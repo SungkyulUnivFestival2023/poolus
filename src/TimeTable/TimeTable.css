@@ -1,0 +1,167 @@
+@font-face {
+    font-family: 'SBAggro1';
+    font-weight: 300;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/sandbox/SBAggroLight.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/sandbox/SBAggroLight.eot?#iefix') format('embedded-opentype'), url('https://cdn.jsdelivr.net/gh/webfontworld/sandbox/SBAggroLight.woff2') format('woff2'), url('https://cdn.jsdelivr.net/gh/webfontworld/sandbox/SBAggroLight.woff') format('woff'), url('https://cdn.jsdelivr.net/gh/webfontworld/sandbox/SBAggroLight.ttf') format("truetype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SBAggro2';
+    font-weight: 500;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/sandbox/SBAggroMedium.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/sandbox/SBAggroMedium.eot?#iefix') format('embedded-opentype'), url('https://cdn.jsdelivr.net/gh/webfontworld/sandbox/SBAggroMedium.woff2') format('woff2'), url('https://cdn.jsdelivr.net/gh/webfontworld/sandbox/SBAggroMedium.woff') format('woff'), url('https://cdn.jsdelivr.net/gh/webfontworld/sandbox/SBAggroMedium.ttf') format("truetype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SBAggro3';
+    font-weight: 700;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/sandbox/SBAggroBold.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/sandbox/SBAggroBold.eot?#iefix') format('embedded-opentype'), url('https://cdn.jsdelivr.net/gh/webfontworld/sandbox/SBAggroBold.woff2') format('woff2'), url('https://cdn.jsdelivr.net/gh/webfontworld/sandbox/SBAggroBold.woff') format('woff'), url('https://cdn.jsdelivr.net/gh/webfontworld/sandbox/SBAggroBold.ttf') format("truetype");
+    font-display: swap;
+}
+
+* {
+    font-family: 'SBAggro1';
+}
+
+
+/* titleimage */
+
+.HeartImg {
+    padding: 30px;
+}
+
+
+/* button */
+
+.dayBtns {
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'SBAggro2';
+}
+
+.active-day {
+    color: #6CC7DF !important;
+    font-weight: bold;
+}
+
+.dayBtn {
+    background-color: inherit;
+    border: none;
+    color: white;
+    font-size: 25px;
+}
+
+
+/* 부스 & 공연 css */
+
+.boothNstage {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.boothNstage>img {
+    height: 840px;
+}
+
+
+/* 부스 */
+
+.boothTitle {
+    font-size: 30px;
+    text-align: right;
+    padding-bottom: 15px;
+    border-bottom: 3px solid #6CC7DF;
+    margin-bottom: 20px;
+    font-family: 'SBAggro2';
+}
+
+.boothBox {
+    width: 170px;
+    padding: 10px;
+    margin-bottom: 30px;
+    text-align: right;
+    position: relative;
+}
+
+.boothBox:last-child {
+    margin-top: 220px;
+}
+
+
+/* 시간 */
+
+.boothBox>div:first-child {
+    font-family: 'SBAggro1';
+    margin-bottom: 8px;
+    font-size: 12px;
+}
+
+
+/* 타이틀 */
+
+.boothBox>div:nth-child(2) {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/* 장소 */
+
+.boothBox>div:last-child {
+    font-size: 15px;
+    font-family: 'SBAggro1';
+}
+
+.blueCircle {
+    position: absolute;
+    top: 12px;
+    right: -19.7px;
+}
+
+
+/* 공연 */
+
+.stageTitle {
+    font-family: 'SBAggro2';
+    margin-bottom: 20px;
+    font-size: 30px;
+    text-align: left;
+    padding-bottom: 15px;
+    border-bottom: 3px solid #6CDD9D;
+}
+
+.stageBox {
+    width: 170px;
+    padding: 40px 10px 10px 10px;
+    margin-bottom: 30px;
+    text-align: left;
+    position: relative;
+}
+
+.stageBox>div:first-child {
+    font-family: 'SBAggro1';
+    margin-bottom: 8px;
+    font-size: 12px;
+}
+
+.stageBox>div:nth-child(2) {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.stageBox>div:last-child {
+    font-size: 15px;
+    font-family: 'SBAggro1';
+}
+
+.greenCircle {
+    position: absolute;
+    top: 44px;
+    left: -19.5px;
+}
