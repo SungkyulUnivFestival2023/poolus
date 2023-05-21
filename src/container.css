@@ -1,22 +1,43 @@
-.flexcontainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    overflow: auto;
-}
-
-
-/* 모바일 스타일 */
-
-@media (max-width: 767px) {}
-
-
-/* 태블릿 스타일 */
-
-@media (min-width: 768px) and (max-width: 1023px) {}
-
-
-/* PC 스타일 */
-
-@media (min-width: 1024px) {}
+        .flexcontainer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            overflow: auto;
+            height: 100vh;
+        }
+        /* 모바일 스타일 */
+        
+        @media (max-width: 767px) {
+            .flexcontainer {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: black;
+                height: 100vh;
+                overflow: auto;
+            }
+        }
+        /* 태블릿 스타일 */
+        
+        @media (min-width: 768px) and (max-width: 1023px) {
+            .flexcontainer {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: black;
+                height: 100%;
+            }
+        }
+        /* PC 스타일 */
+        
+        @media (min-width: 1024px) {
+            .flexcontainer {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: black;
+                height: 100vh;
+                overflow-y: scroll;
+            }
+        }

@@ -6,13 +6,6 @@
 }
 
 
-/* flexcontainer에 height: 100vh주면 타임테이블이 이상해져서 여기에 일단 따로 추가함 */
-
-.height {
-    height: 100vh;
-}
-
-
 /* 버튼 */
 
 .waterIslandBtn {
@@ -46,4 +39,59 @@
 .tree {
     position: absolute;
     bottom: 0;
+}
+
+
+/* Attraction css */
+
+.attractionBtn {
+    padding: 15px;
+    background-color: #6CC7DF;
+    border: 1px solid #6cc7df;
+    border-radius: 20px;
+    font-size: 20px;
+    font-family: SBAggro2;
+    width: 300px;
+}
+
+.attrTitle {
+    margin-top: 50px;
+    font-size: 40px;
+    font-family: 'SBAggro2';
+    letter-spacing: 5px;
+    color: #6cc7df;
+}
+
+
+/* CarouselSize 안 요소들 */
+
+.CarouselSize {
+    width: 375px;
+    height: 680px;
+}
+
+.attrSub {
+    font-family: 'SBAggro2';
+    text-align: left;
+    padding-left: 70px;
+    font-size: 18px;
+    margin: 50px 0;
+}
+
+.attrSub p {
+    margin-bottom: 0.5rem;
+}
+
+.blueFont {
+    color: #6CC7DF;
+}
+
+.AttrImg img {
+    width: 360px;
+    margin-top: 30px;
+}
+
+.groundRule p {
+    margin-bottom: 0.5rem;
+    font-size: 13px;
 }
