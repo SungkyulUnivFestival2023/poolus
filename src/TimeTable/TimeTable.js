@@ -15,7 +15,7 @@ const TimeTable = () => {
     const day31 = day === 31 ? 'active-day' : '';
 
     return (
-        <div className="flexcontainer heightpercent">
+        <div className="flexcontainer percentHeight">
             <div className="TimeTable">
                 <div className="HeartImg">
                     <img src="img/PoolUsHeart.png" alt="Pool:Us Heart" />

@@ -12,6 +12,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/TimeTable" element={<TimeTable />} />
+          {/* WaterIsland */}
           <Route path="/WaterIsland" element={<WaterIsland />} />
           <Route path="/WaterIsland/Attraction" element={<Attraction />} />
           <Route path="/WaterIsland/Goods" element={<Goods />} />
