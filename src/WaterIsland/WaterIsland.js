@@ -5,7 +5,7 @@ import './WaterIsland.css';
 
 const WaterIsland = () => {
     return (
-        <div className="flexcontainer vhHeight flexend">
+        <section className="flexcontainer">
             <div className="WaterIsland">
                 <div className="waterIslandLogo">
                     <img src="img/WaterIslandLogo.png" alt="waterIslandLogo" />
@@ -13,7 +13,7 @@ const WaterIsland = () => {
 
                 <div className="waterIslandBtn">
                     <Link to="/WaterIsland/Attraction">
-                        <button >어트랙션</button>
+                        <button>어트랙션</button>
                     </Link>
                     <Link to="/WaterIsland/Goods">
                         <button>매표소 (굿즈)</button>
@@ -25,7 +25,7 @@ const WaterIsland = () => {
                     <img className="wave" src="img/wave1.png" alt="파도" />
                 </div>
             </div>
-        </div>
+        </section>
     );
 }
 

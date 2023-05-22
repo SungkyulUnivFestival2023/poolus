@@ -1,12 +1,9 @@
 import React from 'react'
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 
 function Nfree() {
   return (
     <>
-        <div>
+    <div>
         <p className="goodssub">영암축전 티셔츠, 고글, 수건은 <br />모든 학우분들께 무료제공됩니다.</p>
         
         <div className="goodsContainer goodsContainer1">

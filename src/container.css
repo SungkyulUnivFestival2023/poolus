@@ -7,12 +7,10 @@
 
 .vhHeight {
     height: 100vh;
-    overflow: auto;
 }
 
 .percentHeight {
     height: 100%;
-    overflow: auto;
 }
 
 .flexend {

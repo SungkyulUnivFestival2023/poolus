@@ -3,28 +3,34 @@ import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
 import Nfree from './Nfree';
 import Yfree from './Yfree';
+import { Link } from "react-router-dom";
 
 const Goods = () =>  {
   const [goods, setGoods] = useState(true);
-  const changeGoods = (bool) => {
-    setGoods(bool);
+  const changeGoods = () => {
+    setGoods(!goods);
   }
 
   return (
-    <div className="flexcontainer vhHeight">
+    <section className="flexcontainer vhHeight">
       <div className="Goods">
-        <button className="attractionBtn">매표소 (굿즈)</button>
+        <Link to="/WaterIsland" className="attractionBtn">
+          <IoIosArrowBack className="arrowback" size="20" color="black" />
+          <span>어트랙션</span>
+        </Link>
 
         <div className="arrowflex">
-          <button className="arrow" onClick={()=>changeGoods(true)} ><IoIosArrowBack size="30" color="#b7b7b7" /></button>
+          <button className="arrow" onClick={()=>changeGoods()} ><IoIosArrowBack size="30" color="#b7b7b7" /></button>
 
           <div>
-            {goods ? <Yfree /> : <Nfree /> }
+            
+            {goods ? <Yfree /> : <Nfree />}
+            
           </div>
-          <button className="arrow" onClick={()=>changeGoods(false)} ><IoIosArrowForward size="30" color="#b7b7b7" /></button>
+          <button className="arrow" onClick={()=>changeGoods()} ><IoIosArrowForward size="30" color="#b7b7b7" /></button>
           </div>    
       </div>
-    </div>
+    </section>
   )
 }
 

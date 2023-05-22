@@ -3,6 +3,8 @@ import Time from './TimeTable.json';
 import './TimeTable.css';
 import { MdPlace } from "react-icons/md"
 import '../container.css';
+import { Link } from 'react-router-dom';
+import Nav from '../Nav';
 
 const TimeTable = () => {
     const [day, setDay] = useState(30); // 화, 수 구분 state
@@ -15,10 +17,12 @@ const TimeTable = () => {
     const day31 = day === 31 ? 'active-day' : '';
 
     return (
-        <div className="flexcontainer percentHeight">
+        <section className="flexcontainer">
             <div className="TimeTable">
                 <div className="HeartImg">
-                    <img src="img/PoolUsHeart.png" alt="Pool:Us Heart" />
+                    <Link to="/Home">
+                        <img src="img/PoolUsHeart.png" alt="Pool:Us Heart" />
+                    </Link>
                 </div>
                 
                 <div className="dayBtns">
@@ -60,7 +64,7 @@ const TimeTable = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 }
 

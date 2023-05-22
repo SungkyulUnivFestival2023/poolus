@@ -1,21 +1,11 @@
+import React from 'react'
 import { IoIosArrowForward } from "react-icons/io";
 import { IoIosArrowBack } from "react-icons/io";
 import Carousel from 'react-bootstrap/Carousel';
-import React from 'react'
-import './WaterIsland.css';
-import { Link } from "react-router-dom";
 
-
-const Attraction = () =>  {
-  
+function Carouselattraction() {
   return (
-    <section className="flexcontainer vhHeight">
-      <div className="Attraction">
-        <Link to="/WaterIsland" className="attractionBtn">
-          <IoIosArrowBack className="arrowback" size="20" color="black" />
-          <span>어트랙션</span>
-        </Link>
-
+    <div>
         <Carousel className="CarouselSize">
           {/* 워터 그라운드 */}
           <Carousel.Item interval={5000}>
@@ -75,9 +65,8 @@ const Attraction = () =>  {
             </div>
           </Carousel.Item>
         </Carousel>
-      </div>
-    </section>
+    </div>
   )
 }
 
-export default Attraction
+export default Carouselattraction
