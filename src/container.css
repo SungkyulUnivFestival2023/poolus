@@ -29,4 +29,9 @@
 
 /* PC 스타일 */
 
-@media (min-width: 1024px) {}
+@media (min-width: 1024px) {
+    .backgroundImg {
+        position: fixed;
+        bottom: 0;
+    }
+}
