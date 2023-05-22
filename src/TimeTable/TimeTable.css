@@ -29,6 +29,12 @@
     font-family: 'SBAggro1';
 }
 
+.TimeTable {
+    background-color: black;
+    width: 100%;
+    max-width: 100%;
+}
+
 
 /* titleimage */
 

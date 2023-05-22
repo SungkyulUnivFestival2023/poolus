@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Time from './TimeTable.json';
 import './TimeTable.css';
 import { MdPlace } from "react-icons/md"
@@ -7,6 +7,11 @@ import { Link } from 'react-router-dom';
 import Nav from '../Nav';
 
 const TimeTable = () => {
+    useEffect(() => {
+        const newColor = 'black'; // 변경할 배경색을 지정
+        document.body.style.backgroundColor = newColor; // body의 배경색 변경
+    }, []);
+
     const [day, setDay] = useState(30); // 화, 수 구분 state
 
     const changeDay = ( newDay ) => {

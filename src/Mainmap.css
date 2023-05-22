@@ -1,0 +1,17 @@
+.Mainmap {
+    background-image: url('./mapbackground.png');
+    width: 100%;
+    max-width: 100%;
+}
+
+.maplogo {
+    margin-top: 50px;
+}
+
+.mapmain img {
+    width: 300px;
+}
+
+.mapmenu img {
+    width: 300px;
+}

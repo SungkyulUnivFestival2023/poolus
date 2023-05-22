@@ -1,15 +1,14 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import TimeTable from './TimeTable/TimeTable';
-import WaterIsland from './WaterIsland/WaterIsland';
-import Attraction from './WaterIsland/Attraction';
-import Goods from './WaterIsland/Goods';
-import Home from './TimeTable/Home';
+import './App.css';
+
 import Nav from './Nav';
-import GoodsCarousel from './WaterIsland/GoodsCarousel';
+import Home from './Home';
+import TimeTable from './TimeTable/TimeTable';
 import WaterIslandMenu from './WaterIsland/Carousel/WaterIslandMenu';
-import Carouselgoods from './WaterIsland/Carousel/Carouselgoods';
+import WaterIsland from './WaterIsland/WaterIsland';
+import Mainmap from './Mainmap';
+import GardenIsland from './GardenIsland/GardenIsland';
 
 function App() {
   return (
@@ -19,13 +18,17 @@ function App() {
         <div>
           <BrowserRouter>
             <Routes>
+              <Route path="/" element={<Home />} />
               <Route path="/Nav" element={<Nav />} />
-              <Route path="/Home" element={<Home />} />
               <Route path="/TimeTable" element={<TimeTable />} />
               {/* WaterIsland */}
               <Route path="/WaterIsland" element={<WaterIsland />} />
               <Route path="/WaterIsland/Attraction" element={<WaterIslandMenu contents={"attr"}/>} />
               <Route path="/WaterIsland/Goods" element={<WaterIslandMenu contents={"goods"}/>} />
+              <Route path="/Mainmap" element={<Mainmap />} />
+              
+              {/* GardenIsland */}
+              <Route path="/GardenIsland" element={<GardenIsland />} />
             </Routes>
           </BrowserRouter>
         </div>
