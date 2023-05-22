@@ -9,7 +9,7 @@ function GardenIsland() {
   return (
     <section className="">
         <div className="GardenIsland">
-            가든ㅎㅇ
+            
         </div>
     </section>
   )

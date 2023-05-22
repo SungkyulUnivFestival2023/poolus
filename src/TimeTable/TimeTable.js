@@ -4,7 +4,6 @@ import './TimeTable.css';
 import { MdPlace } from "react-icons/md"
 import '../container.css';
 import { Link } from 'react-router-dom';
-import Nav from '../Nav';
 
 const TimeTable = () => {
     useEffect(() => {

@@ -1,6 +1,5 @@
 import React from 'react'
 import { IoIosArrowForward } from "react-icons/io";
-import { IoIosArrowBack } from "react-icons/io";
 import Carousel from 'react-bootstrap/Carousel';
 
 function Carouselattraction() {
