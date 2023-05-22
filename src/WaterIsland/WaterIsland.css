@@ -204,3 +204,10 @@
     justify-content: center;
     font-size: 22px;
 }
+
+@media (min-width: 1024px) {
+    .backgroundImg {
+        position: fixed;
+        bottom: 0;
+    }
+}
