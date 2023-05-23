@@ -9,11 +9,11 @@ function Home() {
   
   return (
     <div ClassName="flexcontainer">
-      <Link to="/TimeTable"></Link>
-      <Link to="/WaterIsland"></Link>
-      <Link to="/Mainmap"></Link>
-      <Link to="/GardenIsland"></Link>
-      <Link to="/ArtistTitle"></Link>
+      <Link to="/TimeTable">타임테이블</Link>
+      <Link to="/WaterIsland">워터아일랜드</Link>
+      <Link to="/Mainmap">메인 맵</Link>
+      <Link to="/GardenIsland">가든아일랜드</Link>
+      <Link to="/ArtistTitle">아티스트</Link>
     </div>
   )
 }
