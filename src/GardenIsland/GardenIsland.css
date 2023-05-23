@@ -102,7 +102,7 @@
 
 .boothtitle {
     font-family: 'SBAggro2';
-    font-size: 17px;
+    font-size: 16px;
     margin: 0;
 }
 
@@ -110,10 +110,13 @@
     font-family: 'SBAggro1';
     font-size: 12px;
     margin: 0;
+    width: 170px;
+    text-align: left;
+    word-break: keep-all;
 }
 
 .star {
     position: absolute;
     right: 15px;
-    bottom: 15px;
+    top: 9px;
 }

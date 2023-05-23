@@ -40,8 +40,15 @@ function GardenIsland() {
                 <div className="boothlist">
                     {/* 학과별 부스*/}
                     <p className="boothtitle">{booth.department}</p>
-                    {/* 학과별 부스*/}
-                    <p className="boothmenu">차라리 메뉴 나열하는 게 나을듯</p>
+
+                    {/* 메뉴 */}
+                    <span className="boothmenu">
+                      {booth.menus.map((items)=> (
+                        <>
+                         {items.name},<span>  </span> 
+                        </>
+                      ))}
+                    </span>
                 </div>
                 <BsStar className="star"/>
               </>
