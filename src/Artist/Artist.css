@@ -101,7 +101,7 @@
 
 .dayscroll {
     height: 100vh;
-    overflow-y: scroll;
+    overflow-y: visible;
     display: grid;
     justify-items: center;
     align-content: center;

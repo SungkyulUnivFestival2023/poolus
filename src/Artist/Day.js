@@ -1,3 +1,5 @@
+// 이 페이지 안씀, 일단 두고 지워도 됩니당
+
 import React, { useEffect, useState } from 'react';
 import './Artist.css'; 
 import mapBackground from '../mapbackground.png';

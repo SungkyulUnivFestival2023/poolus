@@ -1,0 +1,119 @@
+.GardenIsland {
+    font-family: 'Anton', sans-serif;
+    color: #287E3A;
+}
+
+.gardenlogo {
+    margin-top: 40px;
+}
+
+.searchtext {
+    font-weight: bold;
+    margin: 10px 0;
+    font-size: 15px;
+}
+
+.search div {
+    width: 200px;
+    margin: 20px auto;
+    border: 2px solid #287e3a;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.searchInput {
+    width: 140px;
+    background: none;
+    border: none;
+}
+
+.searchSubmit {
+    width: 50px;
+    background: none;
+    border: none;
+}
+
+.searchIcon {
+    position: absolute;
+    right: 5px;
+    bottom: 2.5px;
+}
+
+.fixbackground {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -2;
+}
+
+@media (min-width: 1024px) {
+    .fixbackground {
+        position: fixed;
+        bottom: 0;
+    }
+    .wave {
+        width: auto;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .fixbackground {
+        position: fixed;
+        bottom: 0;
+    }
+    .wave {
+        width: auto;
+    }
+}
+
+.GardenIsland {
+    overflow-y: visible;
+}
+
+.boothmain {
+    height: 100vh;
+    display: grid;
+    align-content: center;
+}
+
+.flexbooth {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: none;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    position: relative;
+    background-color: white;
+}
+
+.listImg img {
+    width: 100px;
+    overflow: hidden;
+}
+
+.boothlist {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.boothtitle {
+    font-family: 'SBAggro2';
+    font-size: 17px;
+    margin: 0;
+}
+
+.boothmenu {
+    font-family: 'SBAggro1';
+    font-size: 12px;
+    margin: 0;
+}
+
+.star {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+}
