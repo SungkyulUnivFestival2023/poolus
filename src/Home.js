@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+import { Link } from 'react-router-dom';
 
 function Home() {
   useEffect(() => {
@@ -8,7 +9,11 @@ function Home() {
   
   return (
     <div ClassName="flexcontainer">
-
+      <Link to="/TimeTable"></Link>
+      <Link to="/WaterIsland"></Link>
+      <Link to="/Mainmap"></Link>
+      <Link to="/GardenIsland"></Link>
+      <Link to="/ArtistTitle"></Link>
     </div>
   )
 }

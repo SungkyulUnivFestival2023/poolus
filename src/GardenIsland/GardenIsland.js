@@ -1,8 +1,9 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import './GardenIsland.css';
-import { BiSearchAlt } from "react-icons/bi";
-import { BsStar } from "react-icons/bs";
 import MenuData from'./MenuData.json';
+import GardenMain from './GardenMain';
+import { BsStar } from "react-icons/bs";
+import Allbooth from './Allbooth';
 
 function GardenIsland() {
     useEffect(() => {
@@ -10,53 +11,23 @@ function GardenIsland() {
         document.body.style.backgroundColor = newColor; // body의 배경색 변경
     }, []);
 
+    const [searchword, setSearchword] = useState('');
+
+    const handleSearch = (event) => {
+      setSearchword(event.target.value0);
+      console.log(searchword);
+    }
+    
   return (
     <section className="flexcontainer">
         <div className="GardenIsland">
-          <section className="boothmain">
-            <div className="gardenlogo"><img src="img/garden/gardenlogo.png" alt="" /></div>
+          {/* 부스 메인 */}
+          <GardenMain onChange={handleSearch} value={searchword} />
 
-              <p className="searchtext">원하는 부스 또는 <br/>음식을 검색해 보세요!</p>
+          {/* 부스 전체 리스트 렌더링 */}
+          <Allbooth />
 
-              <div className="search">
-                <div>
-                  <input className="searchInput" type="text" />
-                  <input className="searchSubmit" type="submit" value="" />
-                  <BiSearchAlt className="searchIcon"size="20" />
-                </div>
-              </div>
-
-              <div className="gardenbooth"><img src="img/garden/boothmap.png" alt="전체부스" /></div>
-              <div className="fixbackground"><img src="img/garden/gardenback.png" alt="garden 배경" /></div>
-          </section>
-
-          {MenuData.map((booth)=> (
-          <section className="gardenbooth">
-            <div className="flexbooth">
-                <>                
-                <div className="listImg">
-                  <img src="img/goggles.png" alt="부스이미지" />
-                </div>
-                <div className="boothlist">
-                    {/* 학과별 부스*/}
-                    <p className="boothtitle">{booth.department}</p>
-
-                    {/* 메뉴 */}
-                    <span className="boothmenu">
-                      {booth.menus.map((items)=> (
-                        <>
-                         {items.name},<span>  </span> 
-                        </>
-                      ))}
-                    </span>
-                </div>
-                <BsStar className="star"/>
-              </>
-            </div>
-          </section>
-          ))}
-
-          
+          {/* 검색 후 리스트 렌더링 */}
         </div>
     </section>
   )

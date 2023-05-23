@@ -13,7 +13,7 @@
     font-size: 15px;
 }
 
-.search div {
+.search form {
     width: 200px;
     margin: 20px auto;
     border: 2px solid #287e3a;
@@ -32,6 +32,7 @@
     width: 50px;
     background: none;
     border: none;
+    z-index: 3;
 }
 
 .searchIcon {
