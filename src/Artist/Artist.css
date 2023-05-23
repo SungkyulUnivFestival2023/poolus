@@ -64,20 +64,6 @@
     bottom: -20px;
 }
 
-.fixtree1 {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-}
-
-.fixtree2 {
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: -3;
-    transform: none;
-}
-
 .Day {
     height: 100vh;
     display: flex;
@@ -106,4 +92,38 @@
     position: absolute;
     top: 22px;
     right: -40px;
+}
+
+.LineupSlide {
+    max-width: 100%;
+    width: 100%;
+}
+
+.dayscroll {
+    height: 100vh;
+    overflow-y: scroll;
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    position: relative;
+}
+
+.fixtree1 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.fixtree2 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -3;
+}
+
+.fixlogo {
+    width: 100px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
 }

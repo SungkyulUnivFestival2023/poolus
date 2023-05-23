@@ -10,8 +10,8 @@ import WaterIsland from './WaterIsland/WaterIsland';
 import Mainmap from './Mainmap';
 import GardenIsland from './GardenIsland/GardenIsland';
 import Lineuptitle from './Artist/Lineuptitle';
-import Lineup from './Artist/Lineup';
 import Day from './Artist/Day';
+import LineupSlide from './Artist/LineupSlide';
 
 function App() {
   return (
@@ -34,7 +34,7 @@ function App() {
 
               {/* Artist */}
               <Route path="/ArtistTitle" element={<Lineuptitle />} />
-              <Route path="/ArtistLineup" element={<Lineup />} />
+              <Route path="/ArtistLineup" element={<LineupSlide />} />
               <Route path="/Day" element={<Day />} />
             </Routes>
           </BrowserRouter>
