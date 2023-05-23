@@ -1,0 +1,109 @@
+/* 캐러잴 속성들 */
+
+.carousel-control-prev-icon {
+    display: none;
+}
+
+.carousel-control-next-icon {
+    display: none;
+}
+
+.carousel-inner {
+    overflow: visible;
+}
+
+.carousel-item {
+    transition: transform .7s cubic-bezier(0.29, 0.92, 1, 1)
+}
+
+
+/* 캐러샐  */
+
+.artistcarousel {
+    width: 300px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.artist img:first-child {
+    width: 250px;
+}
+
+.artist img:last-child {
+    width: 150px;
+    position: absolute;
+    bottom: -20px;
+    right: 13px;
+}
+
+
+/* day1, day2 타이틀 */
+
+.daytitle {
+    margin: 20px;
+}
+
+
+/* 메인1 */
+
+.Lineuptitle {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+}
+
+.clickparent {
+    background: none;
+    border: none;
+    position: relative;
+}
+
+.click {
+    position: absolute;
+    right: 0;
+    bottom: -20px;
+}
+
+.fixtree1 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.fixtree2 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -3;
+    transform: none;
+}
+
+.Day {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dayArtist {
+    position: relative;
+}
+
+.dayArtist button {
+    background: none;
+    border: none;
+    position: absolute;
+}
+
+.dayArtist button:first-child {
+    position: absolute;
+    top: 22px;
+    left: -40px;
+}
+
+.dayArtist button:last-child {
+    position: absolute;
+    top: 22px;
+    right: -40px;
+}
