@@ -22,7 +22,7 @@ function GardenIsland() {
           {/* 부스 메인 */}
           <GardenMain onChange={handleSearch} />
 
-          {/* 부스 전체 리스트 렌더링 */}
+          {/* 부스 리스트 렌더링 */}
           <Allbooth searchword={searchword} />
         </div>
     </section>

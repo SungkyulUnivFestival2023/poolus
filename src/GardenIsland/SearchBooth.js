@@ -4,10 +4,11 @@ import { AiTwotoneStar } from "react-icons/ai";
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
-function SearchBooth({searchword, filteredBooth, star, handleStar, selectedBooth, openModal, closeModal}) {
+function SearchBooth({filteredBooth, handleStar, selectedBooth, openModal, closeModal}) {
 
   return (
     <>
+    {/* 앞에서 필터링된 배열을 가지고 렌더링함 */}
     {filteredBooth.map((item) => {
         return(
             <>
@@ -20,7 +21,6 @@ function SearchBooth({searchword, filteredBooth, star, handleStar, selectedBooth
                         </div>
                         <div className="boothlist">
                             {/* 학과별 부스*/}
-                            서치부스
                             <p className="boothtitle">{item.department}</p>
 
                             {/* 메뉴 */}
