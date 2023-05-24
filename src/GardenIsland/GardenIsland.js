@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './GardenIsland.css';
-import MenuData from'./MenuData.json';
 import GardenMain from './GardenMain';
-import { BsStar } from "react-icons/bs";
 import Allbooth from './Allbooth';
 
 function GardenIsland() {
@@ -13,21 +11,22 @@ function GardenIsland() {
 
     const [searchword, setSearchword] = useState('');
 
+    // 검색하면 searchword 바뀌도록
     const handleSearch = (event) => {
-      setSearchword(event.target.value0);
+      setSearchword(event.target.value);
       console.log(searchword);
     }
+
     
+
   return (
     <section className="flexcontainer">
         <div className="GardenIsland">
           {/* 부스 메인 */}
-          <GardenMain onChange={handleSearch} value={searchword} />
+          <GardenMain onChange={handleSearch} />
 
           {/* 부스 전체 리스트 렌더링 */}
-          <Allbooth />
-
-          {/* 검색 후 리스트 렌더링 */}
+          <Allbooth searchword={searchword} />
         </div>
     </section>
   )
