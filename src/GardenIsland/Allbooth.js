@@ -64,7 +64,7 @@ function Allbooth({searchword}) {
                                 <>
                                 {items.name},<span>  </span> 
                                 </>
-                            ))} 등등
+                            ))} 등
                         </>
                         </span>
                     </div>

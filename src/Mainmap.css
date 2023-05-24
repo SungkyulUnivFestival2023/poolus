@@ -1,7 +1,11 @@
 .Mainmap {
     background-image: url('./mapbackground.png');
+    background-size: cover;
     width: 100%;
     max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .mapmain img {

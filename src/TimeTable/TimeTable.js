@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import Time from './TimeTable.json';
 import './TimeTable.css';
 import { MdPlace } from "react-icons/md"
@@ -19,7 +19,7 @@ const TimeTable = () => {
         <section className="fullbgB">
             <div className="TimeTable good">
                 <div className="HeartImg">
-                    <Link to="/Home">
+                    <Link to="/">
                         <img src="img/PoolUsHeart.png" alt="Pool:Us Heart" />
                     </Link>
                 </div>

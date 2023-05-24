@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import Day30 from './Day30'
 import Day31 from './Day31'
 import '../background.css';
