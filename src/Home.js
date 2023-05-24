@@ -1,25 +1,22 @@
 import React, { useEffect } from 'react'
-import { Link } from 'react-router-dom';
+import './Home.css';
+import './App.css';
+import Nav from './Nav';
 
 function Home() {
   useEffect(() => {
-    const newColor = 'black'; // 변경할 배경색을 지정
+    const newColor = '#121212'; // 변경할 배경색을 지정
     document.body.style.backgroundColor = newColor; // body의 배경색 변경
   }, []);
   
   return (
-    <div ClassName="flexcontainer">
-      
-      <Link to="/TimeTable">타임테이블</Link>
-      <br/>
-      <Link to="/WaterIsland">워터아일랜드</Link>
-      <br/>
-      <Link to="/Mainmap">메인 맵</Link>
-      <br/>
-      <Link to="/GardenIsland">가든아일랜드</Link>
-      <br/>
-      <Link to="/ArtistTitle">아티스트</Link>
-      <br/>
+    <div>
+      <div className='display-container'>
+      <Nav/>
+        <video autoPlay loop muted playsInline>
+          <source src={`video/pexels-rostislav-uzunov-5680034-1280x720-24fps.mp4`} type='video/mp4' />
+        </video>
+      </div>
     </div>
   )
 }

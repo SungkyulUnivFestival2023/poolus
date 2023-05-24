@@ -11,6 +11,7 @@ const WaterIsland = () => {
 
     return (
         <section className="flexcontainer">
+            
             <div className="WaterIsland">
                 <div className="waterIslandLogo">
                     <img src="img/WaterIslandLogo.png" alt="waterIslandLogo" />

@@ -3,7 +3,8 @@ import Time from './TimeTable.json';
 import './TimeTable.css';
 import { MdPlace } from "react-icons/md"
 import '../container.css';
-import { Link } from 'react-router-dom';
+import Nav from '../Nav';
+import '../App.css';
 
 const TimeTable = () => {
     useEffect(() => {
@@ -21,13 +22,14 @@ const TimeTable = () => {
     const day31 = day === 31 ? 'active-day' : '';
 
     return (
-        <section className="flexcontainer">
+        <section className="display-container">
+            <Nav />
             <div className="TimeTable">
-                <div className="HeartImg">
+                {/* <div className="HeartImg">
                     <Link to="/Home">
                         <img src="img/PoolUsHeart.png" alt="Pool:Us Heart" />
                     </Link>
-                </div>
+                </div> */}
                 
                 <div className="dayBtns">
                     <button className={`dayBtn ${day30}`} onClick={() => changeDay(30)}>30일<br/>화요일</button>
