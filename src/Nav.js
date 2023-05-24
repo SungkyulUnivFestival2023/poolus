@@ -23,25 +23,25 @@ function Nav() {
           <nav className="nav nav-style">
             <ul className="list">
               <li className="item">
-                <Link to="/TimeTable" className="link">타임테이블</Link>
+                <Link to="/TimeTable" className="link sbaggro-font">타임테이블</Link>
               </li>
               <li className="item">
-              <Link to="/ArtistTitle" className="link">아티스트 라인업</Link>
+              <Link to="/ArtistTitle" className="link sbaggro-font">아티스트 라인업</Link>
               </li>
               <li className="item">
-              <Link to="/Home" className="link">공지사항</Link>
+              <Link to="/Home" className="link sbaggro-font">공지사항</Link>
                 </li>
               <li className="item">
-              <Link to="/Mainmap" className="link">POOL:US MAP</Link>
+              <Link to="/Mainmap" className="link sbaggro-font">POOL:US MAP</Link>
                 </li>
               <li className="item">
-                <Link to="/" className="link">만든이들</Link>
+                <Link to="/" className="link sbaggro-font">만든이들</Link>
               </li>
               <li className="item">
-                <Link to="/GardenIsland" className="link">가든 아일랜드</Link>
+                <Link to="/GardenIsland" className="link sbaggro-font">가든 아일랜드</Link>
               </li>
               <li className="item">
-                <Link to="/WaterIsland" className="link">워터 아일랜드</Link>
+                <Link to="/WaterIsland" className="link sbaggro-font">워터 아일랜드</Link>
               </li>
             </ul>
           </nav>
