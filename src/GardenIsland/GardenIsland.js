@@ -6,12 +6,12 @@ import '../background.css';
 
 function GardenIsland() {
 
-    const [searchword, setSearchword] = useState('');
+  const [searchword, setSearchword] = useState('');
 
-    // 검색하면 searchword 바뀌도록
-    const handleSearch = (event) => {
-      setSearchword(event.target.value);
-    }
+  // 검색하면 searchword 바뀌도록
+  const handleSearch = (event) => {
+    setSearchword(event.target.value);
+  }
 
   return (
     <section className="fullbgBag">

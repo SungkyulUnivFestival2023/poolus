@@ -14,12 +14,14 @@
 }
 
 .gardenLocation {
-    width: 300px;
+    border-radius: 15px;
+    margin: 0 auto;
+    width: 250px;
     padding: 10px;
     font-size: 18px;
     font-family: 'SBAggro2';
     margin-top: 15px;
-    background-color: rgb(255, 255, 255, 0.8);
+    background-color: rgb(255, 255, 255, 0.6);
 }
 
 .search form {
@@ -27,20 +29,16 @@
     margin: 20px auto;
     border: 2px solid #287e3a;
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: center;
     position: relative;
+    align-items: center;
 }
 
 .searchInput {
     width: 170px;
     background: none;
     border: none;
-}
-
-.searchIcon {
-    margin-top: 3px;
-    margin-left: 5px;
-    width: 20px;
 }
 
 .fixbackground {
