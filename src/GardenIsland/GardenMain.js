@@ -2,7 +2,7 @@ import React from 'react';
 import { BiSearchAlt } from "react-icons/bi";
 import { IoLocationSharp } from "react-icons/io5";
 
-function GardenMain({onChange, value}) {
+function GardenMain({onChange, searchword}) {
   
   return (
     <section className="boothmain">
@@ -12,7 +12,7 @@ function GardenMain({onChange, value}) {
 
         <div className="search">
         <form>
-            <input className="searchInput" type="text" onChange={onChange} value={value}/>
+            <input className="searchInput" type="text" onChange={onChange} value={searchword}/>
             <input className="searchSubmit" type="submit" value="" />
             <BiSearchAlt className="searchIcon"size="20" />
         </form>

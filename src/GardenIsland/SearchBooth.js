@@ -1,14 +1,16 @@
 import React from 'react';
-import { BsStar } from "react-icons/bs";
+import { AiOutlineStar } from "react-icons/ai";
+import { AiTwotoneStar } from "react-icons/ai";
 
-function SearchBooth({filteredBooth}) {
+function SearchBooth({filteredBooth, star, handleStar}) {
+
   return (
     <>
     {filteredBooth.map((item) => {
         return(
         <section className="gardenbooth" key={item.id}>
             <div className="flexbooth">
-                <>                
+                <>
                 <div className="listImg">
                 <img src="img/garden/boothimg.png" alt="부스이미지" />
                 </div>
@@ -28,7 +30,10 @@ function SearchBooth({filteredBooth}) {
                     </>
                     </span>
                 </div>
-                <BsStar className="star"/>
+
+                <button className="starbtn" onClick={(event) => handleStar(event, item.id)} >
+                    {item.star ? <AiTwotoneStar size="18" className="star"/> : <AiOutlineStar size="18" className="star"/>}
+                </button>
             </>
             </div>
         </section>

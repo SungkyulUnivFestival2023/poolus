@@ -80,7 +80,7 @@
 }
 
 .boothmain {
-    height: 100vh;
+    height: 80vh;
     display: grid;
     align-content: center;
 }
@@ -122,64 +122,16 @@
     word-break: keep-all;
 }
 
-.star {
+.starbtn {
+    border: none;
+    background: none;
     position: absolute;
-    right: 15px;
-    bottom: 12px;
+    right: 5px;
+    bottom: 5px;
+    color: #287E3A;
 }
 
 .listImg img {
     border-radius: 20px 0 0 20px;
     margin-right: 20px;
-}
-
-
-/* grid 버전 */
-
-.Ggardenbooth {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.Gflexbooth {
-    display: flex;
-    flex-direction: column;
-    width: 140px;
-    align-items: center;
-    border: none;
-    border-radius: 20px;
-    margin-bottom: 15px;
-    position: relative;
-    background-color: white;
-}
-
-.Gboothlist {
-    display: flex;
-    flex-direction: column;
-}
-
-.Gboothtitle {
-    font-family: 'SBAggro2';
-    font-size: 15px;
-    margin: 0;
-}
-
-.Gboothmenu {
-    font-family: 'SBAggro1';
-    font-size: 12px;
-    margin: 0;
-    width: 170px;
-    text-align: left;
-    word-break: keep-all;
-    text-align: center;
-}
-
-.Gstar {
-    position: absolute;
-    right: 15px;
-    top: 9px;
-}
-
-.GlistImg img {
-    border-radius: 20px 20px 0 0;
 }
