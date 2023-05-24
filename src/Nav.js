@@ -5,7 +5,7 @@ import { AiOutlineHome } from 'react-icons/ai';
 
 function Nav() {
   return (
-    <div className='navbar'>
+    <div className='d-flex justify-content-center navbar fixed-top'>
       <Link to="/" className='home'><AiOutlineHome size="50" color='#6bc6dd'/></Link>
       <div className='logo'>
         <Link to="/">

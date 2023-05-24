@@ -10,3 +10,13 @@
     overflow-x: hidden;
     overflow-y: hidden;
 } */
+.main {
+    height: 100vh; /* 영상의 높이에 맞게 조정하세요 */
+}
+
+.main video{
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+}

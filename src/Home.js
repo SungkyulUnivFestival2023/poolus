@@ -13,9 +13,11 @@ function Home() {
     <div>
       <div className='display-container'>
       <Nav/>
-        <video autoPlay loop muted playsInline>
-          <source src={`video/pexels-rostislav-uzunov-5680034-1280x720-24fps.mp4`} type='video/mp4' />
-        </video>
+        <div className='main'>
+          <video autoPlay loop muted playsInline>
+            <source src={`video/pexels-rostislav-uzunov-5680034-1280x720-24fps.mp4`} type='video/mp4' />
+          </video>
+        </div>
       </div>
     </div>
   )

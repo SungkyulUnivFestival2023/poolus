@@ -2,13 +2,15 @@
     padding: 1rem;
 }
 .home{
-    z-index: 3000;
+    /* z-index: 3000; */
 }
 .logo {
-    z-index: 3000;
+    /* z-index: 3000; */
 }
 .logo img {
     width: 55px;
+    margin-left: 80px;
+    margin-right: 80px;
 }
 /* hamburger */
 .checkbox {
@@ -82,7 +84,7 @@
 
 /* functionality */
 .checkbox:checked ~ .background {
-  transform: scale(60);
+  transform: scale(220);
 }
 .checkbox:checked ~ .nav {
   opacity: 1;
