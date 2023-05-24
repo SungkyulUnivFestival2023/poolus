@@ -14,10 +14,8 @@ function GardenIsland() {
     // 검색하면 searchword 바뀌도록
     const handleSearch = (event) => {
       setSearchword(event.target.value);
-      console.log(searchword);
+      console.log("state변경", searchword);
     }
-
-    
 
   return (
     <section className="flexcontainer">
