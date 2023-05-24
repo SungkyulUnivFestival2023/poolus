@@ -1,0 +1,12 @@
+.fullbgB {
+    background-color: black;
+}
+
+.fullbgBag {
+    background-color: #FEF5E8;
+}
+
+.bgwaterImg {
+    background-image: url('./mapbackground.png');
+    background-size: cover;
+}

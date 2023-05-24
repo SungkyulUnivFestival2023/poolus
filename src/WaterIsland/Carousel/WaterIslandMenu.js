@@ -7,15 +7,19 @@ import Carouselattraction from './Carouselattraction';
 
 function GoodsCarousel({contents}) {
   return (
-    <section className="flexcontainer vhHeight">
-      <div className="Goods">
-        <Link to="/WaterIsland" className="attractionBtn">
-          <IoIosArrowBack className="arrowback" size="20" color="black" />
-          {contents === "attr" ? <span>어트랙션</span> : <span>매표소 (굿즈)</span>}
-        </Link>
+    <section className="fullbgB">
+      <div className="Goods good">
+        <div>
+          <Link to="/WaterIsland" className="attractionBtn">
+            <IoIosArrowBack className="arrowback" size="20" color="black" />
+            {contents === "attr" ? <span>어트랙션</span> : <span>매표소 (굿즈)</span>}
+          </Link>
+        </div>
 
-        <div className="waterIslandContents">
-            {contents === "attr" ? <Carouselattraction /> : <Carouselgoods /> }
+        <div>
+          <div className="waterIslandContents">
+              {contents === "attr" ? <Carouselattraction /> : <Carouselgoods /> }
+          </div>
         </div>
     </div>
     </section>

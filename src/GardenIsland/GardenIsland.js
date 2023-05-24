@@ -2,12 +2,9 @@ import React, { useEffect, useState } from 'react'
 import './GardenIsland.css';
 import GardenMain from './GardenMain';
 import Allbooth from './Allbooth';
+import '../background.css';
 
 function GardenIsland() {
-    useEffect(() => {
-        const newColor = '#FEF5E8'; // 변경할 배경색을 지정
-        document.body.style.backgroundColor = newColor; // body의 배경색 변경
-    }, []);
 
     const [searchword, setSearchword] = useState('');
 
@@ -17,8 +14,8 @@ function GardenIsland() {
     }
 
   return (
-    <section className="flexcontainer">
-        <div className="GardenIsland">
+    <section className="fullbgBag">
+        <div className="GardenIsland good">
           {/* 부스 메인 */}
           <GardenMain onChange={handleSearch} />
 

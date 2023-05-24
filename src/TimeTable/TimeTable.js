@@ -6,11 +6,6 @@ import '../container.css';
 import { Link } from 'react-router-dom';
 
 const TimeTable = () => {
-    useEffect(() => {
-        const newColor = 'black'; // 변경할 배경색을 지정
-        document.body.style.backgroundColor = newColor; // body의 배경색 변경
-    }, []);
-
     const [day, setDay] = useState(30); // 화, 수 구분 state
 
     const changeDay = ( newDay ) => {
@@ -21,8 +16,8 @@ const TimeTable = () => {
     const day31 = day === 31 ? 'active-day' : '';
 
     return (
-        <section className="flexcontainer">
-            <div className="TimeTable">
+        <section className="fullbgB">
+            <div className="TimeTable good">
                 <div className="HeartImg">
                     <Link to="/Home">
                         <img src="img/PoolUsHeart.png" alt="Pool:Us Heart" />
