@@ -1,3 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@font-face {
+    font-family: 'GongGothicMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SBAggroB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.isamanroo-font{
+    font-family: 'GongGothicMedium', sans-serif;
+}
+.anton-font {
+    font-family: 'Anton', sans-serif;
+}
+.sbaggro-font {
+    font-family: 'SBAggroB', sans-serif;
+}
+
+
 /* body {
     display: flex;
     justify-content: center;
@@ -26,6 +50,7 @@
     overflow-x: hidden;
     /* overflow-y: hidden; */
 }
+
 
 /* LOGO 폰트
 font-family: 'Anton', sans-serif; */
