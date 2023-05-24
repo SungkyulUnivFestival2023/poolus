@@ -20,6 +20,7 @@ function SearchBooth({filteredBooth, star, handleStar, selectedBooth, openModal,
                         </div>
                         <div className="boothlist">
                             {/* 학과별 부스*/}
+                            서치부스
                             <p className="boothtitle">{item.department}</p>
 
                             {/* 메뉴 */}

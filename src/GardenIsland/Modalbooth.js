@@ -4,7 +4,7 @@ import Modal from 'react-bootstrap/Modal';
 import MenuData from'./MenuData.json';
 import './Modalbooth.css';
 
-function Modalbooth() {
+function Modalbooth({searchword}) {
     // 부스 선택
     const [selectedBooth, setSelectedBooth] = useState(null);
 
@@ -19,7 +19,8 @@ function Modalbooth() {
 
     return (
       <>
-      {MenuData.map((booth) => (
+      {searchword === '' && (
+        MenuData.map((booth) => (
         <Button key={booth.id} variant="" onClick={() => openModal(booth)}>
             <section className="gardenbooth" key={booth.id}>
                 <div className="flexbooth">
@@ -47,7 +48,7 @@ function Modalbooth() {
                 </div>
             </section>
         </Button>
-      ))}
+      )))}
 
     {/* selectedBooth에 부스 정보다 들어있으면 모달창 띄움 */}
     {selectedBooth && (
@@ -56,7 +57,7 @@ function Modalbooth() {
           onHide={closeModal}
           dialogClassName="modal-80w"
           aria-labelledby="example-custom-modal-styling-title"
-          className="modalframe"
+          classNamve="modalframe"
         >
           <Modal.Header closeButton>
             <Modal.Title id="example-custom-modal-styling-title">
