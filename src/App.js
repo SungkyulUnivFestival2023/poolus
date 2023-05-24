@@ -11,6 +11,7 @@ import Mainmap from './Mainmap';
 import GardenIsland from './GardenIsland/GardenIsland';
 import Lineuptitle from './Artist/Lineuptitle';
 import LineupSlide from './Artist/LineupSlide';
+import TestModal from './GardenIsland/TestModal';
 
 
 function App() {
@@ -35,6 +36,7 @@ function App() {
               {/* Artist */}
               <Route path="/ArtistTitle" element={<Lineuptitle />} />
               <Route path="/ArtistLineup" element={<LineupSlide />} />
+              <Route path="/testmodal" element={<TestModal />} />
             </Routes>
           </BrowserRouter>
         </div>

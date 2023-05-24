@@ -12,9 +12,8 @@ function GardenMain({onChange, searchword}) {
 
         <div className="search">
         <form>
+            <BiSearchAlt className="searchIcon" size="20" />
             <input className="searchInput" type="text" onChange={onChange} value={searchword}/>
-            <input className="searchSubmit" type="submit" value="" />
-            <BiSearchAlt className="searchIcon"size="20" />
         </form>
         </div>
 

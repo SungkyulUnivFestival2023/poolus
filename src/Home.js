@@ -20,6 +20,7 @@ function Home() {
       <br/>
       <Link to="/ArtistTitle">아티스트</Link>
       <br/>
+      <Link to="/testmodal">테스트 모달</Link>
     </div>
   )
 }
