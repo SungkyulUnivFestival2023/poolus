@@ -13,10 +13,14 @@ function Home() {
     <div>
       <div className='display-container'>
       <Nav/>
-        <div className='main'>
+        <div className='main d-flex justify-content-center align-items-center'>
           <video autoPlay loop muted playsInline>
-            <source src={`video/pexels-rostislav-uzunov-5680034-1280x720-24fps.mp4`} type='video/mp4' />
+            <source src={`video/background-video.mp4`} type='video/mp4' />
           </video>
+          <div>
+            <div className="glitch" data-glitch="POOL:US">POOL:US</div>
+            <div className="text-white my-3 text-center sub-title">2023 영암축전<br /> 2023.05.30 - 2023.05.31</div>
+          </div>
         </div>
       </div>
     </div>
