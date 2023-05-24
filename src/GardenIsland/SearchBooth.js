@@ -2,9 +2,9 @@ import React from 'react';
 import { AiOutlineStar } from "react-icons/ai";
 import { AiTwotoneStar } from "react-icons/ai";
 import Button from 'react-bootstrap/Button';
-import Modalbooth from './Modalbooth';
+import Modal from 'react-bootstrap/Modal';
 
-function SearchBooth({filteredBooth, star, handleStar, selectedBooth, openModal, closeModal}) {
+function SearchBooth({searchword, filteredBooth, star, handleStar, selectedBooth, openModal, closeModal}) {
 
   return (
     <>
@@ -43,10 +43,32 @@ function SearchBooth({filteredBooth, star, handleStar, selectedBooth, openModal,
                     </div>
                 </section>
             </Button>
-            <Modalbooth selectedBooth={selectedBooth} openModal={openModal} closeModal={closeModal} />
         </>
         );
     })}
+
+    {selectedBooth && (
+        <Modal
+          show={!!selectedBooth}
+          onHide={closeModal}
+          dialogClassName="modal-80w"
+          aria-labelledby="example-custom-modal-styling-title"
+          classNamve="modalframe"
+        >
+          <Modal.Header closeButton>
+            <Modal.Title id="example-custom-modal-styling-title">
+              {selectedBooth.department}
+            </Modal.Title>
+          </Modal.Header>
+          <Modal.Body>
+            <section>
+                {selectedBooth.menus.map((item)=> (
+                    <div>{item.name} - {item.price}</div>
+                ))}
+            </section>
+          </Modal.Body>
+        </Modal>
+    )}
   </>
 );
 }

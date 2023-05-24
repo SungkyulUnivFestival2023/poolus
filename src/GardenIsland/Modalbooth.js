@@ -50,7 +50,7 @@ function Modalbooth({searchword}) {
         </Button>
       )))}
 
-    {/* selectedBooth에 부스 정보다 들어있으면 모달창 띄움 */}
+    {/* selectedBooth에 부스 정보 들어있으면 모달창 띄움 */}
     {selectedBooth && (
         <Modal
           show={!!selectedBooth}

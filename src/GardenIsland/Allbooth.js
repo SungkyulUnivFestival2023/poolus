@@ -1,10 +1,6 @@
 import React, { useState } from 'react';
-import { AiOutlineStar } from "react-icons/ai";
 import MenuData from'./MenuData.json';
 import SearchBooth from './SearchBooth';
-import { AiTwotoneStar } from "react-icons/ai";
-import Button from 'react-bootstrap/Button';
-import Modal from 'react-bootstrap/Modal';
 import Modalbooth from './Modalbooth';
 
 function Allbooth({searchword}) {
@@ -37,7 +33,6 @@ function Allbooth({searchword}) {
 
     const openModal = (booth) => {
         setSelectedBooth(booth);
-        console.log(booth);
       };
 
     const closeModal = () => {
@@ -48,6 +43,7 @@ function Allbooth({searchword}) {
     <>
         {filteredBooth.length > 0 && searchword !== '' && (
         <SearchBooth 
+            searchword={searchword}
             filteredBooth={filteredBooth} 
             handleStar={handleStar} 
             star={star} 

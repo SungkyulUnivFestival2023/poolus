@@ -14,9 +14,12 @@
 }
 
 .gardenLocation {
+    width: 300px;
+    padding: 10px;
     font-size: 18px;
     font-family: 'SBAggro2';
     margin-top: 15px;
+    background-color: rgb(255, 255, 255, 0.8);
 }
 
 .search form {
@@ -73,9 +76,10 @@
 }
 
 .boothmain {
-    height: 80vh;
+    height: 100vh;
     display: grid;
     align-content: center;
+    justify-content: center;
 }
 
 .flexbooth {
