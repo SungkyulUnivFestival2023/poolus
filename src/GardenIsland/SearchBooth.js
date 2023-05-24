@@ -1,10 +1,10 @@
 import React from 'react';
 import { BsStar } from "react-icons/bs";
 
-function SearchBooth({filteredMenuItems, filteredDepartment}) {
+function SearchBooth({filteredBooth}) {
   return (
     <>
-    {filteredMenuItems.concat(filteredDepartment).map((item) => {
+    {filteredBooth.map((item) => {
         return(
         <section className="gardenbooth" key={item.id}>
             <div className="flexbooth">
