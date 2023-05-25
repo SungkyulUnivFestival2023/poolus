@@ -14,6 +14,23 @@
     position: relative;
     height: 100vh; /* 영상의 높이에 맞게 조정하세요 */
 }
+.wayto-water-island{
+   position: absolute;
+   z-index: 1;
+   bottom: 0;
+   margin-bottom: 35px;
+}
+.wayto-water-island p {
+   font-size: 12px;
+   color: #ffffff;
+   text-shadow: 2px 2px 5px black;
+   margin-bottom: 5px;
+}
+.wayto-water-island img{
+   width: auto;
+   height: 40px;
+   filter: drop-shadow(2px 2px 5px #000000);
+}
 
 .main video{
     position: absolute;
@@ -273,8 +290,10 @@
    transition: 0.3s;
 }
 .waterisland-section{
+   position: relative;
    height: 100vh;
    padding-top: 100px;
+   z-index: 0;
 }
 .waterisland-section .island-title{
    font-size: 30px;
@@ -288,4 +307,180 @@
 }
 .waterisland-section .section-description{
    color: #6bc6dd;
+   font-size: 13px;
+   text-shadow: 2px 2px 5px black;
+}
+
+/* WaterIsland.css import 안했는데 이거 왜 되는거야? */
+.waterIslandBtn {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+/* WaterIsland.css에 있는 속성 몇가지 무력화 */
+.waterIslandBtn button {
+   padding: 10px !important;
+   margin-bottom: 0 !important;
+   background-color: #6CC7DF;
+   border-radius: 10px !important;
+   font-size: 20px;
+   font-family: SBAggro2;
+   width: 200px;
+   color: black;
+   filter: drop-shadow(2px 2px 5px #000000);
+}
+.waterisland-img {
+   position: absolute;
+   z-index: -1;
+   bottom: 0;
+}
+
+.wayto-romantic-island{
+   position: absolute;
+   bottom: 0;
+   left: 50%;
+   transform: translateX(-50%);
+   margin-bottom: 20px;
+}
+.wayto-romantic-island p {
+   font-size: 12px;
+   font-weight: 900;
+   color: #000000;
+   /* text-shadow: 2px 2px 5px black; */
+   margin-bottom: 5px;
+}
+.wayto-romantic-island img{
+   width: auto;
+   height: 40px;
+   filter: drop-shadow(2px 2px 5px #000000);
+}
+.waterisland-title{
+   position: relative;
+}
+.wave-line-1{
+   position: absolute;
+   width: 100px;
+   height: auto;
+   top: 10px;
+   right: -65px;
+   z-index: -1;
+}
+.wave-line-2{
+   position: absolute;
+   width: 100px;
+   height: auto;
+   bottom: 50px;
+   left: -65px;
+   z-index: -1;
+}
+.romanticisland-section{
+   position: relative;
+   height: 100vh;  
+   padding-top: 100px;
+   z-index: 0;
+   background-color: #9fd5f4;
+}
+.romanticisland-title {
+   position: relative;
+}
+.romanticisland-section .island-title{
+   font-size: 30px;
+   font-weight: 900;
+   color: transparent;
+   margin-bottom: -30px;
+   -webkit-text-stroke: 1px #c62b6b;
+}
+.romanticisland-section .poolus-title{
+   font-size: 100px;
+   color: #c62b6b;
+   margin-bottom: 0;
+}
+.spring {
+   width: auto;
+   height: 50px;
+}
+.hashtag {
+   display: flex;
+   justify-content: space-between;
+   /* margin-top: 30px; */
+   padding: 0px 15px;
+}
+.hashtag span{
+   font-size: 4px;
+   color: #9fd5f4;
+   background-color: #c62b6b;
+   border-radius: 5px;
+   padding: 2px 7px;
+}
+.romanticisland-section .section-description{
+   margin-top: 30px;
+   color: #c62b6b;
+}
+.cloud-1{
+   position: absolute;
+   width: 155px;
+   height: auto;
+   top: -30px;
+   left: 0;
+   z-index: -1;
+}
+.cloud-2{
+   position: absolute;
+   width: 155px;
+   height: auto;
+   top: 150px;
+   right: -35px;
+   z-index: -1;
+}
+.cloud-3{
+   position: absolute;
+   width: 155px;
+   height: auto;
+   top: 350px;
+   left: -25px;
+   z-index: -1;
+}
+.romanticisland-img{
+   position: absolute;
+   z-index: -1;
+   bottom: 0;
+}
+.wayto-garden-island{
+   position: absolute;
+   bottom: 0;
+   left: 50%;
+   transform: translateX(-50%);
+   margin-bottom: 20px;
+}
+.wayto-garden-island p {
+   font-size: 12px;
+   font-weight: 900;
+   color: #c62b6b;
+   margin-bottom: 5px;
+}
+.wayto-garden-island img{
+   width: auto;
+   height: 40px;
+}
+.heart-group{
+   position: relative;
+}
+.heart-1{
+   position: absolute;
+   width: 100px;
+   height: auto;
+   left: 50px;
+}
+.heart-2{
+   position: absolute;
+   width: 50px;
+   height: auto;
+   right: 100px;
+}
+.heart-3{
+   position: absolute;
+   width: 50px;
+   height: auto;
+   right: 55px;
+   top: 40px;
 }
