@@ -105,6 +105,39 @@ function Home() {
             <img src="img/romantic-arrow.png" alt="way to Garden island"/>
           </div>
         </div>
+        {/* Garden Island */}
+        <div className='gardenisland-section'>
+          <div className='gardenisland-title text-center'>
+            <p className='island-title text-center isamanroo-font'>GARDEN ISLAND</p>
+            <p className='poolus-title text-center anton-font'>POOL:US</p>
+            {/* iPhone se 사이즈에서 보면 스프링 이미지 때문에 section을 벗어나서 주석처리 */}
+            {/* <img className='leaves' src="img/leaves.png" alt="가든 아일랜드 나뭇잎"/> */}
+            <img className='garden-cloud-1' src="img/garden-cloud-1.png" alt="타이틀 꾸미는 구름"/>
+            <img className='garden-cloud-2' src="img/garden-cloud-2.png" alt="타이틀 꾸미는 구름"/>
+            <img className='garden-cloud-3' src="img/garden-cloud-3.png" alt="타이틀 꾸미는 구름"/>
+            <img className='garden-cloud-4' src="img/garden-cloud-4.png" alt="타이틀 꾸미는 구름"/>
+          </div>
+          <p className='section-description text-center sbaggro-font'>
+            숲속의 작은 쉼터, GARDEN ISLAND
+            <br/>매일 걷던 그 길을 헤매이다, 우연히 도착한 숲.
+            <br/>
+            <br/>그곳엔 지친 당신을 위로해줄
+            <br/>쉼터가 기다리고 있습니다.
+            <br/>
+            <br/>고된 하루의 끝을 위로하며,
+            <br/>지친 그대를 보듬어줄 작은 쉼터.
+            <br/>
+            <br/>GARDEN ISLAND로 여러분을 초대합니다.
+          </p>
+          <div className="gardenIslandBtn">
+            <Link to="/GardenIsland">
+                <button>부스 보러가기</button>
+            </Link>
+          </div>
+          <div className='gardenisland-img'>
+            <img className='img-fluid' src="img/garden-island-bottom.png" alt="가든 아일랜드 하단 정원"/>
+          </div>
+        </div>
       </div>
     </div>
   )

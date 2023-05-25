@@ -307,7 +307,7 @@
 }
 .waterisland-section .section-description{
    color: #6bc6dd;
-   font-size: 13px;
+   font-size: 15px;
    text-shadow: 2px 2px 5px black;
 }
 
@@ -402,6 +402,7 @@
 .hashtag {
    display: flex;
    justify-content: space-between;
+   /* 스프링을 추가할 시 주석 해제하기 */
    /* margin-top: 30px; */
    padding: 0px 15px;
 }
@@ -414,6 +415,7 @@
 }
 .romanticisland-section .section-description{
    margin-top: 30px;
+   font-size: 15px;
    color: #c62b6b;
 }
 .cloud-1{
@@ -483,4 +485,91 @@
    height: auto;
    right: 55px;
    top: 40px;
+}
+
+.gardenisland-section{
+   position: relative;
+   height: 100vh;  
+   padding-top: 100px;
+   z-index: 0;
+   background-color: #fef5e8;
+}
+.gardenisland-title {
+   position: relative;
+}
+.gardenisland-section .island-title{
+   font-size: 30px;
+   font-weight: 900;
+   color: transparent;
+   margin-bottom: -30px;
+   -webkit-text-stroke: 1px #287e3a;
+}
+.gardenisland-section .poolus-title{
+   font-size: 100px;
+   color: #287e3a;
+   margin-bottom: 0;
+}
+.gardenisland-section .section-description{
+   margin-top: 30px;
+   font-size: 15px;
+   color: #287e3a;
+   text-shadow: 0px 0px 10px rgb(255, 255, 255);
+}
+.garden-cloud-1{
+   position: absolute;
+   width: 155px;
+   height: auto;
+   top: 30px;
+   left: 0;
+   z-index: -1;
+}
+.garden-cloud-2{
+   position: absolute;
+   width: 155px;
+   height: auto;
+   top: 150px;
+   right: -35px;
+   z-index: -1;
+}
+.garden-cloud-3{
+   position: absolute;
+   width: 155px;
+   height: auto;
+   top: 265px;
+   left: -25px;
+   z-index: 1;
+}
+.garden-cloud-4{
+   position: absolute;
+   width: 100px;
+   height: auto;
+   top: 440px;
+   right: 10px;
+   z-index: -1;
+}
+.gardenisland-img{
+   position: absolute;
+   z-index: -1;
+   bottom: 0;
+}
+.leaves {
+   width: auto;
+   height: 70px;
+}
+.gardenIslandBtn {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+/* WaterIsland.css에 있는 속성 몇가지 무력화 */
+.gardenIslandBtn button {
+   padding: 10px;
+   margin-bottom: 0;
+   background-color: #287e3a;
+   border-radius: 10px;
+   border: none;
+   font-size: 20px;
+   font-family: SBAggro2;
+   width: 200px;
+   color: #fef5e8;
 }
