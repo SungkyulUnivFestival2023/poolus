@@ -1,28 +1,42 @@
 import React from 'react'
+import { AiOutlineCheck } from "react-icons/ai";
+import { FiAlertCircle } from "react-icons/fi";
+import { IoIosArrowBack } from "react-icons/io";
+import { Link } from 'react-router-dom';
 
 function Studentdue() {
   return (
     <section className="fullbgB">
         <div className="Studentdue good">
-            <div className="duetitle">학생회비 납부 혜택</div>
-            <div className="duesub">
+            <div className="duetitle">
+                <Link to="/InfoMain">
+                    <IoIosArrowBack />학생회비 납부 혜택
+                </Link>
+            </div>
+
+            <div className="yesduesub">
                 <p>
                     <span>학생회비 납부자</span><br />
-                    납부자용 팔찌(어트랙션 5회 이용권)<br />
-                    추가 어트랙션 이용 금액 1000원<br />
-                    어트랙션 매직패스
+                    <AiOutlineCheck /> 납부자용 팔찌(어트랙션 5회 이용권)<br />
+                    <AiOutlineCheck /> 추가 어트랙션 이용 금액 1000원<br />
+                    <AiOutlineCheck /> 어트랙션 매직패스
                 </p>
-                <img src="img/info/yesdue" alt="납부자 팔찌" />
+                <img src="img/info/yesdue.png" alt="납부자 팔찌" />
             </div>
-            <div className="duesub">
+
+            <div className="noduesub">
                 <p>
                     <span>학생회비 미납부자</span><br />
-                    미납부자용 팔찌<br />
-                    어트랙션 이용 금액 2000원<br />
+                    미납부자용 팔찌 <AiOutlineCheck /> <br />
+                    어트랙션 이용 금액 2000원 <AiOutlineCheck /> <br />
                 </p>
-                <img src="" alt="" />
+                <img src="img/info/nodue.png" alt="미납부자 팔찌" />
             </div>
-            <p></p>
+            <p className="dueAlert">
+            <span className="pinkbold">학생회비 납부</span>는<br />
+            <span className="pinkbold">학생회관 201호 총학생회실</span>에서 납부 가능합니다.<br/><br/>
+            <span className="alt pink"><FiAlertCircle /> 축제 당일 학생회비 납부는 불가합니다.</span>
+            </p>
         </div>
     </section>
   )

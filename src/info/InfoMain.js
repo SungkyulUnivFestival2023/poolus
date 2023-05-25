@@ -15,26 +15,25 @@ function InfoMain() {
           </div>
         </section>
 
-        <section className="InfoMain1">
+        <div className="InfoMain1">
           <div className="Infomenu">
-            <Link to='/Studentdue'>
+          <Link to='/Studentdue'>
               <button>학생회비 납부 혜택</button>
-            </Link>
+          </Link>
           </div>
 
           <div className="Infomenu">
-            <Link to="Renewcash">
+          <Link to="/Renewcash">
               <button>리뉴 캐쉬</button>
-            </Link>
+          </Link>
           </div>
 
           <div className="Infomenu">
-            <Link to="/Sns">
+          <Link to="/Sns">
               <button>SNS 이벤트</button>
-            </Link>
+          </Link>
           </div>
-          
-        </section>
+      </div>
       </div>
     </section>
   )

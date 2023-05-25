@@ -1,3 +1,11 @@
+.Studentdue {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
 /* 공지사항 메인 */
 
 .InfoMain {
@@ -32,7 +40,7 @@
     background-color: #494949;
     border: none;
     border-radius: 10px;
-    font-size: 20px;
+    font-size: 22px;
     color: #ffc7c7;
     letter-spacing: 2px;
     font-family: 'SBAggro2'
@@ -40,3 +48,123 @@
 
 
 /* 학생회비 납부 혜택 */
+
+.duetitle {
+    font-size: 32px;
+    letter-spacing: 3px;
+    color: #FFC7C7;
+    font-family: 'SBAggro3'
+}
+
+.duetitle a {
+    color: inherit;
+    font-family: inherit;
+    text-decoration: none;
+}
+
+
+/* 납부자 */
+
+.yesduesub {
+    overflow: hidden;
+    width: 300px;
+}
+
+.yesduesub p {
+    text-align: left;
+}
+
+.yesduesub p span {
+    color: #FFC7C7;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+
+/* 미납부자 */
+
+.noduesub {
+    overflow: hidden;
+    width: 300px;
+}
+
+.noduesub p {
+    text-align: right;
+}
+
+.noduesub p span {
+    color: #FFC7C7;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.pink {
+    color: #ffc7c7;
+}
+
+.green {
+    color: #287e3a;
+    font-weight: boldw;
+}
+
+.alt {
+    font-style: italic;
+    text-decoration: underline;
+}
+
+
+/* 리뉴 캐쉬 */
+
+.RenewCash {
+    display: flex;
+    flex-direction: column;
+}
+
+.cashalert {
+    margin-bottom: 50px;
+}
+
+.cashtitle {
+    margin: 50px 0 20px 0;
+    font-size: 42px;
+    letter-spacing: 3px;
+    color: #FFC7C7;
+    font-family: 'SBAggro3'
+}
+
+.cashtitle a {
+    color: inherit;
+    font-family: inherit;
+    text-decoration: none;
+}
+
+.cashalert span {
+    font-size: 14px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.cardflex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px;
+}
+
+.cardflex div {
+    width: 150px;
+}
+
+.cashsub p {
+    margin: 10px 0;
+}
+
+.cashsub {
+    font-size: 18px;
+}
