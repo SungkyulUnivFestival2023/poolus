@@ -1,10 +1,6 @@
-* {
-    font-family: 'SBAggro1';
-}
-
 .GardenIsland {
-    font-family: 'Anton', sans-serif;
     color: #287E3A;
+    font-family: 'SBAggro2';
 }
 
 .gardenlogo {
@@ -12,13 +8,11 @@
 }
 
 .searchtext {
-    font-weight: bold;
     margin-top: 15px;
     font-size: 15px;
 }
 
 .gardenLocation {
-    font-family: 'SBAggro2';
     border-radius: 15px;
     margin: 0 auto;
     width: 250px;
@@ -30,6 +24,7 @@
 }
 
 .mapinfo {
+    font-family: 'SBAggro1';
     font-size: 11px;
     position: absolute;
     top: 38px;
@@ -123,18 +118,17 @@
 }
 
 .boothtitle {
-    font-family: 'SBAggro2';
     font-size: 14px;
     margin: 0;
 }
 
 .boothmenu {
-    font-family: 'SBAggro1';
     font-size: 12px;
     margin: 0;
     width: 170px;
     text-align: left;
     word-break: keep-all;
+    font-family: 'SBAggro1';
 }
 
 .starbtn {
