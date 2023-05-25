@@ -10,3 +10,7 @@
     background-image: url('./mapbackground.png');
     background-size: cover;
 }
+
+.bginfo {
+    background: linear-gradient(to bottom, black, #3C5F68, black);
+}

@@ -11,6 +11,10 @@ import Mainmap from './Mainmap';
 import GardenIsland from './GardenIsland/GardenIsland';
 import Lineuptitle from './Artist/Lineuptitle';
 import LineupSlide from './Artist/LineupSlide';
+import InfoMain from './info/InfoMain';
+import Studentdue from './info/Studentdue';
+import Sns from './info/Sns';
+import RenewCash from './info/RenewCash';
 
 
 function App() {
@@ -22,19 +26,24 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/Nav" element={<Nav />} />
-              <Route path="/TimeTable" element={<TimeTable />} />
+              <Route path="/Timetable" element={<TimeTable />} />
               {/* WaterIsland */}
-              <Route path="/WaterIsland" element={<WaterIsland />} />
-              <Route path="/WaterIsland/Attraction" element={<WaterIslandMenu contents={"attr"}/>} />
-              <Route path="/WaterIsland/Goods" element={<WaterIslandMenu contents={"goods"}/>} />
+              <Route path="/Waterisland" element={<WaterIsland />} />
+              <Route path="/Waterisland/Attraction" element={<WaterIslandMenu contents={"attr"}/>} />
+              <Route path="/Waterisland/Goods" element={<WaterIslandMenu contents={"goods"}/>} />
               <Route path="/Mainmap" element={<Mainmap />} />
               
               {/* GardenIsland */}
-              <Route path="/GardenIsland" element={<GardenIsland />} />
+              <Route path="/Gardenisland" element={<GardenIsland />} />
 
               {/* Artist */}
-              <Route path="/ArtistTitle" element={<Lineuptitle />} />
-              <Route path="/ArtistLineup" element={<LineupSlide />} />
+              <Route path="/Artisttitle" element={<Lineuptitle />} />
+              <Route path="/Artistlineup" element={<LineupSlide />} />
+              {/* 공지사항 */}
+              <Route path="/InfoMain" element={<InfoMain />} />
+              <Route path="/Studentdue" element={<Studentdue />} />
+              <Route path="/Renewcash" element={<RenewCash />} />
+              <Route path="/Sns" element={<Sns />} />
             </Routes>
           </BrowserRouter>
         </div>

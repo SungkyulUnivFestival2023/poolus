@@ -1,0 +1,42 @@
+/* 공지사항 메인 */
+
+.InfoMain {
+    font-family: 'SBAggro1';
+}
+
+.InfoTitle {
+    margin-bottom: 50px;
+}
+
+.InfoTitle span {
+    font-size: 73px;
+    letter-spacing: 3px;
+    color: #FFC7C7;
+    font-family: 'SBAggro3'
+}
+
+.InfoMain1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+.Infomenu {
+    padding: 20px;
+}
+
+.Infomenu button {
+    width: 250px;
+    height: 70px;
+    background-color: #494949;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    color: #ffc7c7;
+    letter-spacing: 2px;
+    font-family: 'SBAggro2'
+}
+
+
+/* 학생회비 납부 혜택 */

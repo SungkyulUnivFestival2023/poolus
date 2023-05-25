@@ -14,6 +14,8 @@ function Home() {
       <Link to="/GardenIsland">가든아일랜드</Link>
       <br/>
       <Link to="/ArtistTitle">아티스트</Link>
+      <br/>
+      <Link to="/InfoMain">공지사항</Link>
     </div>
   )
 }
