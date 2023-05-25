@@ -19,7 +19,7 @@ function Modalbooth() {
             onHide={closeModal}
             dialogClassName="modal-80w"
             aria-labelledby="example-custom-modal-styling-title"
-            classNamve="modalframe"
+            className="modalframe"
           >
             <Modal.Header closeButton>
               <Modal.Title id="example-custom-modal-styling-title">

@@ -9,24 +9,41 @@
 
 .searchtext {
     font-weight: bold;
-    margin: 10px 0;
+    margin-top: 15px;
     font-size: 15px;
 }
 
 .gardenLocation {
+    font-family: 'SBAggro2';
     border-radius: 15px;
     margin: 0 auto;
     width: 250px;
     padding: 10px;
     font-size: 18px;
-    font-family: 'SBAggro2';
-    margin-top: 15px;
+    margin: 15px auto;
     background-color: rgb(255, 255, 255, 0.6);
+    position: relative;
+}
+
+.gardenLocation span {
+    font-family: 'SBAggro2';
+}
+
+.mapinfo {
+    font-size: 11px;
+    position: absolute;
+    top: 38px;
+    left: 31px;
+}
+
+.gardenbooth img {
+    width: 320px;
 }
 
 .search form {
     width: 200px;
-    margin: 20px auto;
+    margin: 0 auto;
+    margin-bottom: 20px;
     border: 2px solid #287e3a;
     display: flex;
     flex-direction: row;

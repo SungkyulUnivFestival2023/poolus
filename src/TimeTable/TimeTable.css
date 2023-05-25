@@ -16,20 +16,27 @@
 
 .dayBtns {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     font-family: 'SBAggro2';
 }
 
 .active-day {
     color: #6CC7DF !important;
     font-weight: bold;
+    font-size: 24px !important;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+.non-act {
+    opacity: 0.6;
 }
 
 .dayBtn {
     background-color: inherit;
     border: none;
     color: white;
-    font-size: 25px;
+    font-size: 23px;
 }
 
 
@@ -50,7 +57,7 @@
 .boothTitle {
     font-size: 30px;
     text-align: right;
-    padding: 15px 30px;
+    padding: 10px 20px;
     border-bottom: 5px solid #6CC7DF;
     margin-bottom: 20px;
     font-family: 'SBAggro2';
@@ -62,6 +69,7 @@
     margin-bottom: 30px;
     text-align: right;
     position: relative;
+    word-break: keep-all;
 }
 
 .boothBox:last-child {
@@ -73,7 +81,7 @@
 
 .boothBox>div:first-child {
     font-family: 'SBAggro1';
-    margin-bottom: 8px;
+    margin-bottom: 6px;
     font-size: 12px;
 }
 
@@ -81,7 +89,7 @@
 /* 타이틀 */
 
 .boothBox>div:nth-child(2) {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
 }
 
@@ -89,7 +97,7 @@
 /* 장소 */
 
 .boothBox>div:last-child {
-    font-size: 15px;
+    font-size: 13px;
     font-family: 'SBAggro1';
 }
 
@@ -107,7 +115,7 @@
     margin-bottom: 20px;
     font-size: 30px;
     text-align: left;
-    padding: 15px 30px;
+    padding: 10px 20px;
     border-bottom: 5px solid #6CDD9D;
 }
 
@@ -121,17 +129,17 @@
 
 .stageBox>div:first-child {
     font-family: 'SBAggro1';
-    margin-bottom: 8px;
+    margin-bottom: 6px;
     font-size: 12px;
 }
 
 .stageBox>div:nth-child(2) {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
 }
 
 .stageBox>div:last-child {
-    font-size: 15px;
+    font-size: 13px;
     font-family: 'SBAggro1';
 }
 

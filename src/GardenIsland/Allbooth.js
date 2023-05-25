@@ -3,6 +3,8 @@ import MenuData from'./MenuData.json';
 import SearchBooth from './SearchBooth';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
+import './Modalbooth.css';
+import { MdOutlineFoodBank } from "react-icons/md";
 
 function Allbooth({searchword}) {
     // 학과, 메뉴 검색 필터링
@@ -94,21 +96,25 @@ function Allbooth({searchword}) {
           onHide={closeModal}
           dialogClassName="modal-80w"
           aria-labelledby="example-custom-modal-styling-title"
-          classNamve="modalframe"
+          className="modalframe"
         >
           <Modal.Header closeButton>
             <Modal.Title id="example-custom-modal-styling-title">
-              {selectedBooth.department}
+            <MdOutlineFoodBank size="28" /> {selectedBooth.department}
             </Modal.Title>
           </Modal.Header>
           <Modal.Body>
             <section>
                 {selectedBooth.menus.map((item)=> (
-                    <div>{item.name} - {item.price}</div>
+                  <div>
+                      <span className="menuname">{item.name}</span><br />
+                      <span className="menuprice">{item.price}</span>
+                      <hr />
+                  </div>
                 ))}
             </section>
           </Modal.Body>
-        </Modal>
+        </Modal> 
     )}
     </>
     );

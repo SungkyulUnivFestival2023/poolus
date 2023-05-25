@@ -3,6 +3,7 @@ import { AiOutlineStar } from "react-icons/ai";
 import { AiTwotoneStar } from "react-icons/ai";
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
+import './Modalbooth.css';
 
 function SearchBooth({filteredBooth, handleStar, selectedBooth, openModal, closeModal}) {
 
@@ -29,16 +30,12 @@ function SearchBooth({filteredBooth, handleStar, selectedBooth, openModal, close
                             {/* 메뉴가 너무 많은 부스들이 있어서 메뉴 3개만 보이도록 */}
                                 {item.menus.slice(0, 3).map((items)=> (
                                     <>
-                                    {items.name},<span>  </span> 
+                                    {items.name}, <span>  </span> 
                                     </>
                                 ))} 등등
                             </>
                             </span>
                         </div>
-
-                        <button className="starbtn" onClick={(event) => handleStar(event, item.id)} >
-                            {item.star ? <AiTwotoneStar size="18" className="star"/> : <AiOutlineStar size="18" className="star"/>}
-                        </button>
                     </>
                     </div>
                 </section>
@@ -53,7 +50,7 @@ function SearchBooth({filteredBooth, handleStar, selectedBooth, openModal, close
           onHide={closeModal}
           dialogClassName="modal-80w"
           aria-labelledby="example-custom-modal-styling-title"
-          classNamve="modalframe"
+          className="modalframe"
         >
           <Modal.Header closeButton>
             <Modal.Title id="example-custom-modal-styling-title">
@@ -63,7 +60,7 @@ function SearchBooth({filteredBooth, handleStar, selectedBooth, openModal, close
           <Modal.Body>
             <section>
                 {selectedBooth.menus.map((item)=> (
-                    <div>{item.name} - {item.price}</div>
+                    <div className="food">{item.name} - {item.price}</div>
                 ))}
             </section>
           </Modal.Body>

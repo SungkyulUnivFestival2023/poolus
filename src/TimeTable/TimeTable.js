@@ -12,8 +12,8 @@ const TimeTable = () => {
         setDay(newDay);
     }
     
-    const day30 = day === 30 ? 'active-day' : '';
-    const day31 = day === 31 ? 'active-day' : '';
+    const day30 = day === 30 ? 'active-day' : 'non-act';
+    const day31 = day === 31 ? 'active-day' : 'non-act';
 
     return (
         <section className="fullbgB">

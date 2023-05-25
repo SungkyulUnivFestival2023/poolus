@@ -1,26 +1,43 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { BiSearchAlt } from "react-icons/bi";
 import { IoLocationSharp } from "react-icons/io5";
 
 function GardenMain({onChange, searchword}) {
+  const [imgsize, setImgsize] = useState(false);
   
+  const handleImg = () => {
+    setImgsize(!imgsize);
+  };
+
   return (
-    <section className="boothmain">
-        <div className="gardenlogo"><img src="img/garden/gardenlogo.png" alt="" /></div>
+    <>
+      <section className="boothmain">
+        
+          <div className="fixbackground"><img src="img/garden/gardenback.png" alt="garden 배경" /></div>
 
-        <p className="searchtext">원하는 부스 또는 음식을 검색해 보세요!</p>
+          <div className="gardenlogo"><img src="img/garden/gardenlogo.png" alt="" /></div>
 
-        <div className="search">
-        <form>
-            <BiSearchAlt className="searchIcon" size="20" />
-            <input className="searchInput" type="text" onChange={onChange} value={searchword}/>
-        </form>
-        </div>
+          <p className="gardenLocation">
+            <span><IoLocationSharp />성결관 앞 가든 아일랜드</span><br />
+            <span className="mapinfo">부스 지도를 클릭하시면 크게 볼 수 있어요!</span>
+          </p>
 
-        <div className="gardenbooth"><img src="img/garden/boothmap.png" alt="전체부스" /></div>
-        <p className="gardenLocation"><IoLocationSharp />성결관 앞 가든 아일랜드</p>
-        <div className="fixbackground"><img src="img/garden/gardenback.png" alt="garden 배경" /></div>
-    </section>
+          <div className="gardenbooth">
+            {imgsize ? 
+            (<img src="img/garden/Gboothcrop.png" alt="전체부스" onClick={handleImg} />) :
+            (<img src="img/garden/Gbooth.png" alt="전체부스" onClick={handleImg} />) }
+          </div>
+          
+          <p className="searchtext">원하는 부스 또는 음식을 검색해 보세요!</p>
+
+          <div className="search">
+            <form className="searchform">
+                <BiSearchAlt className="searchIcon" size="20" />
+                <input className="searchInput" type="text" onChange={onChange} value={searchword}/>
+            </form>
+          </div>
+      </section>
+    </>
   )
 }
 

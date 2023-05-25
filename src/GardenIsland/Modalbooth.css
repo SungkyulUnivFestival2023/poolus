@@ -1,3 +1,53 @@
+.modal-dialog {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
 .modal-content {
-    height: 100vh;
+    background-color: #FEF5E8;
+}
+
+.modal-title {
+    font-family: 'SBAggro3';
+}
+
+.modal-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+    border: 5px solid #D9AE8C;
+    overflow-y: auto;
+    padding: 30px;
+}
+
+.modal-body section div {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.modal-body section div hr {
+    margin: 0.5rem;
+    text-align: center;
+}
+
+.modal-body section div:last-child {
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.modal-body section div:last-child hr {
+    display: none;
+}
+
+.menuname {
+    font-family: 'SBAggro3';
+    font-size: 18px;
+}
+
+.menuprice {
+    font-family: 'SBAggro2';
+    font-size: 14px;
 }
