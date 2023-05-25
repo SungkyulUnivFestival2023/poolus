@@ -14,23 +14,6 @@ function Allbooth({searchword}) {
             item.name.includes(searchword)
     ));
 
-    // 즐겨찾기 
-    const [star, setStar] = useState(false);
-
-    const updatedStarData = MenuData.map((booth) => {
-          return {
-            ...booth,
-            star: false,
-          };
-      });
-
-    const handleStar = (event, id) => {
-        event.preventDefault();
-        // if (updatedStarData.id === id) {
-            console.log(updatedStarData);
-        }
-    //   };
-
     // 부스 선택 모달창
     const [selectedBooth, setSelectedBooth] = useState(null);
 
@@ -81,8 +64,6 @@ function Allbooth({searchword}) {
         <SearchBooth 
             searchword={searchword}
             filteredBooth={filteredBooth} 
-            handleStar={handleStar} 
-            star={star} 
             selectedBooth={selectedBooth}
             openModal={openModal}
             closeModal={closeModal}

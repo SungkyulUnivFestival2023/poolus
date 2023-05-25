@@ -14,3 +14,7 @@
 .bginfo {
     background: linear-gradient(to bottom, black, #3C5F68, black);
 }
+
+.bgstar {
+    background-image: url('../public/img/renewcash/greenstar.png');
+}

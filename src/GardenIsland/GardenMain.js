@@ -24,7 +24,7 @@ function GardenMain({onChange, searchword}) {
 
           <div className="gardenbooth">
             {imgsize ? 
-            (<img src="img/garden/Gboothcrop.png" alt="전체부스" onClick={handleImg} />) :
+            (<img src="img/garden/crop2.png" alt="전체부스" onClick={handleImg} />) :
             (<img src="img/garden/Gbooth.png" alt="전체부스" onClick={handleImg} />) }
           </div>
           

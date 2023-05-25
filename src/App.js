@@ -15,6 +15,7 @@ import InfoMain from './info/InfoMain';
 import Studentdue from './info/Studentdue';
 import Sns from './info/Sns';
 import RenewCash from './info/RenewCash';
+import About from './About/About';
 
 
 function App() {
@@ -39,11 +40,15 @@ function App() {
               {/* Artist */}
               <Route path="/Artisttitle" element={<Lineuptitle />} />
               <Route path="/Artistlineup" element={<LineupSlide />} />
+
               {/* 공지사항 */}
               <Route path="/InfoMain" element={<InfoMain />} />
               <Route path="/Studentdue" element={<Studentdue />} />
               <Route path="/Renewcash" element={<RenewCash />} />
               <Route path="/Sns" element={<Sns />} />
+
+              {/* About */}
+              <Route path="/About" element={<About />} />
             </Routes>
           </BrowserRouter>
         </div>

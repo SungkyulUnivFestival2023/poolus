@@ -1,6 +1,4 @@
 import React from 'react';
-import { AiOutlineStar } from "react-icons/ai";
-import { AiTwotoneStar } from "react-icons/ai";
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import './Modalbooth.css';

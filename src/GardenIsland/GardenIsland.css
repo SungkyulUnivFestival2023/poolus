@@ -14,6 +14,7 @@
 .searchtext {
     margin-top: 15px;
     font-size: 15px;
+    font-family: 'SBAggro2';
 }
 
 .gardenLocation {
@@ -27,8 +28,12 @@
     position: relative;
 }
 
+.gardenLocation span {
+    font-family: 'SBAggro2';
+}
+
 .mapinfo {
-    font-family: 'SBAggro1';
+    font-family: 'SBAggro1' !important;
     font-size: 11px;
     position: absolute;
     top: 38px;

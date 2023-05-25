@@ -1,0 +1,166 @@
+.About {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.pooluslogo img {
+    width: 120px;
+}
+
+.pooluslogo1 img {
+    width: 200px;
+}
+
+.pooluslogo2 {
+    font-family: 'Anton', sans-serif;
+    font-size: 35px;
+    letter-spacing: 5px;
+    margin-top: 30px;
+}
+
+.mar {
+    margin-top: 40px;
+}
+
+.logoX {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.logoX img {
+    height: 70px;
+    width: 70px;
+    display: inline-block;
+    margin: 25px 25px 12px 25px;
+}
+
+.logoX span {
+    font-size: 40px;
+}
+
+.logoX div {
+    display: flex;
+    flex-direction: column;
+}
+
+.logoX div span {
+    font-size: 13px;
+}
+
+.collaboration {
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.people {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.smlogo {
+    width: 35px;
+    height: 35px;
+    margin: 10px 10px 20px 10px;
+}
+
+.smlogo1 {
+    width: 45px;
+    height: 35px;
+    margin: 10px 10px 20px 10px;
+}
+
+.gridpeople {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.llblue {
+    color: #7193C3;
+}
+
+.renewyellow {
+    color: #B69414;
+}
+
+
+/* 개인 커스텀 */
+
+.pbox {
+    /* width: 60px;
+    height: 90px;
+    font-size: 5px; */
+    width: 120px;
+    height: 140px;
+    background-color: #565656;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Pimg {
+    width: 70px;
+    margin-bottom: 11px;
+}
+
+.pbox {
+    padding: 5px;
+}
+
+.pbox span {
+    display: block;
+}
+
+.Pinfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 3px;
+    align-items: center;
+}
+
+.Pinfo img {
+    width: 13px;
+    margin-right: 5px;
+    height: 10px;
+}
+
+.Pinfo span {
+    font-size: 5px;
+}
+
+.Pdepart {
+    margin: 0;
+    font-size: 5px;
+    color: #f3cf4e;
+}
+
+.Pposi {
+    font-size: 1px;
+    margin: 0;
+}
+
+hr {
+    margin: 0.2rem;
+}
+
+.Prole {
+    font-size: 1px;
+}
+
+.pertitle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.likelion {
+    margin-bottom: 50px;
+}

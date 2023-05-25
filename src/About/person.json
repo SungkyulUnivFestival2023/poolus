@@ -1,0 +1,73 @@
+[{
+        "id": 1,
+        "image": "img/about/minjo.png",
+        "logo": "img/logo/renewlogo.png",
+        "name": "서민주",
+        "department": "관광개발학과 22",
+        "position": "총학생회 홍보디자인국장",
+        "role": "웹 디자인"
+    },
+    {
+        "id": 2,
+        "image": "",
+        "logo": "img/logo/likelion.png",
+        "name": "김현준",
+        "department": "산업경영공학과 17",
+        "position": "대표",
+        "role": "Front-End"
+    },
+    {
+        "id": 3,
+        "image": "",
+        "logo": "img/logo/likelion.png",
+        "name": "노승희",
+        "department": "미디어소프트웨어학과 20",
+        "position": "운영진",
+        "role": "Front-End"
+    },
+    {
+        "id": 4,
+        "image": "",
+        "logo": "img/logo/likelion.png",
+        "name": "주영민",
+        "department": "미디어소프트웨어학과 17",
+        "position": "부대표",
+        "role": "Back-End"
+    },
+    {
+        "id": 5,
+        "image": "",
+        "logo": "img/logo/likelion.png",
+        "name": "정택원",
+        "department": "컴퓨터공학과 19",
+        "position": "운영진",
+        "role": "Back-End"
+    },
+    {
+        "id": 6,
+        "image": "",
+        "logo": "img/logo/likelion.png",
+        "name": "남민지",
+        "department": "컴퓨터공학과 21",
+        "position": "운영진",
+        "role": "Back-End"
+    },
+    {
+        "id": 7,
+        "image": "",
+        "logo": "img/logo/likelion.png",
+        "name": "천민우",
+        "department": "컴퓨터공학과 18",
+        "position": "운영진",
+        "role": "Back-End"
+    },
+    {
+        "id": 8,
+        "image": "",
+        "logo": "img/logo/likelion.png",
+        "name": "이원경",
+        "department": "국어국문학과 22",
+        "position": "운영진",
+        "role": "UI/UX"
+    }
+]
