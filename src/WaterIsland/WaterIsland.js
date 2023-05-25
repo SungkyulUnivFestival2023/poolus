@@ -9,7 +9,7 @@ const WaterIsland = () => {
             <div className="WaterIsland good">
                 <div className="griddd">
                     <div className="waterIslandLogo">
-                        <img src="img/WaterIslandLogo.png" alt="waterIslandLogo" />
+                        <img src="img/logo/waterlogo.png" alt="waterIslandLogo" />
                     </div>
 
                     <div className="waterIslandBtn">

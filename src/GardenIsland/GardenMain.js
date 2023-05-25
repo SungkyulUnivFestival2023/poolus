@@ -15,7 +15,7 @@ function GardenMain({onChange, searchword}) {
         
           <div className="fixbackground"><img src="img/garden/gardenback.png" alt="garden 배경" /></div>
 
-          <div className="gardenlogo"><img src="img/garden/gardenlogo.png" alt="" /></div>
+          <div className="gardenlogo"><img src="img/logo/gardenlogo.png" alt="" /></div>
 
           <p className="gardenLocation">
             <span><IoLocationSharp />성결관 앞 가든 아일랜드</span><br />

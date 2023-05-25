@@ -29,11 +29,18 @@
     width: 250px;
 }
 
-.artist img:last-child {
-    width: 150px;
+.artist img:nth-child(2) {
+    width: 180px;
     position: absolute;
-    bottom: -20px;
-    right: 13px;
+    bottom: -31px;
+    left: 113px;
+}
+
+.artist img:last-child {
+    width: 100px;
+    position: absolute;
+    bottom: -61px;
+    right: 16px;
 }
 
 
@@ -130,6 +137,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.dayssss img {
+    margin-bottom: 30px;
 }
 
 .DayN {
