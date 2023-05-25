@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 function InfoMain() {
   return (
-    <section className="bginfo">
+    <section className="fullbgB bgstar">
       <div className="InfoMain good">
         <section className="InfoMain1">
           <div className="InfoTitle">

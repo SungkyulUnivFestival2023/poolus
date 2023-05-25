@@ -18,7 +18,7 @@ function Sns() {
 
   return (
     <>
-    <section className="fullbgB" data-bs-spy="scroll" data-bs-target=".navbar-example">
+    <section className="fullbgB bgstar" data-bs-spy="scroll" data-bs-target=".navbar-example">
       <div className="Sns good">
         <div className="snstitle">
           <Link to="/InfoMain" id="SNS">
@@ -55,7 +55,7 @@ function Sns() {
     </section>
 
     {/* 릴스 이벤트 */}
-    <section id="Rls" className="fullbgB">
+    <section id="Rls" className="fullbgB bgstar">
       <div className="Rls good">
           <div className="Rlstitle">
             <button onClick={handleButtonClick}>
@@ -87,7 +87,7 @@ function Sns() {
     </section>
 
     {/* 리늉이를 찾아라 */}
-    <section id="Renewung" className="fullbgB">
+    <section id="Renewung" className="fullbgB bgstar">
     <div className="Rls good">
           <div className="Rlstitle">
             <button onClick={handleButtonClick}>
@@ -119,7 +119,7 @@ function Sns() {
     </section>
 
     {/* 필터이벤트 */}
-    <section id="Fter" className="fullbgB">
+    <section id="Fter" className="fullbgB bgstar">
       <div className="Rls good">
             <div className="Rlstitle">
               <button onClick={handleButtonClick}>
@@ -139,14 +139,14 @@ function Sns() {
             </div>
 
             <div className="baromove">
-            <div>
-              <a href="#Rls"><button>릴스 이벤트</button></a>
-            </div>
+              <div>
+                <a href="#Rls"><button>릴스 이벤트</button></a>
+              </div>
 
-            <div>
-            <a href="#Renewung"><button>리늉이를 찾아라</button></a>
-          </div>
-          </div>
+              <div>
+              <a href="#Renewung"><button>리늉이를 찾아라</button></a>
+              </div>
+            </div>
         </div> 
       </section>
     </>

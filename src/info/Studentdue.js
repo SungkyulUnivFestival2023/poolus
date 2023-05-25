@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 function Studentdue() {
   return (
-    <section className="fullbgB">
+    <section className="fullbgB bgstar">
         <div className="Studentdue good">
             <div className="duetitle">
                 <Link to="/InfoMain">

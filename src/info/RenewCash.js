@@ -10,7 +10,7 @@ function RenewCash() {
   }, []);
   
   return (
-    <section className="fullbgB">
+    <section className="fullbgB bgstar">
       <div className="RenewCash good">
         <div className="cashtitle">
           <Link to="/InfoMain">
