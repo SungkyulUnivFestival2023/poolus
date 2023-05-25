@@ -1,10 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { IoIosArrowBack } from "react-icons/io";
 import { BsArrowDown } from "react-icons/bs";
 import { AiOutlineCheck } from "react-icons/ai";
 
 function RenewCash() {
+  useEffect(() => {
+    window.scrollTo(0, 0); // 상단으로 스크롤
+  }, []);
+  
   return (
     <section className="fullbgB">
       <div className="RenewCash good">

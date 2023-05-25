@@ -1,0 +1,123 @@
+.Sns {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.snstitle {
+    font-size: 42px;
+    letter-spacing: 3px;
+    color: #FFC7C7;
+    font-family: 'SBAggro3';
+}
+
+.snstitle a {
+    color: inherit;
+    font-family: inherit;
+    text-decoration: none;
+}
+
+.snsevent span {
+    color: #5abdd8;
+}
+
+.snsevent {
+    font-size: 15px;
+    margin: 20px 0
+}
+
+.snsbtns div {
+    padding: 15px;
+}
+
+.snsbtns button {
+    width: 230px;
+    height: 60px;
+    background-color: #494949;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    color: #ffc7c7;
+    letter-spacing: 2px;
+    font-family: 'SBAggro2'
+}
+
+.fontY {
+    color: #FCF69F;
+}
+
+.fontB {
+    color: #AFEDFE;
+}
+
+.fontG {
+    color: #87FDBE;
+}
+
+.eventexp {
+    width: 330px;
+    font-size: 15px;
+    background-color: #121212;
+    padding: 40px 0;
+    border-radius: 20px;
+}
+
+.eventsm {
+    font-size: 12px;
+}
+
+.mar-b {
+    margin-bottom: 25px;
+}
+
+.Rls {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Rlstitle {
+    font-size: 38px;
+    letter-spacing: 3px;
+    color: #FFC7C7;
+    font-family: 'SBAggro3';
+    margin-bottom: 30px;
+}
+
+.Rlstitle a {
+    color: inherit;
+    font-family: inherit;
+    text-decoration: none;
+}
+
+.Rlstitle button {
+    background: inherit;
+    color: inherit;
+    letter-spacing: 3px;
+    border: none;
+}
+
+.baromove {
+    margin-top: 30px;
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.baromove div {
+    padding: 10px;
+}
+
+.baromove button {
+    width: 150px;
+    height: 40px;
+    background-color: #494949;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    color: #ffc7c7;
+    letter-spacing: 2px;
+    font-family: 'SBAggro2'
+}
