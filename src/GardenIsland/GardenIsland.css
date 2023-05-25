@@ -1,3 +1,7 @@
+* {
+    font-family: 'SBAggro1';
+}
+
 .GardenIsland {
     font-family: 'Anton', sans-serif;
     color: #287E3A;
@@ -23,10 +27,6 @@
     margin: 15px auto;
     background-color: rgb(255, 255, 255, 0.6);
     position: relative;
-}
-
-.gardenLocation span {
-    font-family: 'SBAggro2';
 }
 
 .mapinfo {
