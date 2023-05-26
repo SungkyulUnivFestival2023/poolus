@@ -35,7 +35,13 @@ function Carouselattraction() {
               <div className="attrTitle">워터 슬라이드</div>
 
               <div className="attrSub">
-                <p><span>이용시간</span> <IoIosArrowForward /> <span className="blueFont">수질관리 이외의 시간, 20:00 이전</span></p>
+                <p className="attrsubflex">
+                  <span>이용시간</span> <IoIosArrowForward /> 
+                  <span className="blueFont finisht">
+                    <p>1일차 : 10:00 ~ 17:00</p>
+                    <p>2일차 : 10:00 ~ 19:00</p>
+                  </span>
+                </p>
                 <p><span>이용요금</span> <IoIosArrowForward /> <span className="blueFont">2000원</span></p>
                 <p><span>슬라이드 높이</span> <IoIosArrowForward /> <span className="blueFont">약 7-8m</span></p>
                 <p><span>소형풀장 수심</span> <IoIosArrowForward /> <span className="blueFont">약 0.7m</span></p>
@@ -52,7 +58,13 @@ function Carouselattraction() {
               <div className="attrTitle">대형&소형 풀장</div>
 
               <div className="attrSub">
-                <p><span>이용시간</span> <IoIosArrowForward /> <span className="blueFont">수질관리 이외의 시간, 20:00 이전</span></p>
+              <p className="attrsubflex">
+                  <span>이용시간</span> <IoIosArrowForward /> 
+                  <span className="blueFont finisht">
+                    <p>1일차 : 10:00 ~ 17:00</p>
+                    <p>2일차 : 10:00 ~ 19:00</p>
+                  </span>
+                </p>
                 <p><span>이용요금</span> <IoIosArrowForward /> <span className="blueFont">2000원</span></p>
                 <p><span>대형풀장</span> <IoIosArrowForward /> <span className="blueFont">수심 : 약 1.2m</span></p>
                 <p><span>소형풀장</span> <IoIosArrowForward /> <span className="blueFont">수심 : 약 0.7m</span></p>

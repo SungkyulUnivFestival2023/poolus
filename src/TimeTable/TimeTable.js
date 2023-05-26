@@ -59,7 +59,7 @@ const TimeTable = () => {
                                     <span>{item.time}</span>
                                     <img className="greenCircle" src="img/greenCircle.png" alt="" />
                                 </div>) : null}</div>
-                                <div>{item.title}</div>
+                                <div className="breakword">{item.title}</div>
                                 <div><MdPlace /> {item.place}</div>
                             </div> )}
                         </div>
