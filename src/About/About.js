@@ -5,8 +5,8 @@ import Person0 from './Person0';
 
 function About() {
   return (
-    <>
-        <section className="fullbgB">
+    <>  
+        <div className='display-container'>
             <div className="About good">
                 <div>
                     <div className="pooluslogo"><img src="img/logo/heartlogo.png" alt="정식로고" /></div>
@@ -31,9 +31,7 @@ function About() {
                     성결대학교 멋쟁이사자처럼 대학 11기에서 웹 사이트를 제작하였습니다.
                 </p>
             </div>
-        </section>
 
-        <section className="fullbgB">
             <div className="people good">
                 <div className="renew">
                     <div className="pertitle">
@@ -59,8 +57,8 @@ function About() {
                     </div>
                 </div>
             </div>
-        </section>
-        </>
+        </div>
+    </>
   )
 }
 

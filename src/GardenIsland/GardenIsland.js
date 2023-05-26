@@ -14,7 +14,7 @@ function GardenIsland() {
   }
 
   return (
-    <section className="fullbgBag">
+    <section className="display-container fullbgBag">
         <div className="GardenIsland good">
           {/* 부스 메인 */}
           <GardenMain onChange={handleSearch} />

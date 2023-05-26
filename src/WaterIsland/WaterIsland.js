@@ -5,11 +5,15 @@ import './WaterIsland.css';
 const WaterIsland = () => {
 
     return (
-        <section className="fullbgB">
+        <section className="display-container fullbgB">
             <div className="WaterIsland good">
                 <div className="griddd">
-                    <div className="waterIslandLogo">
+                    {/* <div className="waterIslandLogo">
                         <img src="img/logo/waterlogo.png" alt="waterIslandLogo" />
+                    </div> */}
+                    <div className='water-island-title'>
+                        <p className='island-title text-center isamanroo-font'>WATER ISLAND</p>
+                        <p className='poolus-title text-center anton-font'>POOL:US</p>
                     </div>
 
                     <div className="waterIslandBtn">

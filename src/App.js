@@ -21,40 +21,36 @@ import About from './About/About';
 function App() {
   return (
     <div className="App">
-      <div>
-        <div>
-          <BrowserRouter>
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/Nav" element={<Nav />} />
-              <Route path="/Timetable" element={<TimeTable />} />
-              {/* WaterIsland */}
-              <Route path="/Waterisland" element={<WaterIsland />} />
-              <Route path="/Waterisland/Attraction" element={<WaterIslandMenu contents={"attr"}/>} />
-              <Route path="/Waterisland/Goods" element={<WaterIslandMenu contents={"goods"}/>} />
-              <Route path="/Mainmap" element={<Mainmap />} />
-              
-              {/* GardenIsland */}
-              <Route path="/Gardenisland" element={<GardenIsland />} />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/Nav" element={<Nav />} />
+          <Route path="/Timetable" element={<TimeTable />} />
+          {/* WaterIsland */}
+          <Route path="/Waterisland" element={<WaterIsland />} />
+          <Route path="/Waterisland/Attraction" element={<WaterIslandMenu contents={"attr"}/>} />
+          <Route path="/Waterisland/Goods" element={<WaterIslandMenu contents={"goods"}/>} />
+          <Route path="/Mainmap" element={<Mainmap />} />
+          
+          {/* GardenIsland */}
+          <Route path="/Gardenisland" element={<GardenIsland />} />
 
-              {/* Artist */}
-              <Route path="/Artisttitle" element={<Lineuptitle />} />
-              <Route path="/Artistlineup" element={<LineupSlide />} />
+          {/* Artist */}
+          <Route path="/Artisttitle" element={<Lineuptitle />} />
+          <Route path="/Artistlineup" element={<LineupSlide />} />
 
-              {/* 공지사항 */}
-              <Route path="/InfoMain" element={<InfoMain />} />
-              <Route path="/Studentdue" element={<Studentdue />} />
-              <Route path="/Renewcash" element={<RenewCash />} />
-              <Route path="/Sns" element={<Sns />} />
+          {/* 공지사항 */}
+          <Route path="/InfoMain" element={<InfoMain />} />
+          <Route path="/Studentdue" element={<Studentdue />} />
+          <Route path="/Renewcash" element={<RenewCash />} />
+          <Route path="/Sns" element={<Sns />} />
 
-              {/* About */}
-              <Route path="/About" element={<About />} />
-            </Routes>
-          </BrowserRouter>
-        </div>
-        <footer>
-        </footer>
-      </div>
+          {/* About */}
+          <Route path="/About" element={<About />} />
+        </Routes>
+      </BrowserRouter>
+      <footer>
+      </footer>
     </div>
   );
 }

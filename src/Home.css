@@ -290,8 +290,9 @@
    transition: 0.3s;
 }
 .waterisland-section{
+   background-color: #000000;
    position: relative;
-   height: 100vh;
+   min-height: 100vh;
    padding-top: 100px;
    z-index: 0;
 }
@@ -312,17 +313,18 @@
 }
 
 /* WaterIsland.css import 안했는데 이거 왜 되는거야? */
-.waterIslandBtn {
+.main-waterIslandBtn {
    display: flex;
    flex-direction: column;
    align-items: center;
 }
 /* WaterIsland.css에 있는 속성 몇가지 무력화 */
-.waterIslandBtn button {
+.main-waterIslandBtn button {
    padding: 10px !important;
    margin-bottom: 0 !important;
    background-color: #6CC7DF;
    border-radius: 10px !important;
+   border: none;
    font-size: 20px;
    font-family: SBAggro2;
    width: 200px;
@@ -375,7 +377,7 @@
 }
 .romanticisland-section{
    position: relative;
-   height: 100vh;  
+   min-height: 100vh;  
    padding-top: 100px;
    z-index: 0;
    background-color: #9fd5f4;
@@ -401,17 +403,16 @@
 }
 .hashtag {
    display: flex;
-   justify-content: space-between;
+   justify-content: space-evenly;
    /* 스프링을 추가할 시 주석 해제하기 */
    /* margin-top: 30px; */
    padding: 0px 15px;
 }
 .hashtag span{
-   font-size: 4px;
    color: #9fd5f4;
    background-color: #c62b6b;
    border-radius: 5px;
-   padding: 2px 7px;
+   /* padding: 2px 7px; */
 }
 .romanticisland-section .section-description{
    margin-top: 30px;
@@ -489,7 +490,7 @@
 
 .gardenisland-section{
    position: relative;
-   height: 100vh;  
+   min-height: 100vh;  
    padding-top: 100px;
    z-index: 0;
    background-color: #fef5e8;

@@ -17,7 +17,7 @@ const TimeTable = () => {
     const day31 = day === 31 ? 'active-day' : 'non-act';
 
     return (
-        <section className="fullbgB">
+        <section className="display-container fullbgB">
             <div className="TimeTable good">
                 <div className="HeartImg">
                     <Link to="/">
