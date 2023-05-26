@@ -26,7 +26,7 @@ function Studentdue() {
 
             <div className="noduesub">
                 <p>
-                    <span>학생회비 미납부자</span><br />
+                    <span>학생회비 미납부자 </span><br />
                     미납부자용 팔찌 <AiOutlineCheck /> <br />
                     어트랙션 이용 금액 2000원 <AiOutlineCheck /> <br />
                 </p>

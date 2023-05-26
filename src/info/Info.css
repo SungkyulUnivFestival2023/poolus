@@ -12,12 +12,8 @@
     font-family: 'SBAggro1';
 }
 
-.InfoTitle {
-    margin-bottom: 50px;
-}
-
 .InfoTitle span {
-    font-size: 73px;
+    font-size: 65px;
     letter-spacing: 3px;
     color: #FFC7C7;
     font-family: 'SBAggro3'
@@ -26,21 +22,20 @@
 .InfoMain1 {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    height: 100vh;
+    justify-content: space-evenly;
 }
 
 .Infomenu {
-    padding: 20px;
+    padding: 15px;
 }
 
 .Infomenu button {
-    width: 250px;
-    height: 70px;
+    width: 230px;
+    height: 60px;
     background-color: #494949;
     border: none;
     border-radius: 10px;
-    font-size: 22px;
+    font-size: 20px;
     color: #ffc7c7;
     letter-spacing: 2px;
     font-family: 'SBAggro2'

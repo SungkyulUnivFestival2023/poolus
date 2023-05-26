@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { BiSearchAlt } from "react-icons/bi";
 import { IoLocationSharp } from "react-icons/io5";
+import { MdKeyboardDoubleArrowDown } from "react-icons/md";
 
 function GardenMain({onChange, searchword}) {
   const [imgsize, setImgsize] = useState(false);
@@ -23,8 +24,11 @@ function GardenMain({onChange, searchword}) {
 
           <p className="gardenLocation">
             <span><IoLocationSharp />성결관 앞 가든 아일랜드</span><br />
-            <span className="mapinfo">부스 지도를 클릭하시면 크게 볼 수 있어요!</span>
           </p>
+
+          <p className="mapinfo">
+            <MdKeyboardDoubleArrowDown size="20" /> 부스 지도를 클릭하시면 크게 볼 수 있어요 <MdKeyboardDoubleArrowDown size="20" />
+            </p>
 
           <div className="gardenbooth">
             {imgsize ? 

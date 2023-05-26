@@ -34,10 +34,8 @@
 
 .mapinfo {
     font-family: 'SBAggro1' !important;
-    font-size: 11px;
-    position: absolute;
-    top: 38px;
-    left: 31px;
+    font-size: 13px;
+    font-weight: bold;
 }
 
 .gardenbooth img {
@@ -149,14 +147,16 @@
     bottom: 5px;
     color: #287E3A;
 }
-.garden-island-title .island-title{
+
+.garden-island-title .island-title {
     font-size: 30px;
     font-weight: 900;
     color: transparent;
     margin-bottom: -30px;
     -webkit-text-stroke: 1px #287e3a;
 }
-.garden-island-title .poolus-title{
+
+.garden-island-title .poolus-title {
     font-size: 100px;
     color: #287e3a;
     margin-bottom: 0;

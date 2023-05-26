@@ -23,6 +23,7 @@
 }
 
 .modal-body section {
+    width: 100%;
     max-height: 70vh;
     overflow-y: auto;
     scrollbar-width: thin;
@@ -35,13 +36,8 @@
 }
 
 .modal-body section::-webkit-scrollbar-thumb {
-    background-color: transparent;
+    background-color: rgb(223, 179, 147, 0.5);
     /* 스크롤바 썸네일 색상을 투명으로 지정 */
-}
-
-.modal-body section::-webkit-scrollbar-track {
-    background-color: transparent;
-    /* 스크롤바 트랙 색상을 투명으로 지정 */
 }
 
 .modal-body section div {
