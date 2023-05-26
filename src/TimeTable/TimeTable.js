@@ -5,6 +5,7 @@ import { MdPlace } from "react-icons/md"
 import '../container.css';
 import '../App.css';
 import { Link } from 'react-router-dom';
+import Nav from '../Nav';
 
 const TimeTable = () => {
     const [day, setDay] = useState(30); // 화, 수 구분 state
@@ -18,6 +19,7 @@ const TimeTable = () => {
 
     return (
         <section className="display-container fullbgB">
+            <Nav/>
             <div className="TimeTable good">
                 <div className="HeartImg">
                     <Link to="/">

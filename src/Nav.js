@@ -1,15 +1,28 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
 import './Nav.css';
-import { AiOutlineHome } from 'react-icons/ai';
 
 function Nav() {
+  
+  const [scroll, setScroll] = useState(0);
+  
+  useEffect(() => {
+    window.scrollTo(0, 0); // 상단으로 스크롤
+  }, [scroll]);
+
+  const handleButtonClick = () => {
+    setScroll(prevCount => prevCount + 1);
+  };
+
   return (
     <div className='d-flex justify-content-center navbar fixed-top'>
-      <Link to="/" className='home'><AiOutlineHome size="50" color='#6bc6dd'/></Link>
+      {/* <Link to="/" className='home'><AiOutlineHome size="50" color='#6bc6dd'/></Link> */}
       <div className='logo'>
-        <Link to="/">
+        {/* <Link to="/" scrollintoview>
             <img src="img/PoolUsHeart.png" alt="Pool:Us Heart"/>
+        </Link> */}
+        <Link to="/" onClick={() =>{handleButtonClick()}}>
+          <img src="img/PoolUsHeart.png" alt="Pool:Us Heart"/>
         </Link>
       </div>
       <div>
