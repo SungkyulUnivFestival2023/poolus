@@ -75,11 +75,11 @@ function Home() {
           <img className='cloud-3' src="img/cloud-3.png" alt="타이틀 꾸미는 구름"/>
         </div>
         <div className='hashtag'>
-          <span>#연애</span>
-          <span>#사탕팅</span>
-          <span>#플리마켓</span>
-          <span>#인생네컷</span>
-          <span>#Who are you?</span>
+          <span className='badge'>#연애</span>
+          <span className='badge'>#사탕팅</span>
+          <span className='badge'>#플리마켓</span>
+          <span className='badge'>#인생네컷</span>
+          <span className='badge'>#Who are you?</span>
         </div>
         <p className='section-description text-center sbaggro-font'>
           진정한 사랑이란? ROMANTIC ISLAND

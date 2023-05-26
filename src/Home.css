@@ -292,7 +292,7 @@
 .waterisland-section{
    background-color: #000000;
    position: relative;
-   height: 100vh;
+   min-height: 100vh;
    padding-top: 100px;
    z-index: 0;
 }
@@ -376,7 +376,7 @@
 }
 .romanticisland-section{
    position: relative;
-   height: 100vh;  
+   min-height: 100vh;  
    padding-top: 100px;
    z-index: 0;
    background-color: #9fd5f4;
@@ -402,17 +402,16 @@
 }
 .hashtag {
    display: flex;
-   justify-content: space-between;
+   justify-content: space-evenly;
    /* 스프링을 추가할 시 주석 해제하기 */
    /* margin-top: 30px; */
    padding: 0px 15px;
 }
 .hashtag span{
-   font-size: 4px;
    color: #9fd5f4;
    background-color: #c62b6b;
    border-radius: 5px;
-   padding: 2px 7px;
+   /* padding: 2px 7px; */
 }
 .romanticisland-section .section-description{
    margin-top: 30px;
@@ -490,7 +489,7 @@
 
 .gardenisland-section{
    position: relative;
-   height: 100vh;  
+   min-height: 100vh;  
    padding-top: 100px;
    z-index: 0;
    background-color: #fef5e8;
