@@ -3,6 +3,7 @@ import Time from './TimeTable.json';
 import './TimeTable.css';
 import { MdPlace } from "react-icons/md"
 import '../container.css';
+import '../App.css';
 import { Link } from 'react-router-dom';
 
 const TimeTable = () => {
