@@ -8,7 +8,7 @@ function GardenIsland() {
   useEffect(() => {
     window.scrollTo(0, 0); // 상단으로 스크롤
   }, []);
-
+  
   const [searchword, setSearchword] = useState('');
 
   // 검색하면 searchword 바뀌도록

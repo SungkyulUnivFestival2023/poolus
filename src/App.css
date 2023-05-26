@@ -5,18 +5,22 @@
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'SBAggroB';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
-.isamanroo-font{
+
+.isamanroo-font {
     font-family: 'GongGothicMedium', sans-serif;
 }
+
 .anton-font {
     font-family: 'Anton', sans-serif;
 }
+
 .sbaggro-font {
     font-family: 'SBAggroB', sans-serif;
 }
@@ -33,12 +37,9 @@
     padding: 0;
 } */
 
-
-
 .App {
     background-color: #0f0f0f;
 }
-
 
 @font-face {
     font-family: 'SBAggro1';
@@ -83,8 +84,8 @@
     max-width: 415px;
     min-height: 100vh;
     -webkit-box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.75);
-    -moz-box-shadow: 0px 0px 15px 0px rgba(255,255,255,0.75);
-    box-shadow: 0px 0px 15px 0px rgba(255,255,255,0.75);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.75);
+    box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.75);
     overflow-x: hidden;
     /* overflow-y: hidden; */
 }
