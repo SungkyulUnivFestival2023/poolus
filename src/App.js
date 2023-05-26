@@ -17,9 +17,26 @@ import Sns from './info/Sns';
 import RenewCash from './info/RenewCash';
 import About from './About/About';
 import Waterislandslide from './WaterIsland/slide/Waterislandslide';
+import { useEffect } from 'react';
+import axios from 'axios';
 
 
 function App() {
+	useEffect(() => {
+		if (document.cookie.includes('visited')){
+			callAPI();
+		}
+	}, []);
+
+	const callAPI = () => {
+		axios.get('https://api.sku-sku.com/visitors/counts')
+		  .then((response) => {
+			console.log(response.data);
+		  })
+		  .catch((error) => {
+			console.error('API Error: ', error);
+		  })
+	}
   return (
     <div className="App">
       <BrowserRouter>
