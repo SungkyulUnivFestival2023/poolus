@@ -7,7 +7,7 @@ import Carouselattraction from './Carouselattraction';
 
 function GoodsCarousel({contents}) {
   return (
-    <section className="fullbgB">
+    <section className="display-container fullbgB">
       <div className="Goods good">
         <div>
           <Link to="/WaterIsland" className="attractionBtn">

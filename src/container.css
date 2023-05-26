@@ -1,6 +1,6 @@
 .good {
     color: white;
-    width: 360px;
+    max-width: 415px;
     text-align: center;
     margin: 0 auto;
     min-height: 100vh;

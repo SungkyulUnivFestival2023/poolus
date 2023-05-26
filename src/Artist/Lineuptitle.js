@@ -5,7 +5,7 @@ import './Artist.css';
 
 function Lineuptitle() {
   return (
-    <section className="fullbgB">
+    <section className="display-container">
         <div className="Lineuptitle good">       
             <Link to="/ArtistLineup" className="clickparent">
                 <TbClick className="click" size="30" color="white" />

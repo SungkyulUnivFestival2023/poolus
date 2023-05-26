@@ -3,7 +3,7 @@ import './Mainmap.css';
 
 function Mainmap() {
     return (
-        <section>
+        <section className='display-container'>
             <div className="Mainmap good">
                 <div className="maplogo"><img src="img/mapLogo.png" alt="map로고" /></div>
 

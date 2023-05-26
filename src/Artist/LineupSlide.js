@@ -6,7 +6,7 @@ import '../background.css';
 function LineupSlide() {
         
   return (
-    <section className="bgwaterImg">
+    <section className="display-container bgwaterImg">
         <div className="LineupSlide good">
             <div className="dayscroll">
                 <img className="fixlogo" src="img/artist/lineup.png" alt="minilogo" />

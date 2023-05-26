@@ -5,7 +5,7 @@ import './WaterIsland.css';
 const WaterIsland = () => {
 
     return (
-        <section className="fullbgB">
+        <section className="display-container fullbgB">
             <div className="WaterIsland good">
                 <div className="griddd">
                     <div className="waterIslandLogo">

@@ -290,6 +290,7 @@
    transition: 0.3s;
 }
 .waterisland-section{
+   background-color: #000000;
    position: relative;
    height: 100vh;
    padding-top: 100px;
