@@ -238,3 +238,13 @@
     justify-content: center;
     height: 70vh;
 }
+.water-island-title .island-title{
+    font-size: 30px;
+    color: black;
+    margin-bottom: -30px;
+    -webkit-text-stroke: 1px #6bc6dd;
+}
+.water-island-title .poolus-title{
+    font-size: 100px;
+    color: #6bc6dd;
+}

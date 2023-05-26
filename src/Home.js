@@ -50,7 +50,7 @@ function Home() {
           <br/>
           <br />WATER ISLAND로 여러분을 초대합니다.
         </p>
-        <div className="waterIslandBtn">
+        <div className="main-waterIslandBtn">
           <Link to="/WaterIsland">
               <button>자세히 보기</button>
           </Link>

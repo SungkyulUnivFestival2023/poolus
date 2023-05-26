@@ -313,17 +313,18 @@
 }
 
 /* WaterIsland.css import 안했는데 이거 왜 되는거야? */
-.waterIslandBtn {
+.main-waterIslandBtn {
    display: flex;
    flex-direction: column;
    align-items: center;
 }
 /* WaterIsland.css에 있는 속성 몇가지 무력화 */
-.waterIslandBtn button {
+.main-waterIslandBtn button {
    padding: 10px !important;
    margin-bottom: 0 !important;
    background-color: #6CC7DF;
    border-radius: 10px !important;
+   border: none;
    font-size: 20px;
    font-family: SBAggro2;
    width: 200px;
