@@ -3,6 +3,13 @@
     flex-direction: column;
     justify-content: center;
     background-color: #000000;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+}
+.about-p{
+    padding-top: 100px;
+    background-color: #000000;
 }
 
 .pooluslogo img {
@@ -16,8 +23,10 @@
 .pooluslogo2 {
     font-family: 'Anton', sans-serif;
     font-size: 35px;
-    letter-spacing: 5px;
-    margin-top: 30px;
+    font-weight: 700;
+    /* letter-spacing: 5px; */
+    margin-top: 10px;
+    color: #6bc6dd;
 }
 
 .mar {
@@ -29,14 +38,30 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin: 40px 0;
+    margin: 20px 0;
+    position: relative;
+    z-index: 1;
 }
-
+.sku-likelion {
+    position: absolute;
+    z-index: 0;
+    left: 35px;
+}
+.sku-renew {
+    position: absolute;
+    right: 35px;
+}
 .logoX img {
-    height: 70px;
-    width: 70px;
     display: inline-block;
     margin: 25px 25px 12px 25px;
+}
+.likelion-logo {
+    width: 70px;
+    height: auto;
+}
+.renew-logo{
+    width: 85px;
+    height: auto;
 }
 
 .logoX span {
@@ -54,7 +79,7 @@
 
 .collaboration {
     font-size: 12px;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 .people {
@@ -63,18 +88,21 @@
     justify-content: space-evenly;
     align-items: center;
     background-color: #000000;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .smlogo {
-    width: 35px;
-    height: 35px;
-    margin: 10px 10px 20px 10px;
+    width: 45px;
+    height: auto;
+    margin: 50px 10px 5px 10px;
 }
 
 .smlogo1 {
-    width: 45px;
-    height: 35px;
-    margin: 10px 10px 20px 10px;
+    width: 50px;
+    height: auto;
+    margin: 50px 10px 5px 10px;
 }
 
 .gridpeople {
@@ -99,15 +127,16 @@
     height: 90px;
     font-size: 5px; */
     width: 120px;
-    height: 140px;
+    height: 180px;
     background-color: #565656;
     border-radius: 10px;
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
 }
 
 .Pimg {
-    width: 70px;
+    height: 70px;
+    width: auto;
     margin-bottom: 11px;
 }
 
@@ -128,9 +157,9 @@
 }
 
 .Pinfo img {
-    width: 13px;
+    height: 18px;
+    width: auto;
     margin-right: 5px;
-    height: 10px;
 }
 
 .Pinfo span {
@@ -153,16 +182,21 @@ hr {
 }
 
 .Prole {
-    font-size: 1px;
-}
-
-.pertitle {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    margin-top: 5px;
+    font-size: 15px;
 }
 
 .likelion {
     margin-bottom: 50px;
+}
+
+.renew > .pertitle > .renewyellow {
+    font-size: 10px;
+    margin-top: 3px;
+    margin-bottom: 15px;
+}
+.likelion > .pertitle > .llblue {
+    font-size: 10px;
+    margin-top: 3px;
+    margin-bottom: 15px;
 }
