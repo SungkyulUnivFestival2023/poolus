@@ -30,12 +30,12 @@ const TimeTable = () => {
                     <button className={`dayBtn ${day31}`} onClick={() => changeDay(31)}>31일<br/>수요일</button>
                 </div>
 
-                <hr></hr>
+                <hr className="tthr"></hr>
 
                 <div className="boothNstage">
                     <div className="booth">
-                        <div className="boothTitle">부스</div>
-                        {Time.filter(item => item.type === "booth").map((item) => 
+                        <div className="boothTitle bothbooth">부스</div>
+                        {Time.filter(item => item.type === "booth").map((item) =>
                             <div className="boothBox">
                                 <div>{item.time !== "" ? (
                                 <div>
@@ -44,14 +44,15 @@ const TimeTable = () => {
                                 </div>) : null}</div>
                                 <div>{item.title}</div>
                                 <div>{item.place} <MdPlace /></div>
-                            </div> )} 
+                            </div>)} 
                     </div>
                     
                     <img src="img/Line2.png" alt="Line" />
 
                     <div className="stage">
-                        <div className="stageTitle">공연</div>
-                        {Time.filter(item => item.day === day && item.type === "stage").map((item) => 
+                        <div className="stageTitle bothbooth">공연</div>
+                        <div className="stagemt">
+                            {Time.filter(item => item.day !== day && item.type === "stage").map((item) => 
                             <div className="stageBox">
                             <div>{item.time !== "" ? (
                                 <div>
@@ -61,6 +62,7 @@ const TimeTable = () => {
                                 <div>{item.title}</div>
                                 <div><MdPlace /> {item.place}</div>
                             </div> )}
+                        </div>
                     </div>
                 </div>
             </div>

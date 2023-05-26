@@ -16,7 +16,7 @@
 
 .dayBtns {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     font-family: 'SBAggro2';
 }
 
@@ -53,15 +53,6 @@
 
 
 /* 부스 */
-
-.boothTitle {
-    font-size: 30px;
-    text-align: right;
-    padding: 10px 20px;
-    border-bottom: 5px solid #6CC7DF;
-    margin-bottom: 20px;
-    font-family: 'SBAggro2';
-}
 
 .boothBox {
     width: 170px;
@@ -104,19 +95,35 @@
 .blueCircle {
     position: absolute;
     top: 12px;
-    right: -11.700000000000003px;
+    right: -15.700000000000003px;
 }
 
 
 /* 공연 */
 
+.bothbooth {
+    font-size: 30px;
+    font-family: 'SBAggro2';
+    padding: 10px 20px;
+    width: 100px;
+}
+
+.boothTitle {
+    text-align: right;
+    border-bottom: 5px solid #6CC7DF;
+    margin-bottom: 30px;
+    margin-left: 70px;
+}
+
 .stageTitle {
     font-family: 'SBAggro2';
-    margin-bottom: 20px;
-    font-size: 30px;
     text-align: left;
-    padding: 10px 20px;
     border-bottom: 5px solid #6CDD9D;
+    margin-right: 60px;
+}
+
+.stagemt {
+    margin-top: 30px;
 }
 
 .stageBox {
@@ -146,5 +153,9 @@
 .greenCircle {
     position: absolute;
     top: 44px;
-    left: -13px;
+    left: -16.5px;
+}
+
+.tthr {
+    margin: 1rem;
 }
