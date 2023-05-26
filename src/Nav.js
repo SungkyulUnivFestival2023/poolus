@@ -29,13 +29,13 @@ function Nav() {
               <Link to="/ArtistTitle" className="link sbaggro-font">아티스트 라인업</Link>
               </li>
               <li className="item">
-              <Link to="/Home" className="link sbaggro-font">공지사항</Link>
+              <Link to="/InfoMain" className="link sbaggro-font">공지사항</Link>
                 </li>
               <li className="item">
               <Link to="/Mainmap" className="link sbaggro-font">POOL:US MAP</Link>
                 </li>
               <li className="item">
-                <Link to="/" className="link sbaggro-font">만든이들</Link>
+                <Link to="/About" className="link sbaggro-font">만든이들</Link>
               </li>
               <li className="item">
                 <Link to="/GardenIsland" className="link sbaggro-font">가든 아일랜드</Link>
