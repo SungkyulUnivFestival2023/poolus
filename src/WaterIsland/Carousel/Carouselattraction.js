@@ -39,7 +39,7 @@ function Carouselattraction() {
                   <span>이용시간</span> <IoIosArrowForward /> 
                   <span className="blueFont finisht">
                     <p>1일차 : 10:00 ~ 17:00</p>
-                    <p>2일차 : 10:00 ~ 19:00</p>
+                    <p>2일차 : 10:00 ~ 18:00</p>
                   </span>
                 </p>
                 <p><span>이용요금</span> <IoIosArrowForward /> <span className="blueFont">2000원</span></p>
@@ -62,7 +62,7 @@ function Carouselattraction() {
                   <span>이용시간</span> <IoIosArrowForward /> 
                   <span className="blueFont finisht">
                     <p>1일차 : 10:00 ~ 17:00</p>
-                    <p>2일차 : 10:00 ~ 19:00</p>
+                    <p>2일차 : 10:00 ~ 18:00</p>
                   </span>
                 </p>
                 <p><span>이용요금</span> <IoIosArrowForward /> <span className="blueFont">2000원</span></p>

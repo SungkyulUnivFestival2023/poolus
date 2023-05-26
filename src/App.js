@@ -16,6 +16,7 @@ import Studentdue from './info/Studentdue';
 import Sns from './info/Sns';
 import RenewCash from './info/RenewCash';
 import About from './About/About';
+import Waterislandslide from './WaterIsland/slide/Waterislandslide';
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
           <Route path="/Waterisland/Attraction" element={<WaterIslandMenu contents={"attr"}/>} />
           <Route path="/Waterisland/Goods" element={<WaterIslandMenu contents={"goods"}/>} />
           <Route path="/Mainmap" element={<Mainmap />} />
+          <Route path="/waterislandslide" element={<Waterislandslide />} />
           
           {/* GardenIsland */}
           <Route path="/Gardenisland" element={<GardenIsland />} />

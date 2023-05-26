@@ -1,10 +1,13 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './GardenIsland.css';
 import GardenMain from './GardenMain';
 import Allbooth from './Allbooth';
 import '../background.css';
 
 function GardenIsland() {
+  useEffect(() => {
+    window.scrollTo(0, 0); // 상단으로 스크롤
+  }, []);
 
   const [searchword, setSearchword] = useState('');
 

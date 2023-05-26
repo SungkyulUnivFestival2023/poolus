@@ -1,0 +1,86 @@
+.waterbtnsparent {
+    position: relative;
+}
+
+.waterbtns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.wslidebtn {
+    font-family: SBAggro2;
+    padding: 20px;
+    padding-bottom: 10px;
+    background: none;
+    font-size: 18px;
+    color: rgb(255, 255, 255, 0.5);
+    border: none;
+    border-bottom: 5px solid rgb(108, 199, 223, 0.5);
+    width: 140px;
+}
+
+.activebtn {
+    font-family: SBAggro2;
+    padding: 20px;
+    padding-bottom: 10px;
+    background: none;
+    font-size: 20px !important;
+    color: white !important;
+    border: none;
+    border-bottom: 5px solid #6CC7DF !important;
+    width: 140px;
+}
+
+.attrflex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.attrbtns {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.attrbtns button {
+    width: 130px;
+    background-color: rgb(108, 199, 223, 0.3);
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+}
+
+.attrbtns a {
+    text-decoration: none;
+    color: white;
+}
+
+.AttrImg img {
+    margin-top: 10px;
+    width: 300px;
+}
+
+.goodsflex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.goodsbtn button {
+    width: 180px;
+    background-color: rgb(108, 199, 223, 0.3);
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+}
+
+.goodsbtn a {
+    text-decoration: none;
+    color: white;
+}

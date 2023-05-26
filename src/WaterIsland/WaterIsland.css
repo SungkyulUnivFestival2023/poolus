@@ -91,7 +91,7 @@
 }
 
 .attrTitle {
-    margin-top: 40px;
+    margin-top: 50px;
     font-size: 35px;
     font-family: 'SBAggro2';
     letter-spacing: 5px;
@@ -122,7 +122,7 @@
     text-align: left;
     padding-left: 50px;
     font-size: 15px;
-    margin: 30px 0;
+    margin: 20px 0;
 }
 
 .attrSub p {
@@ -144,11 +144,6 @@
     margin-bottom: 3px;
 }
 
-.AttrImg img {
-    width: 300px;
-    margin-top: 30px;
-}
-
 .groundRule p {
     margin-bottom: 0.5rem;
     font-size: 13px;
@@ -156,15 +151,6 @@
 
 
 /* goods */
-
-.goodsContainer {
-    margin: 30px 0;
-}
-
-.goodssub {
-    /* margin: 50px 0; */
-    margin-top: 20px;
-}
 
 .arrow {
     border: none;
@@ -193,11 +179,12 @@
 .goodsContainer {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin: 30px 0;
 }
 
 .goodsContainer div {
     width: 150px;
-    height: 200px;
+    height: 160px;
 }
 
 .goodsContainer div img {
@@ -210,7 +197,7 @@
 
 .goodsContainer1 div {
     width: 150px;
-    height: 200px;
+    height: 160px;
     display: flex;
     align-items: center;
     justify-content: center;

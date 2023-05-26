@@ -43,6 +43,9 @@ function Nav() {
               <li className="item">
                 <Link to="/WaterIsland" className="link sbaggro-font">워터 아일랜드</Link>
               </li>
+              <li className="item">
+                <Link to="/waterislandslide" className="link sbaggro-font">워터 아일랜드 슬라이드버전</Link>
+              </li>
             </ul>
           </nav>
       </div>

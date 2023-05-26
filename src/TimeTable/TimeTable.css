@@ -44,7 +44,9 @@
 
 .boothNstage {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    width: 360px;
+    margin: 0 auto;
 }
 
 .boothNstage>img {
@@ -95,7 +97,7 @@
 .blueCircle {
     position: absolute;
     top: 12px;
-    right: -15.700000000000003px;
+    right: -16.7px;
 }
 
 
@@ -158,7 +160,7 @@
 .greenCircle {
     position: absolute;
     top: 44px;
-    left: -16.5px;
+    left: -16.7px;
 }
 
 .tthr {
