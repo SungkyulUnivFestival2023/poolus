@@ -17,9 +17,40 @@ import Sns from './info/Sns';
 import RenewCash from './info/RenewCash';
 import About from './About/About';
 import Waterislandslide from './WaterIsland/slide/Waterislandslide';
-
+import { useEffect } from 'react';
+import axios from 'axios';
+import { getCookie, setCookie } from './utils/cookie';
 
 function App() {
+	
+	useEffect(() => {
+		const cookie = getCookie('visitor');
+		if (!cookie) {
+			const currentDate = new Date();
+			const expiresDate = new Date(
+			  currentDate.getFullYear(),
+			  currentDate.getMonth(),
+			  currentDate.getDate() + 1, // 다음 날로 설정
+			  0, // 시간을 00시로 설정
+			  0, // 분을 00분으로 설정
+			  0, // 초를 00초로 설정
+			);
+			// 시차 보정
+			expiresDate.setMinutes(expiresDate.getMinutes() - expiresDate.getTimezoneOffset());
+			setCookie('visitor', 'visitor', {path: '/', expires: expiresDate , secure: true});
+			callAPI();
+		}
+	}, []);
+
+	const callAPI = () => {
+		axios.get('https://api.sku-sku.com/visitors/counts')
+		  .then((response) => {
+			console.log(response.data);
+		  })
+		  .catch((error) => {
+			console.error('API Error: ', error);
+		  })
+	}
   return (
     <div className="App">
       <BrowserRouter>
