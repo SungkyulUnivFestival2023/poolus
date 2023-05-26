@@ -15,7 +15,7 @@ function Nav() {
   };
 
   return (
-    <div className='d-flex justify-content-center navbar fixed-top'>
+    <div className='navbar fixed-top d-flex justify-content-center'>
       {/* <Link to="/" className='home'><AiOutlineHome size="50" color='#6bc6dd'/></Link> */}
       <div className='logo'>
         {/* <Link to="/" scrollintoview>
@@ -36,25 +36,19 @@ function Nav() {
           <nav className="nav nav-style">
             <ul className="list">
               <li className="item">
+                <Link to="/infomain" className="link sbaggro-font">공지사항</Link>
+              </li>
+              <li className="item">
                 <Link to="/TimeTable" className="link sbaggro-font">타임테이블</Link>
               </li>
               <li className="item">
-              <Link to="/ArtistTitle" className="link sbaggro-font">아티스트 라인업</Link>
+                <Link to="/ArtistTitle" className="link sbaggro-font">아티스트 라인업</Link>
               </li>
               <li className="item">
-              <Link to="/Home" className="link sbaggro-font">공지사항</Link>
+                <Link to="/Mainmap" className="link sbaggro-font">POOL:US MAP</Link>
                 </li>
               <li className="item">
-              <Link to="/Mainmap" className="link sbaggro-font">POOL:US MAP</Link>
-                </li>
-              <li className="item">
-                <Link to="/" className="link sbaggro-font">만든이들</Link>
-              </li>
-              <li className="item">
-                <Link to="/GardenIsland" className="link sbaggro-font">가든 아일랜드</Link>
-              </li>
-              <li className="item">
-                <Link to="/WaterIsland" className="link sbaggro-font">워터 아일랜드</Link>
+                <Link to="/about" className="link sbaggro-font">만든이들</Link>
               </li>
             </ul>
           </nav>

@@ -1,6 +1,6 @@
 import React from 'react'
 import './about.css';
-import { FaHandshake } from "react-icons/fa";
+// import { FaHandshake } from "react-icons/fa";
 import Person0 from './Person0';
 import { Helmet } from 'react-helmet';
 
