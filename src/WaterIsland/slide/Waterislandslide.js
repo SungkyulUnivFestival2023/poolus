@@ -31,7 +31,7 @@ function Waterislandslide() {
 
   return (
     <>
-    <Nav handleX={handleX} ref={Xclickdom} />
+    <Nav handleX={handleX} ref={Xclickdom} imgurl={"PoolUsHeart"}/>
     <section className="display-container fullbgB">
         <div className="waterbtnsparent">
           <div className={`${zindex} navbar navmargin fixed-top d-flex justify-content-center`}>

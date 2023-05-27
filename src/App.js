@@ -38,7 +38,7 @@ function App() {
 			// 시차 보정
 			expiresDate.setMinutes(expiresDate.getMinutes() - expiresDate.getTimezoneOffset());
 			setCookie('visitor', 'visitor', {path: '/', expires: expiresDate , secure: true});
-			//callAPI();
+			callAPI();
 		}
 	}, []);
 
@@ -75,6 +75,9 @@ function App() {
 
           {/* About */}
           <Route path="/About" element={<About />} />
+		  
+          <Route path="/Mainmap" element={<Mainmap />} />
+		  
         </Routes>
       </BrowserRouter>
       <footer>

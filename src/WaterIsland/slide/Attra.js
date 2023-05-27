@@ -14,7 +14,7 @@ function Attra({waterground}) {
 
                 <div className="attrSub">
                     <p><span>이용시간</span> <IoIosArrowForward /> <span className="blueFont">10분</span></p>
-                    <p><span>이용요금</span> <IoIosArrowForward /> <span className="blueFont">2000원</span></p>
+                    <p><span>이용요금</span> <IoIosArrowForward /> <span className="blueFont">2,000원</span></p>
                 </div>
                 
                 <div className="groundRule">
@@ -48,7 +48,7 @@ function Attra({waterground}) {
                         <p>2일차 : 10:00 ~ 19:00</p>
                     </span>
                     </p>
-                    <p><span>이용요금</span> <IoIosArrowForward /> <span className="blueFont">2000원</span></p>
+                    <p><span>이용요금</span> <IoIosArrowForward /> <span className="blueFont">2,000원</span></p>
                     <p><span>슬라이드 높이</span> <IoIosArrowForward /> <span className="blueFont">약 7-8m</span></p>
                     <p><span>소형풀장 수심</span> <IoIosArrowForward /> <span className="blueFont">약 0.7m</span></p>
                 </div>
@@ -77,7 +77,7 @@ function Attra({waterground}) {
                         <p>2일차 : 10:00 ~ 19:00</p>
                     </span>
                     </p>
-                    <p><span>이용요금</span> <IoIosArrowForward /> <span className="blueFont">2000원</span></p>
+                    <p><span>이용요금</span> <IoIosArrowForward /> <span className="blueFont">2,000원</span></p>
                     <p><span>대형풀장</span> <IoIosArrowForward /> <span className="blueFont">수심 : 약 1.2m</span></p>
                     <p><span>소형풀장</span> <IoIosArrowForward /> <span className="blueFont">수심 : 약 0.7m</span></p>
                 </div>

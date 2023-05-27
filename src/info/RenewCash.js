@@ -12,8 +12,8 @@ function RenewCash() {
   
   return (
     <>
-    <Nav btncolor={"#FFC7C7"} classcolor={"pinkcolor"} />
-    <div className="infodiao diao fixed-top d-flex justify-content-center"><img src="img/black.png" alt="안돼" /></div>
+    <Nav btncolor={"#FFC7C7"} classcolor={"pinkcolor"} imgurl={"pinklogo"} />
+    <div className="infodiao diao fixed-top d-flex justify-content-center"><img src="img/black.png" alt="img" /></div>
     <section className="fullbgB bgstar display-container">
       <div className="RenewCash good">
         <div className="cashtitle navmargin">

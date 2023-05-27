@@ -28,7 +28,7 @@ const TimeTable = () => {
 
     return (
         <section className="display-container fullbgB">
-            <Nav handleX={handleX} ref={Xclickdom} />
+            <Nav handleX={handleX} ref={Xclickdom} imgurl={"PoolUsHeart"} />
             <div className="diao fixed-top d-flex justify-content-center"><img src="img/black.png" alt="안돼" /></div>
             <div className="TimeTable good navmargin">
                 <div className="dayBtns">

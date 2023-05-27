@@ -27,7 +27,7 @@ function LineupSlide() {
     <>
 
     <section className="display-container bgwaterImg">
-        <Nav handleX={handleX} ref={Xclickdom} />
+        <Nav handleX={handleX} ref={Xclickdom} imgurl={"blacklogo"} />
         <div className="waterimg diao fixed-top d-flex justify-content-center"><img src="img/waterdiao.png" alt="?" /></div>
 
         <div className={`${zindex} dayparent navmargin navbar fixed-top d-flex justify-content-center`}>

@@ -15,7 +15,6 @@ function GardenMain({onChange, searchword}) {
       <section className="boothmain">
         
           <div className="fixbackground"><img src="img/garden/gardenback.png" alt="garden 배경" /></div>
-          <div className="gardendiao diao navbar fixed-top d-flex justify-content-center"><img src="img/fef5e8.png" alt="안돼" /></div>
           {/* <div className="gardenlogo"><img src="img/logo/gardenlogo.png" alt="" /></div> */}
           <div className='garden-island-title navmargin'>
             <p className='island-title text-center isamanroo-font'>GARDEN ISLAND</p>

@@ -5,7 +5,7 @@ import Nav from './Nav';
 function Mainmap() {
     return (
         <section className='display-container'>
-            <Nav />
+            <Nav imgurl={"blacklogo"}/>
             <div className="Mainmap good">
                 <div className="maplogo"><img className='img-fluid' src="img/mapLogo.png" alt="map로고" /></div>
 

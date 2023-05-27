@@ -20,7 +20,8 @@ function GardenIsland() {
 
   return (
     <>
-    <Nav btncolor={"#287e3a"} classcolor={"greencolor"} />
+    <Nav btncolor={"#287e3a"} classcolor={"greencolor"} imgurl={"greenlogo"} />
+    <div className="infodiao diao fixed-top d-flex justify-content-center"><img src="img/fef5e8.png" alt="안돼" /></div>
     <section className="display-container fullbgBag">
         <div className="GardenIsland good">
           {/* 부스 메인 */}

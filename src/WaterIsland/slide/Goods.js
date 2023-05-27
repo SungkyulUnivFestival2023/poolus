@@ -45,7 +45,7 @@ function Goods() {
                 <div className="pricegood">
                     <div className="goodsContainer goodsContainer1">
                         <div>
-                            <div>방수팩<br />3000원</div>
+                            <div>방수팩<br />3,000원</div>
                         </div>
 
                         <div>
@@ -56,7 +56,7 @@ function Goods() {
                             <img src="/img/gun.png" alt="물총" /><br />
                         </div>
                         <div>
-                            <div>물총<br />4000원</div>
+                            <div>물총<br />4,000원</div>
                         </div>
                     </div>
                 </div>

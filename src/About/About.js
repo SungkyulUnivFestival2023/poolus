@@ -10,9 +10,9 @@ import Nav from '../Nav';
 
 function About() {
   return (
-    <>  
+    <>
         <div className='display-container about-p'>
-        <Nav/>
+        <Nav imgurl={"PoolUsHeart"} />
             <div className="About">
                 {/* <div className="pooluslogo"><img src="img/logo/heartlogo.png" alt="정식로고" /></div> */}
                 {/* <div className="pooluslogo1"><img src="img/logo/waterpoolus.png" alt="로고글씨" /></div> */}

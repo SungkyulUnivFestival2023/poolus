@@ -2,7 +2,7 @@ import React, { useEffect, useState, forwardRef} from 'react'
 import { Link } from 'react-router-dom';
 import './Nav.css';
 
-const Nav = forwardRef(({ classcolor, btncolor, handleX }, ref) => {
+const Nav = forwardRef(({ imgurl, classcolor, btncolor, handleX }, ref) => {
   
   const [scroll, setScroll] = useState(0);
   
@@ -22,7 +22,7 @@ const Nav = forwardRef(({ classcolor, btncolor, handleX }, ref) => {
             <img src="img/PoolUsHeart.png" alt="Pool:Us Heart"/>
         </Link> */}
         <Link to="/" onClick={() =>{handleButtonClick()}}>
-          <img src="img/PoolUsHeart.png" alt="Pool:Us Heart"/>
+          <img src={`img/logo/${imgurl}.png`} alt="Pool:Us Heart"/>
         </Link>
       </div>
       <div>

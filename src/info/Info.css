@@ -165,6 +165,10 @@
         width: 130px;
     }
     
+    .cardflex img {
+        width: 120px;
+    }
+    
     .cashsub {
         background-color: #191919;
         margin: 0 auto;
