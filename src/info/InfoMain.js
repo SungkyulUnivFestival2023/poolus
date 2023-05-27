@@ -1,10 +1,12 @@
 import React from 'react'
 import './Info.css';
 import { Link } from 'react-router-dom';
+import Nav from '../Nav';
 
 function InfoMain() {
   return (
     <section className="display-container fullbgB bgstar">
+      <Nav />
       <div className="InfoMain good InfoMain1">
           <div className="InfoTitle">
             <span>공지사항</span>

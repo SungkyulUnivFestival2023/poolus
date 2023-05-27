@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import './Sns.css';
 import { RxChevronUp } from "react-icons/rx";
 import { BsPinAngleFill } from "react-icons/bs";
+import Nav from '../Nav';
 
 function Sns() {
   const [clickCount, setClickCount] = useState(0);
@@ -19,6 +20,7 @@ function Sns() {
   return (
     <>
     <div className='display-container'>
+      <Nav />
       <section className="fullbgB bgstar" data-bs-spy="scroll" data-bs-target=".navbar-example">
         <div className="Sns good">
           <div className="snstitle">

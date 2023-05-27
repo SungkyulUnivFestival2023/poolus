@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { IoIosArrowBack } from "react-icons/io";
 import { BsArrowDown } from "react-icons/bs";
 import { AiOutlineCheck } from "react-icons/ai";
+import Nav from '../Nav';
 
 function RenewCash() {
   useEffect(() => {
@@ -10,7 +11,8 @@ function RenewCash() {
   }, []);
   
   return (
-    <section className="fullbgB bgstar">
+    <section className="fullbgB bgstar display-container">
+      <Nav />
       <div className="RenewCash good">
         <div className="cashtitle">
           <Link to="/InfoMain">

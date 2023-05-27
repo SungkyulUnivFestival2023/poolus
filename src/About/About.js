@@ -2,17 +2,20 @@ import React from 'react'
 import './about.css';
 // import { FaHandshake } from "react-icons/fa";
 import Person0 from './Person0';
-import { Helmet } from 'react-helmet';
+// import { Helmet } from 'react-helmet';
+import Lottie from 'lottie-react';
+import animationData from './4934-hand-shake.json';
+
+import Nav from '../Nav';
 
 function About() {
   return (
-    <>  <Helmet>
-            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-        </Helmet>
+    <>  
         <div className='display-container about-p'>
+        <Nav/>
             <div className="About">
-                <div className="pooluslogo"><img src="img/logo/heartlogo.png" alt="정식로고" /></div>
-                {/* <div className="pooluslogo1 mar"><img src="img/logo/waterpoolus.png" alt="로고글씨" /></div> */}
+                {/* <div className="pooluslogo"><img src="img/logo/heartlogo.png" alt="정식로고" /></div> */}
+                {/* <div className="pooluslogo1"><img src="img/logo/waterpoolus.png" alt="로고글씨" /></div> */}
                 <div className="pooluslogo2 ">만든이들</div>
                 
                 {/* <div className="logoX">
@@ -35,7 +38,7 @@ function About() {
                         <img className='renew-logo' src="img/logo/renewlogo.png" alt="리뉴로고" />
                         <span className="renewyellow">RE:NEW<br/>총학생회</span>
                     </div>
-                    <lottie-player src="https://assets1.lottiefiles.com/temp/lf20_wsi9DZ.json" background="transparent" speed="1" style={{ width: '200px', height: '200px' }} loop autoplay></lottie-player>
+                    <Lottie animationData={animationData} style={{width: '200px', height: '200px'}}/>
                 </div>
 
                 <p className="collaboration">
@@ -50,7 +53,12 @@ function About() {
                         <img className="smlogo1" src="img/logo/renewlogo.png" alt="리뉴로고" />
                         <div className='renewyellow'>RE:NEW 총학생회</div>
                     </div>
-                    <Person0 id={1}/>
+                    <div className="gridpeople">
+                        <Person0 id={1}/>
+                        <Person0 id={2}/>
+                        <Person0 id={3}/>
+                        <Person0 id={4}/>
+                    </div>
                 </div>
 
                 <div className="likelion">
@@ -59,10 +67,10 @@ function About() {
                         <div className='llblue'>성결대학교 멋쟁이사자처럼 11기</div>
                     </div>
                     <div className="gridpeople">
-                        <Person0 id={2}/>
-                        <Person0 id={4}/>
-                        <Person0 id={3}/>
                         <Person0 id={5}/>
+                        <Person0 id={6}/>
+                        <Person0 id={7}/>
+                        <Person0 id={8}/>
                     </div>
                 </div>
             </div>

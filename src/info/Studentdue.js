@@ -3,10 +3,12 @@ import { AiOutlineCheck } from "react-icons/ai";
 import { FiAlertCircle } from "react-icons/fi";
 import { IoIosArrowBack } from "react-icons/io";
 import { Link } from 'react-router-dom';
+import Nav from '../Nav';
 
 function Studentdue() {
   return (
-    <section className="fullbgB bgstar">
+    <section className="fullbgB bgstar display-container">
+        <Nav/>
         <div className="Studentdue good">
             <div className="duetitle">
                 <Link to="/InfoMain">
