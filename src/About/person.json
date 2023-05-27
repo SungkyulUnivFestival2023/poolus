@@ -18,21 +18,21 @@
     },
     {
         "id": 3,
-        "image": "img/about/hyunjun.png",
+        "image": "img/about/minjung.png",
         "logo": "img/logo/renewlogo.png",
-        "name": "김현준",
-        "department": "산업경영공학과 17",
-        "position": "대표",
-        "role": "Front-End"
+        "name": "성민정",
+        "department": "연극영화학부 20",
+        "position": "정책국장",
+        "role": "검수"
     },
     {
         "id": 4,
-        "image": "img/about/hyunjun.png",
+        "image": "img/about/dabin.png",
         "logo": "img/logo/renewlogo.png",
-        "name": "김현준",
-        "department": "산업경영공학과 17",
-        "position": "대표",
-        "role": "Front-End"
+        "name": "홍다빈",
+        "department": "경영학과 21",
+        "position": "정책국 차장",
+        "role": "검수"
     },
     {
         "id": 5,

@@ -36,19 +36,6 @@ function About() {
             </div>
 
             <div className="people">
-                <div className="renew">
-                    <div className="pertitle">
-                        <img className="smlogo1" src="img/logo/renewlogo.png" alt="리뉴로고" />
-                        <div className='renewyellow'>RE:NEW 총학생회</div>
-                    </div>
-                    <div className="gridpeople">
-                        <Person0 id={1}/>
-                        <Person0 id={2}/>
-                        <Person0 id={3}/>
-                        <Person0 id={4}/>
-                    </div>
-                </div>
-
                 <div className="likelion">
                     <div className="pertitle">
                         <img className="smlogo" src="img/logo/likelion.png" alt="멋사로고" />
@@ -59,6 +46,18 @@ function About() {
                         <Person0 id={6}/>
                         <Person0 id={7}/>
                         <Person0 id={8}/>
+                    </div>
+                </div>
+                <div className="renew">
+                    <div className="pertitle">
+                        <img className="smlogo1" src="img/logo/renewlogo.png" alt="리뉴로고" />
+                        <div className='renewyellow'>RE:NEW 총학생회</div>
+                    </div>
+                    <div className="gridpeople">
+                        <Person0 id={1}/>
+                        <Person0 id={2}/>
+                        <Person0 id={3}/>
+                        <Person0 id={4}/>
                     </div>
                 </div>
             </div>
