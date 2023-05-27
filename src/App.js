@@ -36,7 +36,6 @@ function App() {
 			  0, // 초를 00초로 설정
 			);
 			// 시차 보정
-			expiresDate.setMinutes(expiresDate.getMinutes() - expiresDate.getTimezoneOffset());
 			setCookie('visitor', 'visitor', {path: '/', expires: expiresDate , secure: true});
 			callAPI();
 		}
