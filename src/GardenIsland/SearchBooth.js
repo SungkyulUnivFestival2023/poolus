@@ -28,7 +28,7 @@ function SearchBooth({filteredBooth, handleStar, selectedBooth, openModal, close
                             {/* 메뉴가 너무 많은 부스들이 있어서 메뉴 3개만 보이도록 */}
                                 {item.menus.slice(0, 3).map((items)=> (
                                     <>
-                                    {items.name}, <span>  </span> <br/>
+                                    {items.name} <span>  </span> <br/>
                                     </>
                                 ))}
                             </>

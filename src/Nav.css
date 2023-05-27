@@ -1,16 +1,12 @@
 .navbar {
     padding: 1rem;
 }
-.home{
-    /* z-index: 3000; */
-}
 .logo {
     /* z-index: 3000; */
+    margin-right: 220px;
 }
 .logo img {
     width: 55px;
-    margin-left: 95px;
-    margin-right: 95px;
 }
 /* hamburger */
 .checkbox {

@@ -1,15 +1,10 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import './Home.css';
 import './App.css';
 import Nav from './Nav';
 import { Link } from 'react-router-dom';
 
 function Home() {
-  // useEffect(() => {
-  //   const newColor = '#121212'; // 변경할 배경색을 지정
-  //   document.body.style.backgroundColor = newColor; // body의 배경색 변경
-  // }, []);
-  
   return (
     <div className='display-container'>
     <Nav/>
@@ -18,13 +13,21 @@ function Home() {
         <video autoPlay loop muted playsInline>
           <source src={`video/background-video.mp4`} type='video/mp4' />
         </video>
-        <div>
+        <div id='btn-main-group'>
           <div className="glitch anton-font" data-glitch="POOL:US">POOL:US</div>
           <div className="text-white my-3 text-center sub-title isamanroo-font">2023 영암축전<br /> 2023.05.30 - 2023.05.31</div>
-          <Link to="/TimeTable" class="btn-about-pool-us d-flex justify-content-center align-items-center">
-              <div class="-font text-center py-2 about-pool-us-in isamanroo-font">타임테이블 보기</div>
-              <div class="isamanroo-font text-center py-2 about-pool-us-out"></div>
-          </Link>
+          <a href="#waterIsland" class="btn-main d-flex justify-content-center align-items-center my-4">
+              <div class="text-center py-2 btn-main-waterisland-in isamanroo-font">WATER ISLAND</div>
+              <div class="isamanroo-font text-center py-2 btn-main-waterisland-out"></div>
+          </a>
+          <a href="#romanticIsland" class="btn-main d-flex justify-content-center align-items-center my-4">
+              <div class="text-center py-2 btn-main-romanticisland-in isamanroo-font">ROMANTIC ISLAND</div>
+              <div class="isamanroo-font text-center py-2 btn-main-romanticisland-out"></div>
+          </a>
+          <a href="#gardenIsland" class="btn-main d-flex justify-content-center align-items-center my-4">
+              <div class="text-center py-2 btn-main-gardenisland-in isamanroo-font">GARDEN ISLAND</div>
+              <div class="isamanroo-font text-center py-2 btn-main-gardenisland-out"></div>
+          </a>
         </div>
         <div className='wayto-water-island text-center'>
           <p>WATER ISLAND<br/>구경하러 가기</p>
@@ -32,7 +35,7 @@ function Home() {
         </div>
       </div>
       {/* Water Island */}
-      <div className='waterisland-section'>
+      <div className='waterisland-section' id='waterIsland'>
         <div className='waterisland-title'>
           <p className='island-title text-center isamanroo-font'>WATER ISLAND</p>
           <p className='poolus-title text-center anton-font'>POOL:US</p>
@@ -64,7 +67,7 @@ function Home() {
         </div>
       </div>
       {/* Romantic Island */}
-      <div className='romanticisland-section'>
+      <div className='romanticisland-section' id='romanticIsland'>
         <div className='romanticisland-title text-center'>
           <p className='island-title text-center isamanroo-font'>ROMANTIC ISLAND</p>
           <p className='poolus-title text-center anton-font'>POOL:US</p>
@@ -75,11 +78,17 @@ function Home() {
           <img className='cloud-3' src="img/cloud-3.png" alt="타이틀 꾸미는 구름"/>
         </div>
         <div className='hashtag'>
-          <span className='badge'>#연애</span>
-          <span className='badge'>#사탕팅</span>
-          <span className='badge'>#플리마켓</span>
-          <span className='badge'>#인생네컷</span>
-          <span className='badge'>#Who are you?</span>
+          <div className='text-center'>
+            <div>
+              <span className='badge mx-1'>#연애</span>
+              <span className='badge mx-1'>#사탕팅</span>
+              <span className='badge mx-1'>#플리마켓</span>
+            </div>
+            <div>
+              <span className='badge mx-1'>#인생네컷</span>
+              <span className='badge mx-1'>#Who are you?</span>
+            </div>
+          </div>
         </div>
         <p className='section-description text-center sbaggro-font'>
           진정한 사랑이란? ROMANTIC ISLAND
@@ -105,7 +114,7 @@ function Home() {
         </div>
       </div>
       {/* Garden Island */}
-      <div className='gardenisland-section'>
+      <div className='gardenisland-section' id='gardenIsland'>
         <div className='gardenisland-title text-center'>
           <p className='island-title text-center isamanroo-font'>GARDEN ISLAND</p>
           <p className='poolus-title text-center anton-font'>POOL:US</p>

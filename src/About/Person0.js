@@ -8,15 +8,17 @@ function Person0({id}) {
         {Person.map(person => (
             (person.id === id) && (
             <div key={person.id}>
-                    {/* <img className="Pimg" src={person.image} alt="personimg" /> */}
-                    <img className="Pimg" src="img/about/minjo.png" alt="personimg" />
+                    <img className="Pimg" src={person.image} alt="personimg" />
+                    {/* <img className="Pimg" src="img/about/minjo.png" alt="personimg" /> */}
 
                     <div className="Pinfo">
-                        <span>{person.name} _ {person.role}</span>
+                        <img src={person.logo} alt="personimg"/>
+                        <div className='name align-middle'>{person.name}</div>
                     </div>
 
-                <span className="Pdepart">{person.department}</span>
-                <span className="Pposi">{person.position}</span>
+                <div className="Pdepart">{person.department}</div>
+                <div className="Pposi">{person.position}</div>
+                <div className='Prole'>{person.role}</div>
             </div>
         )
       ))}

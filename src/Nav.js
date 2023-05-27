@@ -1,15 +1,28 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
 import './Nav.css';
-import { AiOutlineHome } from 'react-icons/ai';
 
 function Nav() {
+  
+  const [scroll, setScroll] = useState(0);
+  
+  useEffect(() => {
+    window.scrollTo(0, 0); // 상단으로 스크롤
+  }, [scroll]);
+
+  const handleButtonClick = () => {
+    setScroll(prevCount => prevCount + 1);
+  };
+
   return (
-    <div className='d-flex justify-content-center navbar fixed-top'>
-      <Link to="/" className='home'><AiOutlineHome size="50" color='#6bc6dd'/></Link>
+    <div className='navbar fixed-top d-flex justify-content-center'>
+      {/* <Link to="/" className='home'><AiOutlineHome size="50" color='#6bc6dd'/></Link> */}
       <div className='logo'>
-        <Link to="/">
+        {/* <Link to="/" scrollintoview>
             <img src="img/PoolUsHeart.png" alt="Pool:Us Heart"/>
+        </Link> */}
+        <Link to="/" onClick={() =>{handleButtonClick()}}>
+          <img src="img/PoolUsHeart.png" alt="Pool:Us Heart"/>
         </Link>
       </div>
       <div>
@@ -23,25 +36,19 @@ function Nav() {
           <nav className="nav nav-style">
             <ul className="list">
               <li className="item">
+                <Link to="/infomain" className="link sbaggro-font">공지사항</Link>
+              </li>
+              <li className="item">
                 <Link to="/TimeTable" className="link sbaggro-font">타임테이블</Link>
               </li>
               <li className="item">
-              <Link to="/ArtistTitle" className="link sbaggro-font">아티스트 라인업</Link>
+                <Link to="/ArtistTitle" className="link sbaggro-font">아티스트 라인업</Link>
               </li>
               <li className="item">
-              <Link to="/InfoMain" className="link sbaggro-font">공지사항</Link>
+                <Link to="/Mainmap" className="link sbaggro-font">POOL:US MAP</Link>
                 </li>
               <li className="item">
-              <Link to="/Mainmap" className="link sbaggro-font">POOL:US MAP</Link>
-                </li>
-              <li className="item">
-                <Link to="/About" className="link sbaggro-font">만든이들</Link>
-              </li>
-              <li className="item">
-                <Link to="/GardenIsland" className="link sbaggro-font">가든 아일랜드</Link>
-              </li>
-              <li className="item">
-                <Link to="/WaterIsland" className="link sbaggro-font">워터 아일랜드</Link>
+                <Link to="/about" className="link sbaggro-font">만든이들</Link>
               </li>
               <li className="item">
                 <Link to="/waterislandslide" className="link sbaggro-font">워터 아일랜드 슬라이드버전</Link>
