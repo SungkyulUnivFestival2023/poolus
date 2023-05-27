@@ -1,11 +1,10 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import Reday30 from './Reday30';
 import Reday31 from './Reday31';
-import Day30 from './Day30';
-import Day31 from './Day31';
 import '../background.css';
 import { useState } from 'react';
 import './Artist.css';
+import Nav from '../Nav';
 
 function LineupSlide() {
   const [artistday, setArtistday ] = useState("day1");
@@ -14,22 +13,35 @@ function LineupSlide() {
     setArtistday(day);
   }
 
-  return (
-    <section className="display-container bgwaterImg">
-        <div className="LineupSlide good">
-            <div className="dayscroll">
-                <div className="dayparent">
-                  <div className={`dayss ${artistday==="day1" ? 'activeday' : ''}`} onClick={()=>{handleartist("day1")}}>DAY1</div>
-                  <div className={`dayss ${artistday==="day2" ? 'activeday' : ''}`} onClick={()=>{handleartist("day2")}}>DAY2</div>
-                </div>
+  const Xclickdom = useRef(null);
+    const [Xclick, setXclick] = useState(true);
 
-                <div className="lineupview">
-                {/* {artistday === "day1" ? <Reday30 /> : <Reday31 />} */}
-                {artistday === "day1" ? <Day30 /> : <Day31 />}
-                </div>
-            </div>
+    const handleX= () => {
+        setXclick(!Xclick);
+        console.log(Xclickdom.current, Xclick);
+    }
+
+    const zindex = Xclick ? '' : 'zindex';
+
+  return (
+    <>
+
+    <section className="display-container bgwaterImg">
+        <Nav handleX={handleX} ref={Xclickdom} />
+        <div className="waterimg diao fixed-top d-flex justify-content-center"><img src="img/waterdiao.png" alt="?" /></div>
+
+        <div className={`${zindex} dayparent navmargin navbar fixed-top d-flex justify-content-center`}>
+          <div className={`dayss ${artistday==="day1" ? 'activeartist' : ''}`} onClick={()=>{handleartist("day1")}}>DAY1</div>
+          <div className={`dayss ${artistday==="day2" ? 'activeartist' : ''}`} onClick={()=>{handleartist("day2")}}>DAY2</div>
+        </div>
+
+        <div className="LineupSlide good">
+          <div className="lineupview">
+          {artistday === "day1" ? <Reday30 /> : <Reday31 />}
+          </div>
         </div>
     </section>
+    </>
   )
 }
 

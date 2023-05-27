@@ -36,10 +36,12 @@
     justify-content: center;
     background-color: black;
 }
-.Lineuptitle img{
+
+.Lineuptitle img {
     width: 330px;
     height: auto;
 }
+
 .clickparent {
     background: none;
     border: none;
@@ -117,6 +119,10 @@
     margin-bottom: 30px;
 }
 
+.waterimg img {
+    min-width: 415px;
+}
+
 .DayN {
     width: 263px;
     height: 94px;
@@ -143,10 +149,6 @@
     align-items: flex-end;
 }
 
-.dayparent div {
-    width: 150px;
-}
-
 .dayss {
     font-family: 'LOTTERIADDAG' !important;
     font-size: 30px;
@@ -164,7 +166,11 @@
     margin: 0 auto;
 }
 
+
+/* 홀수 왼쪽 */
+
 .artist {
+    width: 300px;
     height: 350px;
     position: relative;
     margin: 0 auto;
@@ -172,7 +178,7 @@
 }
 
 .artist img:first-child {
-    width: 250px;
+    width: 230px;
 }
 
 .artist img:nth-child(2) {
@@ -189,7 +195,11 @@
     right: -9px;
 }
 
+
+/* 짝수 오른쪽 */
+
 .artist2 {
+    width: 300px;
     height: 350px;
     position: relative;
     margin: 0 auto;
@@ -197,7 +207,7 @@
 }
 
 .artist2 img:first-child {
-    width: 250px;
+    width: 230px;
 }
 
 .artist2 img:nth-child(2) {
@@ -215,5 +225,37 @@
 }
 
 .lineupview {
-    margin-top: 40px;
+    margin-top: 180px;
+}
+
+.dayss {
+    padding: 5px;
+    padding-bottom: 10px;
+    background: none;
+    font-size: 20px;
+    color: rgb(255, 255, 255, 0.5);
+    border: none;
+    border-bottom: 5px solid rgb(30, 64, 74, 0.5);
+    width: 120px;
+    text-align: center;
+}
+
+.dayss:first-child {
+    margin-right: 20px;
+}
+
+.activeartist {
+    padding: 5px;
+    padding-bottom: 10px;
+    background: none;
+    font-size: 22px !important;
+    color: white !important;
+    border: none;
+    border-bottom: 5px solid #1e404a !important;
+    width: 120px;
+    text-align: center;
+}
+
+.activeartist:first-child {
+    margin-right: 20px;
 }

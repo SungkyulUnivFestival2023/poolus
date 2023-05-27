@@ -1,6 +1,10 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 function Reday31() {
+  useEffect(() => {
+    window.scrollTo(0, 0); // 상단으로 스크롤
+  }, []);
+  
   return (
     <div>
         <div className="artist">
@@ -9,7 +13,7 @@ function Reday31() {
           <img src="img/time/lucytime.png" alt="EZUZ" />
         </div>
 
-        <div className="artist">
+        <div className="artist2">
           <img src="img/artist/by.png" alt="비와이" />
           <img src="img/artist/byT.png" alt="비와이" />
           <img src="img/time/bytime.png" alt="비와이" />

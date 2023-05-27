@@ -31,12 +31,12 @@ const TimeTable = () => {
             <Nav handleX={handleX} ref={Xclickdom} />
             <div className="diao fixed-top d-flex justify-content-center"><img src="img/black.png" alt="안돼" /></div>
             <div className="TimeTable good navmargin">
-            <div className="dayBtns">
-                <div className={`${zindex} dayBtns navmargin navbar fixed-top d-flex justify-content-center`}>
-                    <button className={`wslidebtn ${day30}`} onClick={() => changeDay(30)}>DAY1</button>
-                    <button className={`wslidebtn ${day31}`} onClick={() => changeDay(31)}>DAY2</button> 
+                <div className="dayBtns">
+                    <div className={`${zindex} dayBtns navmargin navbar fixed-top d-flex justify-content-center`}>
+                        <button className={`wslidebtn ${day30}`} onClick={() => changeDay(30)}>DAY1</button>
+                        <button className={`wslidebtn ${day31}`} onClick={() => changeDay(31)}>DAY2</button> 
+                    </div>
                 </div>
-            </div>
 
                 <hr className="tthr"></hr>
 

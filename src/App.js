@@ -65,8 +65,7 @@ function App() {
           <Route path="/Gardenisland" element={<GardenIsland />} />
 
           {/* Artist */}
-          <Route path="/Artisttitle" element={<Lineuptitle />} />
-          <Route path="/Artistlineup" element={<LineupSlide />} />
+          <Route path="/Artisttitle" element={<LineupSlide />} />
 
           {/* 공지사항 */}
           <Route path="/InfoMain" element={<InfoMain />} />
