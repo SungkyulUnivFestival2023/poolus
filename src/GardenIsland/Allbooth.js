@@ -95,7 +95,7 @@ function Allbooth({searchword}) {
                 ))}
             </section>
           </Modal.Body>
-        </Modal> 
+        </Modal>
     )}
     </>
     );
