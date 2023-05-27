@@ -3,12 +3,15 @@ import { AiOutlineCheck } from "react-icons/ai";
 import { FiAlertCircle } from "react-icons/fi";
 import { IoIosArrowBack } from "react-icons/io";
 import { Link } from 'react-router-dom';
+import Nav from '../Nav';
 
 function Studentdue() {
   return (
+    <>
+    <Nav btncolor={"#FFC7C7"} classcolor={"pinkcolor"} />
     <section className="fullbgB bgstar">
         <div className="Studentdue good">
-            <div className="duetitle">
+            <div className="duetitle navmargin">
                 <Link to="/InfoMain">
                     <IoIosArrowBack />학생회비 납부 혜택
                 </Link>
@@ -39,6 +42,7 @@ function Studentdue() {
             </p>
         </div>
     </section>
+    </>
   )
 }
 

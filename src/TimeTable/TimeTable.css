@@ -16,7 +16,7 @@
 
 .dayBtns {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     font-family: 'SBAggro2';
 }
 
@@ -58,7 +58,7 @@
 
 .boothBox {
     width: 170px;
-    padding: 10px 20px 10px 10px;
+    padding: 10px 10px 10px 0px;
     margin-bottom: 30px;
     text-align: right;
     position: relative;
@@ -135,7 +135,7 @@
 
 .stageBox {
     width: 170px;
-    padding: 40px 10px 10px 20px;
+    padding: 40px 0 10px 10px;
     margin-bottom: 30px;
     text-align: left;
     position: relative;
@@ -165,4 +165,9 @@
 
 .tthr {
     margin: 1rem;
+    margin-top: 100px;
+}
+
+.zindex {
+    z-index: auto;
 }

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { IoIosArrowBack } from "react-icons/io";
 import { BsArrowDown } from "react-icons/bs";
 import { AiOutlineCheck } from "react-icons/ai";
+import Nav from '../Nav';
 
 function RenewCash() {
   useEffect(() => {
@@ -10,9 +11,12 @@ function RenewCash() {
   }, []);
   
   return (
+    <>
+    <Nav btncolor={"#FFC7C7"} classcolor={"pinkcolor"} />
+    <div className="infodiao diao navbar fixed-top d-flex justify-content-center"><img src="img/black.png" alt="안돼" /></div>
     <section className="fullbgB bgstar">
       <div className="RenewCash good">
-        <div className="cashtitle">
+        <div className="cashtitle navmargin">
           <Link to="/InfoMain">
               <IoIosArrowBack />리뉴 캐쉬
           </Link>
@@ -32,7 +36,7 @@ function RenewCash() {
           <p>
             확인 절차 후 <span className="pinkbold">리뉴 캐쉬</span> 수령
           </p>
-        </div>
+        
 
         <div className="cardflex">
           <div>
@@ -45,6 +49,7 @@ function RenewCash() {
             <p>DAY2</p>
           </div>
         </div>
+        </div>
 
         <div className="cashalert">
           <span><AiOutlineCheck /> 축제 양일에 걸쳐 총 300장의 (하루 150장)<br />캐쉬를 배부할 예정입니다.<br /></span>
@@ -56,6 +61,7 @@ function RenewCash() {
 
       </div>
     </section>
+    </>
   )
 }
 

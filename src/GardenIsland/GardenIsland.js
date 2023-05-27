@@ -3,6 +3,8 @@ import './GardenIsland.css';
 import GardenMain from './GardenMain';
 import Allbooth from './Allbooth';
 import '../background.css';
+import Nav from '../Nav';
+
 
 function GardenIsland() {
   useEffect(() => {
@@ -17,6 +19,8 @@ function GardenIsland() {
   }
 
   return (
+    <>
+    <Nav btncolor={"#287e3a"} classcolor={"greencolor"} />
     <section className="display-container fullbgBag">
         <div className="GardenIsland good">
           {/* 부스 메인 */}
@@ -26,6 +30,7 @@ function GardenIsland() {
           <Allbooth searchword={searchword} />
         </div>
     </section>
+    </>
   )
 }
 

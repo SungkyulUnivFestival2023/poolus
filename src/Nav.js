@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, forwardRef} from 'react'
 import { Link } from 'react-router-dom';
 import './Nav.css';
 
-function Nav() {
+const Nav = forwardRef(({ classcolor, btncolor, handleX }, ref) => {
   
   const [scroll, setScroll] = useState(0);
   
@@ -15,7 +15,7 @@ function Nav() {
   };
 
   return (
-    <div className='navbar fixed-top d-flex justify-content-center'>
+    <div className={`navbar fixed-top d-flex justify-content-center`}>
       {/* <Link to="/" className='home'><AiOutlineHome size="50" color='#6bc6dd'/></Link> */}
       <div className='logo'>
         {/* <Link to="/" scrollintoview>
@@ -28,15 +28,18 @@ function Nav() {
       <div>
         {/* hamburger */}
         <input type="checkbox" id="navi-toggle" className="checkbox" />
-          <label htmlFor="navi-toggle" className="button">
+          <label htmlFor="navi-toggle" 
+            className={`button ${classcolor}`} onClick={handleX} ref={ref}
+            style={{ backgroundColor: btncolor}}
+            >
             <span className="icon">&nbsp;</span>
           </label>
           <div className="background">&nbsp;</div>
           {/* nav */}
           <nav className="nav nav-style">
-            <ul className="list">
-              <li className="item">
-                <Link to="/infomain" className="link sbaggro-font">공지사항</Link>
+            <ul className={`list ${classcolor}`}>
+              <li className="item" >
+                <Link to="/infomain" className="link sbaggro-font" >공지사항</Link>
               </li>
               <li className="item">
                 <Link to="/TimeTable" className="link sbaggro-font">타임테이블</Link>
@@ -50,14 +53,11 @@ function Nav() {
               <li className="item">
                 <Link to="/about" className="link sbaggro-font">만든이들</Link>
               </li>
-              <li className="item">
-                <Link to="/waterislandslide" className="link sbaggro-font">워터 아일랜드 슬라이드버전</Link>
-              </li>
             </ul>
           </nav>
       </div>
     </div>
   )
-}
+})
 
 export default Nav

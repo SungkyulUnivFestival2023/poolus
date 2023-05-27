@@ -1,9 +1,12 @@
 import React from 'react'
 import './Info.css';
 import { Link } from 'react-router-dom';
+import Nav from '../Nav';
 
 function InfoMain() {
   return (
+    <>
+    <Nav btncolor={"#FFC7C7"} classcolor={"pinkcolor"} />
     <section className="display-container fullbgB bgstar">
       <div className="InfoMain good InfoMain1">
           <div className="InfoTitle">
@@ -11,7 +14,7 @@ function InfoMain() {
           </div>
 
           {/* 확성기 */}
-          <div>
+          <div className="infoimg">
             <img src="img/info/infoimg.png" alt="확성기아이콘" />
           </div>
           
@@ -36,6 +39,7 @@ function InfoMain() {
         </div>
       </div>
     </section>
+    </>
   )
 }
 

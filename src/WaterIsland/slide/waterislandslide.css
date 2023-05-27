@@ -11,39 +11,44 @@
     width: 100%;
 }
 
+.wslidebtn:first-child {
+    margin-right: 30px;
+}
+
 .wslidebtn {
     font-family: SBAggro2;
-    padding: 20px;
+    padding: 5px;
     padding-bottom: 10px;
     background: none;
     font-size: 18px;
     color: rgb(255, 255, 255, 0.5);
     border: none;
     border-bottom: 5px solid rgb(108, 199, 223, 0.5);
-    width: 140px;
+    width: 120px;
 }
 
 .activebtn {
     font-family: SBAggro2;
-    padding: 20px;
+    padding: 5px;
     padding-bottom: 10px;
     background: none;
     font-size: 20px !important;
     color: white !important;
     border: none;
     border-bottom: 5px solid #6CC7DF !important;
-    width: 140px;
+    width: 120px;
 }
 
 .attrflex {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 .attrbtns {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     margin-top: 20px;
 }
 
@@ -53,6 +58,7 @@
     border-radius: 10px;
     border: none;
     padding: 5px;
+    margin: 0 10px;
 }
 
 .attrbtns a {
@@ -61,8 +67,7 @@
 }
 
 .AttrImg img {
-    margin-top: 10px;
-    width: 300px;
+    width: 260px;
 }
 
 .goodsflex {
@@ -83,4 +88,8 @@
 .goodsbtn a {
     text-decoration: none;
     color: white;
+}
+
+.AttrComp {
+    margin-top: 140px;
 }

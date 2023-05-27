@@ -1,36 +1,42 @@
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import Time from './TimeTable.json';
 import './TimeTable.css';
 import { MdPlace } from "react-icons/md"
 import '../container.css';
 import '../App.css';
-import { Link } from 'react-router-dom';
 import Nav from '../Nav';
 
 const TimeTable = () => {
+    const Xclickdom = useRef(null);
+    const [Xclick, setXclick] = useState(true);
+
+    const handleX= () => {
+        setXclick(!Xclick);
+        console.log(Xclickdom.current, Xclick);
+    }
+
+    const zindex = Xclick ? '' : 'zindex';
+
     const [day, setDay] = useState(30); // 화, 수 구분 state
 
     const changeDay = ( newDay ) => {
         setDay(newDay);
     }
     
-    const day30 = day === 30 ? 'active-day' : 'non-act';
-    const day31 = day === 31 ? 'active-day' : 'non-act';
+    const day30 = day === 30 ? 'activebtn' : '';
+    const day31 = day === 31 ? 'activebtn' : '';
 
     return (
         <section className="display-container fullbgB">
-            <Nav/>
-            <div className="TimeTable good">
-                <div className="HeartImg">
-                    <Link to="/">
-                        <img src="img/PoolUsHeart.png" alt="Pool:Us Heart" />
-                    </Link>
+            <Nav handleX={handleX} ref={Xclickdom} />
+            <div className="diao fixed-top d-flex justify-content-center"><img src="img/black.png" alt="안돼" /></div>
+            <div className="TimeTable good navmargin">
+            <div className="dayBtns">
+                <div className={`${zindex} dayBtns navmargin navbar fixed-top d-flex justify-content-center`}>
+                    <button className={`wslidebtn ${day30}`} onClick={() => changeDay(30)}>DAY1</button>
+                    <button className={`wslidebtn ${day31}`} onClick={() => changeDay(31)}>DAY2</button> 
                 </div>
-                
-                <div className="dayBtns">
-                    <button className={`dayBtn ${day30}`} onClick={() => changeDay(30)}>30일<br/>화요일</button>
-                    <button className={`dayBtn ${day31}`} onClick={() => changeDay(31)}>31일<br/>수요일</button>
-                </div>
+            </div>
 
                 <hr className="tthr"></hr>
 

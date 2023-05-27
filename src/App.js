@@ -59,11 +59,7 @@ function App() {
           <Route path="/Nav" element={<Nav />} />
           <Route path="/Timetable" element={<TimeTable />} />
           {/* WaterIsland */}
-          <Route path="/Waterisland" element={<WaterIsland />} />
-          <Route path="/Waterisland/Attraction" element={<WaterIslandMenu contents={"attr"}/>} />
-          <Route path="/Waterisland/Goods" element={<WaterIslandMenu contents={"goods"}/>} />
-          <Route path="/Mainmap" element={<Mainmap />} />
-          <Route path="/waterislandslide" element={<Waterislandslide />} />
+          <Route path="/Waterisland" element={<Waterislandslide />} />
           
           {/* GardenIsland */}
           <Route path="/Gardenisland" element={<GardenIsland />} />

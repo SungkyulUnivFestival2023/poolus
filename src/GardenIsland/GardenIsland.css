@@ -90,10 +90,11 @@
 
 .GardenIsland {
     overflow-y: visible;
+    margin-bottom: 100px;
+    margin-top: 30px;
 }
 
 .boothmain {
-    height: 100vh;
     display: grid;
     align-content: center;
     justify-content: center;
@@ -160,4 +161,8 @@
     font-size: 100px;
     color: #287e3a;
     margin-bottom: 0;
+}
+
+.navmargingarden {
+    margin-top: 120px;
 }

@@ -18,3 +18,7 @@
 .bgstar {
     background-image: url('../public/img/renewcash/greenstar.png');
 }
+
+.bginherit {
+    background-color: inherit;
+}

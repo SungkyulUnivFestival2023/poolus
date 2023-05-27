@@ -4,14 +4,17 @@ import { IoIosArrowForward } from "react-icons/io";
 function Attra({waterground}) {
   return (
     <section>
+        <div className="diao fixed-top d-flex justify-content-center">
+            <img src="img/black.png" alt="안돼" />
+        </div>
         {/* 워터 그라운드  */}
         <section className="good attrflex" id="waterground">
             <div className="AttrComp">
                 <div className="attrTitle">워터 그라운드</div>
 
                 <div className="attrSub">
-                <p><span>이용시간</span> <IoIosArrowForward /> <span className="blueFont">10분</span></p>
-                <p><span>이용요금</span> <IoIosArrowForward /> <span className="blueFont">2000원</span></p>
+                    <p><span>이용시간</span> <IoIosArrowForward /> <span className="blueFont">10분</span></p>
+                    <p><span>이용요금</span> <IoIosArrowForward /> <span className="blueFont">2000원</span></p>
                 </div>
                 
                 <div className="groundRule">
@@ -80,7 +83,7 @@ function Attra({waterground}) {
                 </div>
 
                 <div className="AttrImg">
-                    <img src="/img/waterGround.png" alt="waterGround" />
+                    <img src="/img/fulljang.png" alt="waterGround" />
                 </div>
 
                 <div className="attrbtns">

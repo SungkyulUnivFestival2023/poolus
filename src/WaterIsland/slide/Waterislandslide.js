@@ -1,10 +1,26 @@
-import React, { useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import './waterislandslide.css';
 import Goods from './Goods';
 import Attra from './Attra';
+import Nav from '../../Nav';
 
 function Waterislandslide() {
-const [content, setContent] = useState('어트랙션');
+  useEffect(() => {
+    window.scrollTo(0, 0); // 상단으로 스크롤
+  }, []);
+
+  const Xclickdom = useRef(null);
+  const [Xclick, setXclick] = useState(true);
+
+  const handleX= () => {
+      setXclick(!Xclick);
+      console.log(Xclickdom.current, Xclick);
+  }
+
+  const zindex = Xclick ? 'zindexx' : 'zindex';
+
+
+  const [content, setContent] = useState('어트랙션');
 
     const handlecontent = (content) => {
         setContent(content);
@@ -14,30 +30,21 @@ const [content, setContent] = useState('어트랙션');
     const activebtn2 = content === '굿즈' ? 'activebtn' : '';
 
   return (
+    <>
+    <Nav handleX={handleX} ref={Xclickdom} />
     <section className="display-container fullbgB">
-        <div className="Goods good">
-            <div className="waterbtnsparent">
-                <div className="waterbtns">
-                    <button onClick={()=>{handlecontent('어트랙션')}} className={`wslidebtn ${activebtn1}`}>어트랙션</button>
-                    <button onClick={() => {handlecontent('굿즈')}} className={`wslidebtn ${activebtn2}`}>매표소</button> 
-                </div>
-            </div>
-
-            {content === '어트랙션' ? <Attra /> : <Goods />}
-       {/* <div>
-          <Link to="/WaterIsland" className="attractionBtn">
-            <IoIosArrowBack className="arrowback" size="20" color="black" />
-            {contents === "attr" ? <span>어트랙션</span> : <span>매표소 (굿즈)</span>}
-          </Link>
+        <div className="waterbtnsparent">
+          <div className={`${zindex} navbar navmargin fixed-top d-flex justify-content-center`}>
+              <button onClick={()=>{handlecontent('어트랙션')}} className={`wslidebtn ${activebtn1}`}>어트랙션</button>
+              <button onClick={() => {handlecontent('굿즈')}} className={`wslidebtn ${activebtn2}`}>매표소</button> 
+          </div>
         </div>
 
-        <div>
-          <div className="waterIslandContents">
-              {contents === "attr" ? <Carouselattraction /> : <Carouselgoods /> }
-          </div> 
-        </div>*/}
+        <div className="Goods good">
+            {content === '어트랙션' ? <Attra /> : <Goods />}
         </div>
     </section>
+    </>
   )
 }
 
