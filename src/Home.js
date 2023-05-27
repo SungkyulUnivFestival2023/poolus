@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 function Home() {
   return (
     <div className='display-container'>
-    <Nav imgurl={"PoolUsHeart"}/>
+    <Nav imgurl={"heartlogo"}/>
       {/* Main Section */}
       <div className='main d-flex justify-content-center align-items-center'>
         <video autoPlay loop muted playsInline>
