@@ -22,6 +22,7 @@ function Sns() {
     <Nav btncolor={"#FFC7C7"} classcolor={"pinkcolor"} />
     <div className="infodiao diao fixed-top d-flex justify-content-center"><img src="img/black.png" alt="안돼" /></div>
     <div className='display-container'>
+      <Nav />
       <section className="fullbgB bgstar" data-bs-spy="scroll" data-bs-target=".navbar-example">
         <div className="Sns good">
           <div className="snstitle navmargin">

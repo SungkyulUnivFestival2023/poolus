@@ -42,7 +42,7 @@ function Home() {
           <img className='wave-line-1' src="img/wave-line.png" alt="타이틀 꾸미는 wave line"/>
           <img className='wave-line-2' src="img/wave-line.png" alt="타이틀 꾸미는 wave line"/>
         </div>
-        <p className='section-description text-center sbaggro-font'>
+        <div className='section-description text-center sbaggro-font'>
           여름날의 청량한 쉼터, WATER ISLAND
           <br/>뜨거운 여름의 온기로 가득한 지금.
           <br/>
@@ -52,7 +52,7 @@ function Home() {
           <br/>푸른 바다의 정취가 느껴지는
           <br/>
           <br />WATER ISLAND로 여러분을 초대합니다.
-        </p>
+        </div>
         <div className="main-waterIslandBtn">
           <Link to="/WaterIsland">
               <button>자세히 보기</button>
@@ -90,7 +90,7 @@ function Home() {
             </div>
           </div>
         </div>
-        <p className='section-description text-center sbaggro-font'>
+        <div className='section-description text-center sbaggro-font'>
           진정한 사랑이란? ROMANTIC ISLAND
           <br/>누군가를 사랑한다는 건 어떤 의미일까,
           <br/>진정한 사랑의 의미를 찾으러 가는 길.
@@ -99,7 +99,7 @@ function Home() {
           <br/>이제 그 길의 답을 찾으러 갈 시간
           <br/>
           <br />ROMANTIC ISLAND로 여러분을 초대합니다.
-        </p>
+        </div>
         <div className='heart-group'>
           <img className='heart-1' src="img/heart-1.png" alt="heart 1"/>
           <img className='heart-2' src="img/heart-2.png" alt="heart 1"/>
@@ -125,7 +125,7 @@ function Home() {
           <img className='garden-cloud-3' src="img/garden-cloud-3.png" alt="타이틀 꾸미는 구름"/>
           <img className='garden-cloud-4' src="img/garden-cloud-4.png" alt="타이틀 꾸미는 구름"/>
         </div>
-        <p className='section-description text-center sbaggro-font'>
+        <div className='section-description text-center sbaggro-font'>
           숲속의 작은 쉼터, GARDEN ISLAND
           <br/>매일 걷던 그 길을 헤매이다, 우연히 도착한 숲.
           <br/>
@@ -136,7 +136,7 @@ function Home() {
           <br/>지친 그대를 보듬어줄 작은 쉼터.
           <br/>
           <br/>GARDEN ISLAND로 여러분을 초대합니다.
-        </p>
+        </div>
         <div className="gardenIslandBtn">
           <Link to="/GardenIsland">
               <button>부스 보러가기</button>

@@ -9,9 +9,17 @@
 }
 
 .mapmain img {
-    width: 300px;
+    padding: 0 15px;
+    margin: 0 auto;
 }
 
 .mapmenu img {
+    padding: 0px 15px 30px 15px;
+    margin: 0 auto;
+}
+
+.maplogo {
     width: 300px;
+    height: auto;
+    margin: 100px auto 0px auto;
 }

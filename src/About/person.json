@@ -4,11 +4,47 @@
         "logo": "img/logo/renewlogo.png",
         "name": "서민주",
         "department": "관광개발학과 22",
-        "position": "홍보디자인국장",
+        "position": "홍보미디어국장",
         "role": "웹 디자인"
     },
     {
         "id": 2,
+        "image": "img/about/jungyeop.png",
+        "logo": "img/logo/renewlogo.png",
+        "name": "임정엽",
+        "department": "사회복지학과 20",
+        "position": "홍보미디어국장",
+        "role": "SNS 콘텐츠 디자인"
+    },
+    {
+        "id": 3,
+        "image": "img/about/minjung.png",
+        "logo": "img/logo/renewlogo.png",
+        "name": "성민정",
+        "department": "연극영화학부 20",
+        "position": "정책국장",
+        "role": "검수"
+    },
+    {
+        "id": 4,
+        "image": "img/about/dabin.png",
+        "logo": "img/logo/renewlogo.png",
+        "name": "홍다빈",
+        "department": "경영학과 21",
+        "position": "정책국 차장",
+        "role": "검수"
+    },
+    {
+        "id": 5,
+        "image": "img/about/myeongho.png",
+        "logo": "img/logo/renewlogo.png",
+        "name": "유명호",
+        "department": "정보통신공학과 17",
+        "position": "사업기획국장",
+        "role": "행사 세부기획"
+    },
+    {
+        "id": 6,
         "image": "img/about/hyunjun.png",
         "logo": "img/logo/likelion.png",
         "name": "김현준",
@@ -17,7 +53,7 @@
         "role": "Front-End"
     },
     {
-        "id": 3,
+        "id": 7,
         "image": "img/about/seunghee.png",
         "logo": "img/logo/likelion.png",
         "name": "노승희",
@@ -26,7 +62,7 @@
         "role": "Front-End"
     },
     {
-        "id": 4,
+        "id": 8,
         "image": "img/about/youngmin.png",
         "logo": "img/logo/likelion.png",
         "name": "주영민",
@@ -35,7 +71,7 @@
         "role": "Back-End"
     },
     {
-        "id": 5,
+        "id": 9,
         "image": "img/about/taekwon.png",
         "logo": "img/logo/likelion.png",
         "name": "정택원",

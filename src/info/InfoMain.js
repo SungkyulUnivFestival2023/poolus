@@ -8,6 +8,7 @@ function InfoMain() {
     <>
     <Nav btncolor={"#FFC7C7"} classcolor={"pinkcolor"} />
     <section className="display-container fullbgB bgstar">
+      <Nav />
       <div className="InfoMain good InfoMain1">
           <div className="InfoTitle">
             <span>공지사항</span>
