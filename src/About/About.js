@@ -42,10 +42,10 @@ function About() {
                         <div className='llblue'>성결대학교 멋쟁이사자처럼 11기</div>
                     </div>
                     <div className="gridpeople">
-                        <Person0 id={5}/>
                         <Person0 id={6}/>
                         <Person0 id={7}/>
                         <Person0 id={8}/>
+                        <Person0 id={9}/>
                     </div>
                 </div>
                 <div className="renew">
@@ -58,6 +58,7 @@ function About() {
                         <Person0 id={2}/>
                         <Person0 id={3}/>
                         <Person0 id={4}/>
+                        <Person0 id={5}/>
                     </div>
                 </div>
             </div>
