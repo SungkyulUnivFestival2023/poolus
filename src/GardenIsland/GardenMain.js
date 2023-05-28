@@ -25,7 +25,7 @@ function GardenMain({onChange, searchword}) {
 
           <p className="mapinfo">
             <MdKeyboardDoubleArrowDown size="20" /> 부스 지도를 클릭하시면 크게 볼 수 있어요 <MdKeyboardDoubleArrowDown size="20" />
-            </p>
+          </p>
 
           <div className="gardenbooth">
             {imgsize ? 

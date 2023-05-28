@@ -6,6 +6,10 @@ import '../container.css';
 import '../App.css';
 import Nav from '../Nav';
 
+
+import Overlay from 'react-bootstrap/Overlay';
+import Tooltip from 'react-bootstrap/Tooltip';
+
 const TimeTable = () => {
     const Xclickdom = useRef(null);
     const [Xclick, setXclick] = useState(true);
@@ -25,6 +29,14 @@ const TimeTable = () => {
     
     const day30 = day === 30 ? 'activebtn' : '';
     const day31 = day === 31 ? 'activebtn' : '';
+
+    // tooltip
+    const [show, setShow] = useState(false);
+    const targets = useRef({});
+
+    const toggleTooltip = (id) => {
+        setShow((prevShow) => ({ ...prevShow, [id]: !prevShow[id] }));
+    };
 
     return (
         <section className="display-container fullbgB">
@@ -67,8 +79,26 @@ const TimeTable = () => {
                                     <span>{item.time}</span>
                                     <img className="greenCircle" src="img/greenCircle.png" alt="" />
                                 </div>) : null}</div>
-                                <div className="breakword">{item.title}</div>
-                                <div><MdPlace /> {item.place}</div>
+                                <button
+                                        className="TTbtn TTbtn-no-shadow"
+                                        ref={ref => targets.current[item.id] = ref}
+                                        onClick={() => toggleTooltip(item.id)}
+                                    >
+                                    <div className="breakword TTtitle">{item.title}</div>
+                                    <div className="TTtime"><MdPlace /> {item.place}</div>
+                                </button>
+                                <Overlay
+                                        target={targets.current[item.id]}
+                                        show={show[item.id]}
+                                        placement="bottom"
+                                        key={item.id}
+                                    >
+                                        {(props) => (
+                                            <Tooltip id={`overlay-example-${item.id}`} {...props}>
+                                                {item.sub}
+                                            </Tooltip>
+                                        )}
+                                    </Overlay>
                             </div> )}
                         </div>
                     </div>

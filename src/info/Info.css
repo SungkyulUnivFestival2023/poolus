@@ -72,6 +72,11 @@
         margin-bottom: 20px;
     }
     
+    .yesduesub img {
+        width: 300px;
+        height: 30px;
+    }
+    
     .yesduesub p {
         text-align: left;
         margin-left: 10px;
