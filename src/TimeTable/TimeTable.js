@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Time from './TimeTable.json';
 import './TimeTable.css';
 import { MdPlace } from "react-icons/md"
@@ -11,6 +11,12 @@ import Overlay from 'react-bootstrap/Overlay';
 import Tooltip from 'react-bootstrap/Tooltip';
 
 const TimeTable = () => {
+    const changeDay = ( newDay ) => {
+        setDay(newDay);
+    }
+    
+
+
     const Xclickdom = useRef(null);
     const [Xclick, setXclick] = useState(true);
 
@@ -23,12 +29,13 @@ const TimeTable = () => {
 
     const [day, setDay] = useState(30); // 화, 수 구분 state
 
-    const changeDay = ( newDay ) => {
-        setDay(newDay);
-    }
     
     const day30 = day === 30 ? 'activebtn' : '';
     const day31 = day === 31 ? 'activebtn' : '';
+
+    useEffect(() => {
+        window.scrollTo(0, 0); // 상단으로 스크롤
+      }, [day]);
 
     // tooltip
     const [show, setShow] = useState(false);
@@ -84,7 +91,7 @@ const TimeTable = () => {
                                         ref={ref => targets.current[item.id] = ref}
                                         onClick={() => toggleTooltip(item.id)}
                                     >
-                                    <div className="breakword TTtitle">{item.title}</div>
+                                    <div className={`breakword TTtitle ${item.color}`}>{item.title}</div>
                                     <div className="TTtime"><MdPlace /> {item.place}</div>
                                 </button>
                                 <Overlay

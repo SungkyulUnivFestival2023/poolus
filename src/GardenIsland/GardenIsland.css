@@ -166,3 +166,18 @@
 .navmargingarden {
     margin-top: 120px;
 }
+
+.detailMap button {
+    background: none;
+    border: none;
+    color: inherit;
+    font-family: 'SBAggro2';
+    box-shadow: 2px 2px 4px #287E3A;
+    margin: 5px 15px;
+    padding: 5px;
+    font-size: 13px;
+}
+
+.greencolor {
+    color: #6CDD9D;
+}

@@ -1,5 +1,6 @@
 import React from 'react';
 import { IoIosArrowForward } from "react-icons/io";
+import Attrdetail from './Attrdetail';
 
 function Attra({waterground}) {
   return (
@@ -16,8 +17,7 @@ function Attra({waterground}) {
                     <p className="attrsubflex">
                     <span>이용시간</span> <IoIosArrowForward /> 
                     <span className="blueFont finisht">
-                        <p>1일차 : 10:00 ~ 17:00</p>
-                        <p>2일차 : 10:00 ~ 19:00</p>
+                        <Attrdetail />
                     </span>
                     </p>
                     <p><span>이용요금</span> <IoIosArrowForward /> <span className="blueFont">2,000원</span></p>
@@ -50,8 +50,7 @@ function Attra({waterground}) {
                     <p className="attrsubflex">
                     <span>이용시간</span> <IoIosArrowForward /> 
                     <span className="blueFont finisht">
-                        <p>1일차 : 10:00 ~ 17:00</p>
-                        <p>2일차 : 10:00 ~ 19:00</p>
+                        <Attrdetail />  
                     </span>
                     </p>
                     <p><span>이용요금</span> <IoIosArrowForward /> <span className="blueFont">2,000원</span></p>
@@ -79,8 +78,7 @@ function Attra({waterground}) {
                 <p className="attrsubflex">
                     <span>이용시간</span> <IoIosArrowForward /> 
                     <span className="blueFont finisht">
-                        <p>1일차 : 10:00 ~ 17:00</p>
-                        <p>2일차 : 10:00 ~ 19:00</p>
+                        <Attrdetail />
                     </span>
                     </p>
                     <p><span>이용요금</span> <IoIosArrowForward /> <span className="blueFont">2,000원</span></p>

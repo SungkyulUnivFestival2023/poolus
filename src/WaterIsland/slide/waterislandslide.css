@@ -93,3 +93,49 @@
 .AttrComp {
     margin-top: 140px;
 }
+
+.accordion {
+    --bs-accordion-bg: inherit;
+    --bs-accordion-border-width: 0;
+    --bs-accordion-btn-padding-x: 0;
+    --bs-accordion-btn-padding-y: 0;
+    --bs-accordion-btn-color: #6CC7DF;
+}
+
+.finisht {
+    margin-right: 5px;
+}
+
+.accordion-header {
+    margin-bottom: 5px;
+    border: none;
+    padding: 2px;
+    border-radius: none;
+}
+
+.accordion-button::after {
+    color: #6cc7df;
+    margin-left: 10px;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #6CC7DF;
+    background-color: inherit;
+}
+
+.accordion-body {
+    padding: 10px;
+    color: white;
+    background-color: #171717;
+    border-radius: 10px;
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+.accordion-body span {
+    color: #6CC7DF;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: none;
+}
