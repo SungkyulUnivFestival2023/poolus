@@ -24,7 +24,7 @@ function Studentdue() {
                 <p>
                     <span>학생회비 납부자</span><br />
                     <AiOutlineCheck /> 납부자용 팔찌(어트랙션 5회 이용권)<br />
-                    <AiOutlineCheck /> 추가 어트랙션 이용 금액 1000원<br />
+                    <AiOutlineCheck /> 추가 어트랙션 이용 금액 1,000원<br />
                     <AiOutlineCheck /> 어트랙션 매직패스
                 </p>
                 <img src="img/info/yesdue.png" alt="납부자 팔찌" />
@@ -34,7 +34,7 @@ function Studentdue() {
                 <p>
                     <span>학생회비 미납부자 </span><br />
                     미납부자용 팔찌 <AiOutlineCheck /> <br />
-                    어트랙션 이용 금액 2000원 <AiOutlineCheck /> <br />
+                    어트랙션 이용 금액 2,000원 <AiOutlineCheck /> <br />
                 </p>
                 <img src="img/info/nodue.png" alt="미납부자 팔찌" />
             </div>
