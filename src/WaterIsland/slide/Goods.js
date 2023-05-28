@@ -33,7 +33,7 @@ function Goods() {
                 <p className="goodssub">영암축전 티셔츠, 고글, 수건은 <br />모든 학우분들께 무료제공됩니다.</p>
 
                 <div className="goodsbtn">
-                    <button><a href="#pricegoods"><MdKeyboardDoubleArrowDown size="20" /> 구매 물품 보러가기</a></button>
+                    <button><a href="#pricegoods"><MdKeyboardDoubleArrowDown size="20" /> 판매 물품 보러가기</a></button>
                 </div>  
             </div>  
         </section>
@@ -41,7 +41,7 @@ function Goods() {
 
         <section className="good goodsflex" id="pricegoods">
             <div className="AttrComp">
-                <div className="attrTitle">구매 항목</div>
+                <div className="attrTitle">판매 물품</div>
                 <div className="pricegood">
                     <div className="goodsContainer goodsContainer1">
                         <div>

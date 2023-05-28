@@ -1,6 +1,7 @@
 import React from 'react'
 import './about.css';
 // import { FaHandshake } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa"
 import Person0 from './Person0';
 // import { Helmet } from 'react-helmet';
 import Lottie from 'lottie-react';
@@ -40,6 +41,7 @@ function About() {
                     <div className="pertitle">
                         <img className="smlogo" src="img/logo/likelion.png" alt="멋사로고" />
                         <div className='llblue'>성결대학교 멋쟁이사자처럼 11기</div>
+                        <div className='instagram'><a href="https://www.instagram.com/likelion_sku/" target='_blank' rel="noopener noreferrer"><FaInstagram /> likelion_sku</a></div>
                     </div>
                     <div className="gridpeople">
                         <Person0 id={6}/>
@@ -52,6 +54,7 @@ function About() {
                     <div className="pertitle">
                         <img className="smlogo1" src="img/logo/renewlogo.png" alt="리뉴로고" />
                         <div className='renewyellow'>RE:NEW 총학생회</div>
+                        <div className='instagram'><a href="https://www.instagram.com/sku_39th_renew/" target='_blank' rel="noopener noreferrer"><FaInstagram /> sku_39th_renew</a></div>
                     </div>
                     <div className="gridpeople">
                         <Person0 id={1}/>

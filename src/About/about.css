@@ -198,11 +198,19 @@ hr {
 .renew>.pertitle>.renewyellow {
     font-size: 10px;
     margin-top: 3px;
-    margin-bottom: 15px;
+    /* margin-bottom: 15px; */
 }
 
 .likelion>.pertitle>.llblue {
     font-size: 10px;
     margin-top: 3px;
+    /* margin-bottom: 15px; */
+}
+.instagram {
     margin-bottom: 15px;
+}
+.instagram > a{
+    color: #cecece;
+    font-size: 12px;
+    text-decoration: none !important;
 }

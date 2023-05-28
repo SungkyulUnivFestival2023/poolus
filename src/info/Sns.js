@@ -75,7 +75,7 @@ function Sns() {
                 <p className="mar-b">5. 확인 절차 후 리뉴 캐쉬 수령 (양일 선착순 50명)</p>
                 <p className="eventsm"><BsPinAngleFill />  릴스 이벤트를 제외한 이벤트의 중복 참여는 불가능합니다.</p>
                 <p className="eventsm"><BsPinAngleFill />  EX: 릴스 + 필터 이벤트, 리늉이를 찾아라(O),<br />
-                필터이벤트 + 리늉이를 찾아라(X)</p>
+                필터 이벤트 + 리늉이를 찾아라(X)</p>
             </div>
 
             <div className="baromove">
@@ -107,7 +107,7 @@ function Sns() {
                 <p className="mar-b">5. 확인 절차 후 리뉴 캐쉬 수령 (양일 선착순 50명)</p>
                 <p className="eventsm"><BsPinAngleFill />  릴스 이벤트를 제외한 이벤트의 중복 참여는 불가능합니다.</p>
                 <p className="eventsm"><BsPinAngleFill />  EX: 릴스 + 필터 이벤트, 리늉이를 찾아라(O),<br />
-                필터이벤트 + 리늉이를 찾아라(X)</p>
+                필터 이벤트 + 리늉이를 찾아라(X)</p>
             </div>
 
             <div className="baromove">
@@ -122,7 +122,7 @@ function Sns() {
         </div> 
       </section>
 
-      {/* 필터이벤트 */}
+      {/* 필터 이벤트 */}
       <section id="Fter" className="fullbgB bgstar">
         <div className="Rls good">
               <div className="Rlstitle">
@@ -139,7 +139,7 @@ function Sns() {
                   <p className="mar-b">5. 확인 절차 후 리뉴 캐쉬 수령 (양일 선착순 50명)</p>
                   <p className="eventsm"><BsPinAngleFill />  릴스 이벤트를 제외한 이벤트의 중복 참여는 불가능합니다.</p>
                   <p className="eventsm"><BsPinAngleFill />  EX: 릴스 + 필터 이벤트, 리늉이를 찾아라(O),<br />
-                  필터이벤트 + 리늉이를 찾아라(X)</p>
+                  필터 이벤트 + 리늉이를 찾아라(X)</p>
               </div>
 
               <div className="baromove">
