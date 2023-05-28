@@ -209,3 +209,7 @@ stageTitle .stagemt {
 .tooltip-inner {
     z-index: 0;
 }
+
+.tooltip {
+    --bs-tooltip-zindex: 0;
+}
