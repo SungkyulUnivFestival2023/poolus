@@ -29,7 +29,7 @@ function Reday30() {
         <div className="artist2">
             <img src="img/artist/bolsa.png" alt="" />
             <img src="img/artist/bolsaT.png" alt="" />
-            <img src="img/time/bolsatime.png" alt="" />
+            <img src="img/time/bolsatime.png" alt="" className="bottomtime"/>
         </div>
     </div>
   )

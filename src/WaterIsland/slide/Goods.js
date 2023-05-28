@@ -56,7 +56,7 @@ function Goods() {
                             <img src="/img/gun.png" alt="물총" /><br />
                         </div>
                         <div>
-                            <div>물총<br />4,000원</div>
+                            <div>물총<br />3,000원</div>
                         </div>
                     </div>
                 </div>

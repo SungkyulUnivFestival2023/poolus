@@ -13,7 +13,13 @@ function Attra({waterground}) {
                 <div className="attrTitle">워터 그라운드</div>
 
                 <div className="attrSub">
-                    <p><span>이용시간</span> <IoIosArrowForward /> <span className="blueFont">10분</span></p>
+                    <p className="attrsubflex">
+                    <span>이용시간</span> <IoIosArrowForward /> 
+                    <span className="blueFont finisht">
+                        <p>1일차 : 10:00 ~ 17:00</p>
+                        <p>2일차 : 10:00 ~ 19:00</p>
+                    </span>
+                    </p>
                     <p><span>이용요금</span> <IoIosArrowForward /> <span className="blueFont">2,000원</span></p>
                 </div>
                 

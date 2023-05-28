@@ -58,10 +58,10 @@ function About() {
                     </div>
                     <div className="gridpeople">
                         <Person0 id={1}/>
+                        <Person0 id={5}/>
                         <Person0 id={2}/>
                         <Person0 id={3}/>
                         <Person0 id={4}/>
-                        <Person0 id={5}/>
                     </div>
                 </div>
             </div>

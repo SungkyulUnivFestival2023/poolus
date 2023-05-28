@@ -16,7 +16,7 @@ function Reday31() {
         <div className="artist2">
           <img src="img/artist/by.png" alt="비와이" />
           <img src="img/artist/byT.png" alt="비와이" />
-          <img src="img/time/bytime.png" alt="비와이" />
+          <img src="img/time/bytime.png" alt="비와이" className="bottomtime"/>
         </div>
 
         <div className="artist">

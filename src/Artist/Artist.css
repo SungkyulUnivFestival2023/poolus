@@ -221,7 +221,11 @@
     width: 100px;
     position: absolute;
     bottom: 78px;
-    left: -5px;
+    left: -9px;
+}
+
+.bottomtime {
+    bottom: 72px !important;
 }
 
 .lineupview {
