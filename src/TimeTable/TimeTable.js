@@ -14,8 +14,6 @@ const TimeTable = () => {
     const changeDay = ( newDay ) => {
         setDay(newDay);
     }
-    
-
 
     const Xclickdom = useRef(null);
     const [Xclick, setXclick] = useState(true);
@@ -95,17 +93,17 @@ const TimeTable = () => {
                                     <div className="TTtime"><MdPlace /> {item.place}</div>
                                 </button>
                                 <Overlay
-                                        target={targets.current[item.id]}
-                                        show={show[item.id]}
-                                        placement="bottom"
-                                        key={item.id}
-                                    >
-                                        {(props) => (
-                                            <Tooltip id={`overlay-example-${item.id}`} {...props}>
-                                                {item.sub}
-                                            </Tooltip>
-                                        )}
-                                    </Overlay>
+                                    target={targets.current[item.id]}
+                                    show={show[item.id]}
+                                    placement="bottom"
+                                    key={item.id}
+                                >
+                                    {(props) => (
+                                        <Tooltip id={`overlay-example-${item.id}`} {...props}>
+                                            <span className="overlaysub">{item.sub}</span>
+                                        </Tooltip>
+                                    )}
+                                </Overlay>
                             </div> )}
                         </div>
                     </div>

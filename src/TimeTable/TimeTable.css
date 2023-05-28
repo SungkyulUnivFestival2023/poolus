@@ -201,3 +201,7 @@ stageTitle .stagemt {
 .TTbtn-no-shadow {
     border: none;
 }
+
+.overlaysub {
+    word-break: keep-all;
+}
