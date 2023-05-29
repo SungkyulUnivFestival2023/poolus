@@ -60,7 +60,7 @@ const TimeTable = () => {
                 <div className="boothNstage">
                     <div className="booth">
                         <div className="boothTitle bothbooth">부스</div>
-                        {Time.filter(item => item.type === "booth").map((item) =>
+                        {Time.filter(item => item.day !== day && item.type === "booth").map((item) =>
                             <div className="boothBox">
                                 <div>{item.time !== "" ? (
                                 <div>
