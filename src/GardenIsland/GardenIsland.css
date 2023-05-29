@@ -181,3 +181,7 @@
 .greencolor {
     color: #6CDD9D;
 }
+
+.menuname {
+    word-break: keep-all;
+}
