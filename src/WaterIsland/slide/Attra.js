@@ -81,7 +81,7 @@ function Attra({waterground}) {
                         <Attrdetail />
                     </span>
                     </p>
-                    <p><span>이용요금</span> <IoIosArrowForward /> <span className="blueFont">2,000원</span></p>
+                    <p><span>이용요금</span> <IoIosArrowForward /> <span className="blueFont">무료</span></p>
                     <p><span>대형풀장</span> <IoIosArrowForward /> <span className="blueFont">수심 : 약 1.2m</span></p>
                     <p><span>소형풀장</span> <IoIosArrowForward /> <span className="blueFont">수심 : 약 0.7m</span></p>
                 </div>
